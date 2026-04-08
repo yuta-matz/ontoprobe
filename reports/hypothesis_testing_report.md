@@ -7,7 +7,7 @@
 
 - **対象期間:** 2025年1月〜12月
 - **データ規模:** 注文 2,318件 / 顧客 200名 / 商品 12品目 / キャンペーン 5件
-- **使用ツール:** DuckDB / dbt / OWL/RDF (rdflib) / Claude (LLM)
+- **使用ツール:** DuckDB / dbt / OWL/RDF (rdflib) / Claude Code (LLM)
 
 ### PoC環境
 
@@ -18,7 +18,7 @@
 | データベース | DuckDB | 1.5 | ローカルOLAPデータベース |
 | セマンティックレイヤー | dbt-core + dbt-duckdb | 1.11 | メトリクス定義・モデル管理 |
 | オントロジー | rdflib (OWL/RDF Turtle) | 7.6 | ドメイン知識の記述・SPARQLクエリ |
-| LLM | Anthropic Claude API | — | 仮説生成・検証（デモモードではLLM不使用） |
+| LLM | Claude Code (Claude Opus 4.6) | — | 仮説生成・検証（APIではなくClaude Codeのモデルを直接利用） |
 | データモデル | Pydantic | 2.12 | 仮説・検証結果の構造化 |
 | 可視化 | marimo + plotly | 0.22 / 6.6 | EDAノートブック |
 | OS | macOS (Apple Silicon) | — | 開発・実行環境 |
@@ -46,7 +46,7 @@
      └──────────────┘ └──────────────┘ └──────────────┘
 ```
 
-すべてローカルで完結し、外部サービスへの依存はLLM API（Claude）のみ。デモモード（`--demo`）ではAPIキーも不要。
+本レポートの仮説検証は、Claude Code（Claude Opus 4.6）をLLMとして使用した。Claude Codeが3層のコンテキスト（DBメタデータ、セマンティックレイヤー、オントロジー）を読み取り、仮説を生成し、SQLを実行し、結果を分析した。APIキーの設定は不要で、すべてClaude Codeのセッション内で完結している。
 
 ### データソースについて
 

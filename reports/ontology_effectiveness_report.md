@@ -10,8 +10,10 @@
 
 ### PoC環境
 
-本評価は以下の環境で実施した: Python 3.12 / DuckDB 1.5 / dbt 1.11 / rdflib 7.6 / uv 0.11。
-すべてローカル（macOS, Apple Silicon）で完結し、LLM APIは使用していない（ルールベース評価）。
+本評価は以下の環境で実施した: Python 3.12 / DuckDB 1.5 / dbt 1.11 / rdflib 7.6 / uv 0.11 / macOS (Apple Silicon)。
+スコアリングはルールベース評価であり、LLMは使用していない。
+なお、前段の仮説検証レポートではClaude Code（Claude Opus 4.6）をLLMとして使用し、
+APIではなくClaude Codeのセッション内で直接コンテキストを読み取り仮説生成・SQL実行・検証を行った。
 
 ### データソースについて
 
