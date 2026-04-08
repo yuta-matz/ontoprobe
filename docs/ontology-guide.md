@@ -304,7 +304,54 @@ ontology/
 
 ---
 
-## 8. 実行の流れ
+## 8. PoC環境
+
+ontoprobeプロジェクトは以下の技術スタックで構成されている。
+
+| レイヤー | 技術 | 役割 |
+|---------|------|------|
+| データベース | **DuckDB** | ローカルで動作する軽量OLAPデータベース。インストール不要、ファイル1つで完結 |
+| セマンティックレイヤー | **dbt** (dbt-duckdb) | メトリクスの定義（「売上 = SUM(total_amount)」等）とデータモデルの管理 |
+| オントロジー | **rdflib** (OWL/RDF Turtle) | ドメイン知識の記述とSPARQLクエリによる取得 |
+| LLM | **Anthropic Claude API** | 仮説生成とSQL生成・検証。デモモードではLLM不使用 |
+| パッケージ管理 | **uv** | Python依存関係の管理と仮想環境 |
+| 可視化 | **marimo** + **plotly** | インタラクティブなEDAノートブック |
+
+### なぜこの構成か
+
+- **DuckDB:** PoCに最適。サーバー不要、`pip install duckdb` だけで使える。SQLも標準的
+- **dbt:** セマンティックレイヤーの業界標準。メトリクス定義を宣言的に管理できる
+- **rdflib:** Python で OWL/RDF を扱う標準ライブラリ。SPARQLクエリでオントロジーからルールを取得
+- **uv:** 高速なPythonパッケージマネージャ。`uv run` でコマンド実行、`uv sync` で依存解決
+
+### セットアップ手順
+
+```bash
+# 1. リポジトリをクローン
+git clone https://github.com/yuta-matz/ontoprobe.git
+cd ontoprobe
+
+# 2. 依存関係をインストール
+uv sync --all-extras
+
+# 3. シードデータ生成 + DuckDBロード
+uv run python -m ontoprobe.db.seeder
+
+# 4. dbtモデルのビルド
+cd dbt_project && uv run dbt build --profiles-dir . && cd ..
+
+# 5. デモ実行（LLM不要）
+uv run python -m ontoprobe --demo
+
+# 6. EDAノートブック起動
+uv run marimo edit notebooks/eda.py
+```
+
+すべてローカルで完結し、外部サービスへの依存はLLM API（Claude）のみ。デモモード（`--demo`）ではAPIキーも不要。
+
+---
+
+## 9. 実行の流れ
 
 オントロジーは以下の流れでデータ分析に使われる。
 
@@ -337,7 +384,7 @@ Step 5: レポート
 
 ---
 
-## 9. 他の技術との比較
+## 10. 他の技術との比較
 
 ### セマンティックレイヤー（dbt）との違い
 
@@ -374,7 +421,7 @@ Step 5: レポート
 
 ---
 
-## 10. はじめの一歩
+## 11. はじめの一歩
 
 自分のドメインでオントロジーを作り始めるなら：
 
@@ -410,7 +457,7 @@ Step 5: レポート
 
 ---
 
-## 11. 用語集
+## 12. 用語集
 
 | 用語 | 意味 |
 |------|------|
