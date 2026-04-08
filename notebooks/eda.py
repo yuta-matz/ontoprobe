@@ -1,24 +1,26 @@
 import marimo
 
-__generated_with = "0.13.0"
+__generated_with = "0.22.5"
 app = marimo.App(width="medium")
 
 
 @app.cell
 def _(mo):
-    mo.md(
-        r"""
-        # OntoProbe PoC データ EDA
+    mo.md(r"""
+    # OntoProbe PoC データ EDA
 
-        ECサイトのPoCデータ（2025年1月〜12月）の探索的データ分析。
-        DuckDB上の合成データを対象とする。
+    ECサイトのPoCデータ（2025年1月〜12月）の探索的データ分析。
+    DuckDB上の合成データを対象とする。
 
-        - 顧客: 200名（New / Returning / VIP）
-        - 商品: 12品目（季節商品4 / 通年商品8）
-        - 注文: 2,318件
-        - キャンペーン: 5件（割引3 / 送料無料2）
-        """
-    )
+    - 顧客: 200名（New / Returning / VIP）
+    - 商品: 12品目（季節商品4 / 通年商品8）
+    - 注文: 2,318件
+    - キャンペーン: 5件（割引3 / 送料無料2）
+
+    > **注意:** 本データは `src/ontoprobe/db/seeder.py` により生成された**合成データ**である（`random.seed(42)`で再現性確保）。
+    > オントロジーの因果ルール検証を目的として、季節商品のQ4集中・VIPの高額購買・キャンペーンによる注文増加
+    > といったパターンが意図的に埋め込まれている。実在のECサイトのデータではない。
+    """)
     return
 
 
@@ -33,12 +35,14 @@ def _():
 
     DB_PATH = Path(__file__).parent.parent / "data" / "ontoprobe.duckdb"
     conn = duckdb.connect(str(DB_PATH), read_only=True)
-    return DB_PATH, Path, conn, duckdb, go, make_subplots, mo, px
+    return conn, go, make_subplots, mo, px
 
 
 @app.cell
-def _(conn, mo):
-    mo.md("## 1. データ概要")
+def _(mo):
+    mo.md("""
+    ## 1. データ概要
+    """)
     return
 
 
@@ -61,12 +65,14 @@ def _(conn, mo):
         counts.append(cnt)
     tables["rows"] = counts
     mo.ui.table(tables)
-    return counts, tables
+    return
 
 
 @app.cell
-def _(conn, mo):
-    mo.md("## 2. 顧客分析")
+def _(mo):
+    mo.md("""
+    ## 2. 顧客分析
+    """)
     return
 
 
@@ -81,7 +87,7 @@ def _(conn, mo, px):
                      title="顧客セグメント構成",
                      color_discrete_sequence=px.colors.qualitative.Set2)
     mo.ui.plotly(fig_seg)
-    return (fig_seg, seg)
+    return
 
 
 @app.cell
@@ -97,7 +103,7 @@ def _(conn, mo, px):
                         barmode="group",
                         color_discrete_sequence=px.colors.qualitative.Set2)
     mo.ui.plotly(fig_region)
-    return (fig_region, region)
+    return
 
 
 @app.cell
@@ -118,7 +124,7 @@ def _(conn, mo, px):
                      color_discrete_sequence=px.colors.qualitative.Set2)
     fig_ltv.update_layout(showlegend=False)
     mo.ui.plotly(fig_ltv)
-    return (cust_stats, fig_ltv)
+    return
 
 
 @app.cell
@@ -134,12 +140,14 @@ def _(conn, mo, px):
                          color_discrete_sequence=px.colors.qualitative.Set2)
     fig_aov_box.update_layout(showlegend=False)
     mo.ui.plotly(fig_aov_box)
-    return (aov_dist, fig_aov_box)
+    return
 
 
 @app.cell
-def _(conn, mo):
-    mo.md("## 3. 売上トレンド")
+def _(mo):
+    mo.md("""
+    ## 3. 売上トレンド
+    """)
     return
 
 
@@ -184,7 +192,7 @@ def _(conn, go, make_subplots, mo):
                            tickmode="linear", dtick=1)
     fig_trend.update_yaxes(title_text="売上", row=1, col=1)
     mo.ui.plotly(fig_trend)
-    return (fig_trend, monthly)
+    return
 
 
 @app.cell
@@ -204,12 +212,14 @@ def _(conn, mo, px):
                    color_discrete_sequence=px.colors.qualitative.Set2)
     fig_q.update_xaxes(title="四半期", tickmode="linear", dtick=1)
     mo.ui.plotly(fig_q)
-    return (fig_q, quarterly)
+    return
 
 
 @app.cell
-def _(conn, mo):
-    mo.md("## 4. 季節商品分析")
+def _(mo):
+    mo.md("""
+    ## 4. 季節商品分析
+    """)
     return
 
 
@@ -239,7 +249,7 @@ def _(conn, mo, px):
     )
     fig_seasonal.update_xaxes(tickmode="linear", dtick=1)
     mo.ui.plotly(fig_seasonal)
-    return (fig_seasonal, seasonal_monthly)
+    return
 
 
 @app.cell
@@ -260,7 +270,7 @@ def _(conn, mo, px):
                       labels={"is_seasonal": "季節商品", "total_revenue": "売上"})
     fig_prod.update_layout(xaxis_tickangle=-45)
     mo.ui.plotly(fig_prod)
-    return (fig_prod, product_sales)
+    return
 
 
 @app.cell
@@ -282,12 +292,14 @@ def _(conn, mo, px):
                     color_discrete_sequence=px.colors.qualitative.Vivid)
     fig_sq.update_xaxes(title="四半期", tickmode="linear", dtick=1)
     mo.ui.plotly(fig_sq)
-    return (fig_sq, seasonal_q)
+    return
 
 
 @app.cell
-def _(conn, mo):
-    mo.md("## 5. キャンペーン分析")
+def _(mo):
+    mo.md("""
+    ## 5. キャンペーン分析
+    """)
     return
 
 
@@ -300,7 +312,7 @@ def _(conn, mo):
         ORDER BY start_date
     """).fetchdf()
     mo.ui.table(campaigns)
-    return (campaigns,)
+    return
 
 
 @app.cell
@@ -358,7 +370,7 @@ def _(conn, go, make_subplots, mo):
 
     fig_daily.update_layout(height=500, title_text="日次推移とキャンペーン")
     mo.ui.plotly(fig_daily)
-    return (camp, colors, daily, fig_daily, no_camp)
+    return
 
 
 @app.cell
@@ -383,12 +395,14 @@ def _(conn, mo, px):
                         hover_data=["discount_pct", "total_discount"],
                         color_discrete_sequence=px.colors.qualitative.Bold)
     mo.ui.plotly(fig_ce)
-    return (camp_effect, fig_ce)
+    return
 
 
 @app.cell
-def _(conn, mo):
-    mo.md("## 6. 地域分析")
+def _(mo):
+    mo.md("""
+    ## 6. 地域分析
+    """)
     return
 
 
@@ -408,7 +422,7 @@ def _(conn, mo, px):
                     color_discrete_sequence=px.colors.qualitative.Pastel)
     fig_rq.update_xaxes(title="四半期", tickmode="linear", dtick=1)
     mo.ui.plotly(fig_rq)
-    return (fig_rq, region_q)
+    return
 
 
 @app.cell
@@ -427,12 +441,14 @@ def _(conn, mo, px):
                     barmode="stack",
                     color_discrete_sequence=px.colors.qualitative.Set2)
     mo.ui.plotly(fig_rs)
-    return (fig_rs, region_seg)
+    return
 
 
 @app.cell
-def _(conn, mo):
-    mo.md("## 7. 基本統計量")
+def _(mo):
+    mo.md("""
+    ## 7. 基本統計量
+    """)
     return
 
 
@@ -455,7 +471,7 @@ def _(conn, mo):
     """).fetchdf().T.reset_index()
     stats.columns = ["指標", "値"]
     mo.ui.table(stats)
-    return (stats,)
+    return
 
 
 @app.cell
@@ -469,7 +485,7 @@ def _(conn, mo, px):
                             color_discrete_sequence=["#3498db"])
     fig_hist.update_layout(showlegend=False)
     mo.ui.plotly(fig_hist)
-    return (fig_hist, order_dist)
+    return
 
 
 @app.cell
@@ -488,24 +504,22 @@ def _(conn, mo, px):
                        color_discrete_sequence=px.colors.qualitative.Set2)
     fig_items.update_layout(showlegend=False)
     mo.ui.plotly(fig_items)
-    return (fig_items, items_per_order)
+    return
 
 
 @app.cell
-def _(conn, mo):
-    mo.md(
-        r"""
-        ## 8. データの特徴まとめ
+def _(mo):
+    mo.md(r"""
+    ## 8. データの特徴まとめ
 
-        このEDAから確認できる主な特徴:
+    このEDAから確認できる主な特徴:
 
-        1. **Q4売上急増**: 10-12月の売上がQ1-Q3の約2倍。季節商品の需要集中が主因
-        2. **VIPの圧倒的な購買力**: VIPは全顧客の15%だが売上の約48%を占める。AOVはNewの7倍
-        3. **季節商品の偏り**: Q4の季節商品売上がQ1-Q3平均の15倍。冬物・ギフトに集中
-        4. **キャンペーン効果の差**: 割引キャンペーンは注文数をやや増加させるが、送料無料は効果なし
-        5. **地域差は小さい**: 5地域間の売上差は限定的。セグメント構成の影響が大きい
-        """
-    )
+    1. **Q4売上急増**: 10-12月の売上がQ1-Q3の約2倍。季節商品の需要集中が主因
+    2. **VIPの圧倒的な購買力**: VIPは全顧客の15%だが売上の約48%を占める。AOVはNewの7倍
+    3. **季節商品の偏り**: Q4の季節商品売上がQ1-Q3平均の15倍。冬物・ギフトに集中
+    4. **キャンペーン効果の差**: 割引キャンペーンは注文数をやや増加させるが、送料無料は効果なし
+    5. **地域差は小さい**: 5地域間の売上差は限定的。セグメント構成の影響が大きい
+    """)
     return
 
 
