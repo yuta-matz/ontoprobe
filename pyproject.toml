@@ -1,0 +1,27 @@
+[project]
+name = "ontoprobe"
+version = "0.1.0"
+description = "LLM-powered hypothesis testing using DB metadata, dbt semantic layer, and OWL/RDF ontology"
+readme = "README.md"
+authors = [
+    { name = "yuta-matz", email = "yuta.matz@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=1.2.0",
+    "rdflib>=7.0.0",
+    "anthropic>=0.49.0",
+    "pydantic>=2.0.0",
+    "rich>=13.0.0",
+    "pyyaml>=6.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.9.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.4,<0.12.0"]
+build-backend = "uv_build"

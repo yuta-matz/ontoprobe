@@ -1,0 +1,13 @@
+product_id,name,category_id,price,is_seasonal
+1,Wireless Earbuds,1,4980,False
+2,USB-C Cable,1,1280,False
+3,Smartphone Case,1,1980,False
+4,T-Shirt Basic,2,2480,False
+5,Sneakers,2,8980,False
+6,Winter Coat,5,15980,True
+7,Knit Scarf,5,3480,True
+8,Organic Coffee,3,1680,False
+9,Green Tea Set,3,2980,False
+10,Desk Lamp,4,4480,False
+11,Christmas Gift Box,6,5980,True
+12,New Year Hamper,6,8980,True

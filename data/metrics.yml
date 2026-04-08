@@ -1,0 +1,91 @@
+metrics:
+  - name: total_revenue
+    label: "Total Revenue"
+    description: "Sum of total_amount across all completed orders"
+    model: fct_orders
+    expression: "SUM(total_amount)"
+    timestamp_column: order_date
+    time_grains: [day, week, month, quarter]
+    dimensions:
+      - customer_segment
+      - region
+      - has_campaign
+      - order_quarter
+
+  - name: order_count
+    label: "Order Count"
+    description: "Total number of completed orders"
+    model: fct_orders
+    expression: "COUNT(order_id)"
+    timestamp_column: order_date
+    time_grains: [day, week, month, quarter]
+    dimensions:
+      - customer_segment
+      - region
+      - has_campaign
+      - order_quarter
+
+  - name: average_order_value
+    label: "Average Order Value (AOV)"
+    description: "Average total_amount per order"
+    model: fct_orders
+    expression: "AVG(total_amount)"
+    timestamp_column: order_date
+    time_grains: [day, week, month, quarter]
+    dimensions:
+      - customer_segment
+      - region
+      - has_campaign
+
+  - name: total_discount
+    label: "Total Discount"
+    description: "Sum of all discount amounts applied"
+    model: fct_orders
+    expression: "SUM(discount_amount)"
+    timestamp_column: order_date
+    time_grains: [day, week, month, quarter]
+    dimensions:
+      - customer_segment
+      - has_campaign
+
+  - name: items_sold
+    label: "Items Sold"
+    description: "Total quantity of items sold"
+    model: fct_order_items
+    expression: "SUM(quantity)"
+    timestamp_column: order_date
+    time_grains: [day, week, month, quarter]
+    dimensions:
+      - category_name
+      - is_seasonal
+      - customer_segment
+      - order_quarter
+
+  - name: seasonal_revenue
+    label: "Seasonal Product Revenue"
+    description: "Revenue from seasonal products only"
+    model: fct_order_items
+    expression: "SUM(CASE WHEN is_seasonal THEN line_total ELSE 0 END)"
+    timestamp_column: order_date
+    time_grains: [month, quarter]
+    dimensions:
+      - category_name
+      - order_quarter
+
+  - name: customer_lifetime_value
+    label: "Customer Lifetime Value"
+    description: "Total lifetime revenue per customer"
+    model: dim_customers
+    expression: "lifetime_revenue"
+    dimensions:
+      - customer_segment
+      - region
+
+  - name: repeat_purchase_rate
+    label: "Repeat Purchase Rate"
+    description: "Percentage of customers with more than 1 order"
+    model: dim_customers
+    expression: "AVG(CASE WHEN total_orders > 1 THEN 1.0 ELSE 0.0 END)"
+    dimensions:
+      - customer_segment
+      - region

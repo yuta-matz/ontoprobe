@@ -1,0 +1,6 @@
+ontoprobe:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "../data/ontoprobe.duckdb"

@@ -1,0 +1,86 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: "Fact table for completed orders with customer and time dimensions"
+    columns:
+      - name: order_id
+        description: "Unique order identifier"
+      - name: customer_id
+        description: "Customer who placed the order"
+      - name: order_date
+        description: "Date the order was placed"
+      - name: total_amount
+        description: "Total order amount after discount"
+      - name: discount_amount
+        description: "Discount applied to the order"
+      - name: campaign_id
+        description: "Campaign associated with the order, if any"
+      - name: customer_segment
+        description: "Customer segment: new, returning, or vip"
+      - name: region
+        description: "Customer region"
+      - name: order_month
+        description: "Month of the order (1-12)"
+      - name: order_quarter
+        description: "Quarter of the order (1-4)"
+      - name: has_campaign
+        description: "Whether the order was placed during a campaign"
+
+  - name: fct_order_items
+    description: "Fact table at order-item grain with product and time dimensions"
+    columns:
+      - name: order_item_id
+        description: "Unique order item identifier"
+      - name: product_id
+        description: "Product purchased"
+      - name: quantity
+        description: "Quantity purchased"
+      - name: unit_price
+        description: "Unit price at time of purchase"
+      - name: line_total
+        description: "Line total (unit_price * quantity)"
+      - name: is_seasonal
+        description: "Whether the product is seasonal"
+      - name: category_name
+        description: "Product category"
+      - name: order_quarter
+        description: "Quarter of the order (1-4)"
+
+  - name: dim_customers
+    description: "Customer dimension with aggregated order statistics"
+    columns:
+      - name: customer_id
+        description: "Unique customer identifier"
+      - name: customer_segment
+        description: "Customer segment: new, returning, or vip"
+      - name: total_orders
+        description: "Total number of orders placed"
+      - name: lifetime_revenue
+        description: "Total revenue from this customer"
+      - name: avg_order_value
+        description: "Average order value for this customer"
+
+  - name: dim_products
+    description: "Product dimension with category hierarchy"
+    columns:
+      - name: product_id
+        description: "Unique product identifier"
+      - name: product_name
+        description: "Product name"
+      - name: price
+        description: "Base price"
+      - name: is_seasonal
+        description: "Whether the product is seasonal"
+      - name: category_name
+        description: "Product category"
+
+  - name: dim_campaigns
+    description: "Campaign dimension with duration"
+    columns:
+      - name: campaign_id
+        description: "Unique campaign identifier"
+      - name: campaign_type
+        description: "Campaign type: discount or free_shipping"
+      - name: discount_percent
+        description: "Discount percentage (0 for free shipping)"

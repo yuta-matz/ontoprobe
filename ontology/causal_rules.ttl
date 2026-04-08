@@ -1,0 +1,109 @@
+@prefix : <http://ontoprobe.example.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# =============================================================================
+# Causal Relationship Properties
+# =============================================================================
+
+:CausalRule a owl:Class ;
+    rdfs:label "Causal Rule"@en ;
+    rdfs:comment "A domain knowledge rule describing a causal or correlational relationship"@en .
+
+:hasCause a owl:ObjectProperty ;
+    rdfs:domain :CausalRule ;
+    rdfs:comment "The entity or condition that causes the effect"@en .
+
+:hasEffect a owl:ObjectProperty ;
+    rdfs:domain :CausalRule ;
+    rdfs:comment "The metric or outcome affected"@en .
+
+:hasDirection a owl:DatatypeProperty ;
+    rdfs:domain :CausalRule ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Direction of effect: 'increase' or 'decrease'"@en .
+
+:hasExpectedMagnitude a owl:DatatypeProperty ;
+    rdfs:domain :CausalRule ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Expected magnitude of the effect (e.g., '15-30%')"@en .
+
+:hasCondition a owl:DatatypeProperty ;
+    rdfs:domain :CausalRule ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Condition under which the rule applies"@en .
+
+:hasComparedTo a owl:ObjectProperty ;
+    rdfs:domain :CausalRule ;
+    rdfs:comment "Comparison baseline for the rule"@en .
+
+:hasDescription a owl:DatatypeProperty ;
+    rdfs:domain :CausalRule ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Human-readable description of the causal rule"@en .
+
+# =============================================================================
+# Causal Rules
+# =============================================================================
+
+:rule_discount_order_volume a :CausalRule ;
+    rdfs:label "Discount increases order volume"@en ;
+    :hasCause :DiscountCampaign ;
+    :hasEffect :OrderVolume ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "15-30%" ;
+    :hasCondition "discount_percent > 10" ;
+    :hasDescription "Discount campaigns with >10% off are expected to increase order volume by 15-30% compared to non-campaign periods" .
+
+:rule_seasonal_revenue a :CausalRule ;
+    rdfs:label "Seasonal products spike in Q4"@en ;
+    :hasCause :SeasonalProduct ;
+    :hasEffect :SeasonalRevenue ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "2-3x" ;
+    :hasCondition "order_quarter = 4" ;
+    :hasDescription "Seasonal products (winter fashion, gift sets) see 2-3x revenue increase in Q4 compared to other quarters" .
+
+:rule_vip_higher_aov a :CausalRule ;
+    rdfs:label "VIP customers have higher AOV"@en ;
+    :hasCause :VIPCustomer ;
+    :hasEffect :AverageOrderValue ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "40-60%" ;
+    :hasComparedTo :NewCustomer ;
+    :hasDescription "VIP customers are expected to have 40-60% higher average order value compared to new customers" .
+
+:rule_free_shipping_volume a :CausalRule ;
+    rdfs:label "Free shipping increases order volume"@en ;
+    :hasCause :FreeShippingCampaign ;
+    :hasEffect :OrderVolume ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "10-20%" ;
+    :hasDescription "Free shipping campaigns are expected to increase order volume by 10-20%" .
+
+:rule_repeat_clv a :CausalRule ;
+    rdfs:label "Repeat purchases correlate with CLV"@en ;
+    :hasCause :RepeatPurchaseRate ;
+    :hasEffect :CustomerLifetimeValue ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "positive correlation" ;
+    :hasDescription "Customers with higher repeat purchase rates have significantly higher lifetime value" .
+
+:rule_q4_overall_revenue a :CausalRule ;
+    rdfs:label "Q4 has highest overall revenue"@en ;
+    :hasCause :SeasonalProduct ;
+    :hasEffect :Revenue ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "30-50%" ;
+    :hasCondition "order_quarter = 4" ;
+    :hasDescription "Q4 total revenue is 30-50% higher than average quarter due to holiday season and year-end campaigns" .
+
+:rule_discount_reduces_margin a :CausalRule ;
+    rdfs:label "Discounts reduce effective margin"@en ;
+    :hasCause :DiscountCampaign ;
+    :hasEffect :Discount ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "proportional to discount_percent" ;
+    :hasDescription "Higher discount percentages lead to proportionally higher total discount amounts, reducing effective revenue per order" .

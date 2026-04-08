@@ -1,0 +1,130 @@
+@prefix : <http://ontoprobe.example.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# =============================================================================
+# Ontology Declaration
+# =============================================================================
+
+<http://ontoprobe.example.org/ontology> a owl:Ontology ;
+    rdfs:label "E-Commerce Domain Ontology"@en ;
+    rdfs:comment "Domain knowledge for e-commerce hypothesis testing"@en .
+
+# =============================================================================
+# Classes
+# =============================================================================
+
+:Customer a owl:Class ;
+    rdfs:label "Customer"@en .
+
+:NewCustomer a owl:Class ;
+    rdfs:subClassOf :Customer ;
+    rdfs:label "New Customer"@en ;
+    rdfs:comment "First-time buyer, customer_segment = 'new'"@en .
+
+:ReturningCustomer a owl:Class ;
+    rdfs:subClassOf :Customer ;
+    rdfs:label "Returning Customer"@en ;
+    rdfs:comment "Has purchased before, customer_segment = 'returning'"@en .
+
+:VIPCustomer a owl:Class ;
+    rdfs:subClassOf :Customer ;
+    rdfs:label "VIP Customer"@en ;
+    rdfs:comment "High-value customer, customer_segment = 'vip'"@en .
+
+:Product a owl:Class ;
+    rdfs:label "Product"@en .
+
+:SeasonalProduct a owl:Class ;
+    rdfs:subClassOf :Product ;
+    rdfs:label "Seasonal Product"@en ;
+    rdfs:comment "Product with demand concentrated in specific seasons, is_seasonal = true"@en .
+
+:EvergreenProduct a owl:Class ;
+    rdfs:subClassOf :Product ;
+    rdfs:label "Evergreen Product"@en ;
+    rdfs:comment "Product with stable year-round demand, is_seasonal = false"@en .
+
+:Order a owl:Class ;
+    rdfs:label "Order"@en .
+
+:Campaign a owl:Class ;
+    rdfs:label "Campaign"@en .
+
+:DiscountCampaign a owl:Class ;
+    rdfs:subClassOf :Campaign ;
+    rdfs:label "Discount Campaign"@en ;
+    rdfs:comment "Campaign offering percentage discount, campaign_type = 'discount'"@en .
+
+:FreeShippingCampaign a owl:Class ;
+    rdfs:subClassOf :Campaign ;
+    rdfs:label "Free Shipping Campaign"@en ;
+    rdfs:comment "Campaign offering free shipping, campaign_type = 'free_shipping'"@en .
+
+:Metric a owl:Class ;
+    rdfs:label "Metric"@en .
+
+# =============================================================================
+# Metric Instances (linked to dbt metric names)
+# =============================================================================
+
+:Revenue a :Metric ;
+    rdfs:label "Revenue"@en ;
+    :measuredBy "total_revenue" .
+
+:OrderVolume a :Metric ;
+    rdfs:label "Order Volume"@en ;
+    :measuredBy "order_count" .
+
+:AverageOrderValue a :Metric ;
+    rdfs:label "Average Order Value"@en ;
+    :measuredBy "average_order_value" .
+
+:Discount a :Metric ;
+    rdfs:label "Discount"@en ;
+    :measuredBy "total_discount" .
+
+:ItemsSold a :Metric ;
+    rdfs:label "Items Sold"@en ;
+    :measuredBy "items_sold" .
+
+:SeasonalRevenue a :Metric ;
+    rdfs:label "Seasonal Revenue"@en ;
+    :measuredBy "seasonal_revenue" .
+
+:CustomerLifetimeValue a :Metric ;
+    rdfs:label "Customer Lifetime Value"@en ;
+    :measuredBy "customer_lifetime_value" .
+
+:RepeatPurchaseRate a :Metric ;
+    rdfs:label "Repeat Purchase Rate"@en ;
+    :measuredBy "repeat_purchase_rate" .
+
+# =============================================================================
+# Properties
+# =============================================================================
+
+:measuredBy a owl:DatatypeProperty ;
+    rdfs:domain :Metric ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Maps an ontology metric concept to a dbt metric name"@en .
+
+:hasConstraint a owl:ObjectProperty ;
+    rdfs:comment "Associates an entity with a business constraint"@en .
+
+# =============================================================================
+# Business Constraints
+# =============================================================================
+
+:MinOrderValue a owl:NamedIndividual ;
+    rdfs:label "Minimum Order Value"@en ;
+    rdfs:comment "total_amount must be > 0 for valid orders"@en .
+
+:MaxDiscountPercent a owl:NamedIndividual ;
+    rdfs:label "Maximum Discount Percentage"@en ;
+    rdfs:comment "discount_percent should not exceed 50%"@en .
+
+:Order :hasConstraint :MinOrderValue .
+:DiscountCampaign :hasConstraint :MaxDiscountPercent .
