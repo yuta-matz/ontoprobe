@@ -102,6 +102,46 @@
     rdfs:label "Repeat Purchase Rate"@en ;
     :measuredBy "repeat_purchase_rate" .
 
+:EffectiveMargin a :Metric ;
+    rdfs:label "Effective Margin"@en ;
+    :measuredBy "effective_margin" .
+
+:AnnualRevenueConcentration a :Metric ;
+    rdfs:label "Annual Revenue Concentration"@en ;
+    :measuredBy "q4_revenue_share" .
+
+:RevenueConcentration a :Metric ;
+    rdfs:label "Revenue Concentration"@en ;
+    :measuredBy "segment_revenue_share" .
+
+:ProfitGrowth a :Metric ;
+    rdfs:label "Profit Growth"@en ;
+    :measuredBy "net_revenue_growth" .
+
+:SeasonalDependencyRisk a :Metric ;
+    rdfs:label "Seasonal Dependency Risk"@en ;
+    :measuredBy "q4_seasonal_dependency" .
+
+:SegmentDependencyRisk a :Metric ;
+    rdfs:label "Segment Dependency Risk"@en ;
+    :measuredBy "vip_dependency_ratio" .
+
+:CampaignEfficiency a :Metric ;
+    rdfs:label "Campaign Efficiency"@en ;
+    :measuredBy "campaign_roi" .
+
+:StrategicVulnerability a :Metric ;
+    rdfs:label "Strategic Vulnerability"@en ;
+    :measuredBy "seasonal_vulnerability_index" .
+
+:RetentionPriority a :Metric ;
+    rdfs:label "Retention Priority"@en ;
+    :measuredBy "vip_retention_urgency" .
+
+:StrategyRevisionNeed a :Metric ;
+    rdfs:label "Strategy Revision Need"@en ;
+    :measuredBy "campaign_revision_score" .
+
 # =============================================================================
 # Properties
 # =============================================================================

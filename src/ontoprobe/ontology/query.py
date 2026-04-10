@@ -1,6 +1,6 @@
 """SPARQL queries against the ontology graph."""
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 from rdflib import Graph
 
@@ -24,6 +24,16 @@ class CausalRule:
 class MetricMapping:
     concept: str
     dbt_metric: str
+
+
+@dataclass
+class CausalChain:
+    """A multi-hop causal chain extracted from the ontology."""
+
+    rules: list[CausalRule] = field(default_factory=list)
+    start_cause: str = ""
+    end_effect: str = ""
+    hop_count: int = 0
 
 
 def get_causal_rules(graph: Graph) -> list[CausalRule]:
@@ -114,3 +124,70 @@ def format_ontology_context(rules: list[CausalRule], mappings: list[MetricMappin
         lines.append(f"  - {m.concept} → `{m.dbt_metric}`")
 
     return "\n".join(lines)
+
+
+def _build_rule_index(graph: Graph) -> dict[str, CausalRule]:
+    """Build an index of rule name -> CausalRule for chain assembly."""
+    rules = get_causal_rules(graph)
+    return {r.name: r for r in rules}
+
+
+def get_causal_chains(graph: Graph) -> list[CausalChain]:
+    """Extract multi-hop causal chains using SPARQL property paths.
+
+    Finds all chains of 2+ rules connected via :feedsInto relationships.
+    """
+    query = f"""
+    PREFIX : <{ONT}>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+    SELECT ?start ?end
+    WHERE {{
+        ?start :feedsInto+ ?end .
+        FILTER NOT EXISTS {{ ?other :feedsInto ?start }}
+    }}
+    """
+    results = graph.query(query)
+    rule_index = _build_rule_index(graph)
+
+    # Build chains by walking feedsInto from each start rule
+    chain_starts: set[str] = set()
+    for row in results:
+        start_name = str(row.start).replace(ONT, "")
+        chain_starts.add(start_name)
+
+    chains: list[CausalChain] = []
+    for start_name in sorted(chain_starts):
+        # Walk the chain from this start
+        chain_rules: list[CausalRule] = []
+        current = start_name
+        while current in rule_index:
+            chain_rules.append(rule_index[current])
+            # Find next rule via feedsInto
+            next_query = f"""
+            PREFIX : <{ONT}>
+            SELECT ?next WHERE {{
+                :{current} :feedsInto ?next .
+            }}
+            """
+            next_results = list(graph.query(next_query))
+            if next_results:
+                current = str(next_results[0].next).replace(ONT, "")
+            else:
+                break
+
+        if len(chain_rules) >= 2:
+            chains.append(CausalChain(
+                rules=chain_rules,
+                start_cause=chain_rules[0].cause,
+                end_effect=chain_rules[-1].effect,
+                hop_count=len(chain_rules),
+            ))
+
+    return chains
+
+
+def get_chain_for_effect(graph: Graph, effect_label: str) -> list[CausalChain]:
+    """Find all causal chains leading to a specific effect (reverse reasoning)."""
+    all_chains = get_causal_chains(graph)
+    return [c for c in all_chains if c.end_effect == effect_label]

@@ -44,6 +44,11 @@
     rdfs:range xsd:string ;
     rdfs:comment "Human-readable description of the causal rule"@en .
 
+:feedsInto a owl:ObjectProperty ;
+    rdfs:domain :CausalRule ;
+    rdfs:range :CausalRule ;
+    rdfs:comment "This rule's effect feeds into another rule's cause, forming a causal chain"@en .
+
 # =============================================================================
 # Causal Rules
 # =============================================================================
@@ -107,3 +112,177 @@
     :hasDirection "increase" ;
     :hasExpectedMagnitude "proportional to discount_percent" ;
     :hasDescription "Higher discount percentages lead to proportionally higher total discount amounts, reducing effective revenue per order" .
+
+# =============================================================================
+# Multi-Hop Causal Rules (Chain Endpoints)
+# =============================================================================
+
+:rule_order_volume_drives_revenue a :CausalRule ;
+    rdfs:label "Order volume drives total revenue"@en ;
+    :hasCause :OrderVolume ;
+    :hasEffect :Revenue ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "proportional" ;
+    :hasDescription "Higher order volume directly increases total revenue, as more orders contribute to the revenue pool" .
+
+:rule_discount_drives_revenue a :CausalRule ;
+    rdfs:label "Discount drives revenue through order volume"@en ;
+    :hasCause :DiscountCampaign ;
+    :hasEffect :Revenue ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "net positive despite per-order discount" ;
+    :hasDescription "Discount campaigns increase order volume sufficiently to offset per-order discount, resulting in higher total revenue" .
+
+:rule_discount_erodes_margin a :CausalRule ;
+    rdfs:label "Discount erodes effective margin through discount amount"@en ;
+    :hasCause :DiscountCampaign ;
+    :hasEffect :EffectiveMargin ;
+    :hasDirection "decrease" ;
+    :hasExpectedMagnitude "proportional to discount_percent" ;
+    :hasCondition "discount_percent > 10" ;
+    :hasDescription "Discount campaigns increase total discount amounts, which reduces effective margin (revenue after discounts / gross revenue)" .
+
+:rule_vip_drives_revenue a :CausalRule ;
+    rdfs:label "VIP customers drive revenue through higher AOV"@en ;
+    :hasCause :VIPCustomer ;
+    :hasEffect :Revenue ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "significant contribution" ;
+    :hasComparedTo :NewCustomer ;
+    :hasDescription "VIP customers have significantly higher average order value, making them disproportionate contributors to total revenue compared to new customers" .
+
+# =============================================================================
+# 3-Hop Chain Rules (Endpoints for 3-step chains)
+# =============================================================================
+
+:rule_seasonal_revenue_concentration a :CausalRule ;
+    rdfs:label "Seasonal spike concentrates annual revenue in Q4"@en ;
+    :hasCause :Revenue ;
+    :hasEffect :AnnualRevenueConcentration ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "Q4 > 30% of annual" ;
+    :hasCondition "order_quarter = 4" ;
+    :hasDescription "Q4 revenue spike from seasonal products causes Q4 to represent a disproportionate share of annual revenue (>30% vs expected 25%)" .
+
+:rule_vip_revenue_concentration a :CausalRule ;
+    rdfs:label "VIP revenue drives concentration risk"@en ;
+    :hasCause :Revenue ;
+    :hasEffect :RevenueConcentration ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "VIP revenue share > VIP order share" ;
+    :hasComparedTo :NewCustomer ;
+    :hasDescription "VIP customers' disproportionate revenue contribution creates revenue concentration where a small segment accounts for a large share of total revenue" .
+
+:rule_discount_profit_growth a :CausalRule ;
+    rdfs:label "Discount revenue impact limits profit growth"@en ;
+    :hasCause :Revenue ;
+    :hasEffect :ProfitGrowth ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "positive if revenue gain > discount cost" ;
+    :hasDescription "If discount-driven order volume increase translates to net revenue growth, then profit growth should follow. However, if discounts reduce per-order revenue more than volume compensates, profit growth is negative" .
+
+# =============================================================================
+# Causal Chain Links (feedsInto relationships)
+# =============================================================================
+
+# 2-hop chains
+# Chain: Discount → OrderVolume → Revenue
+:rule_discount_order_volume :feedsInto :rule_order_volume_drives_revenue .
+
+# Chain: FreeShipping → OrderVolume → Revenue
+:rule_free_shipping_volume :feedsInto :rule_order_volume_drives_revenue .
+
+# Chain: Discount → Discount Amount → Effective Margin (erosion)
+:rule_discount_reduces_margin :feedsInto :rule_discount_erodes_margin .
+
+# Chain: VIP → AOV → Revenue
+:rule_vip_higher_aov :feedsInto :rule_vip_drives_revenue .
+
+# 3-hop chains (extend 2-hop chains with a third step)
+# Chain: Seasonal → SeasonalRevenue → Q4Revenue → AnnualConcentration
+:rule_seasonal_revenue :feedsInto :rule_q4_overall_revenue .
+:rule_q4_overall_revenue :feedsInto :rule_seasonal_revenue_concentration .
+
+# Chain: VIP → AOV → Revenue → RevenueConcentration
+:rule_vip_drives_revenue :feedsInto :rule_vip_revenue_concentration .
+
+# Chain: Discount → OrderVolume → Revenue → ProfitGrowth
+:rule_order_volume_drives_revenue :feedsInto :rule_discount_profit_growth .
+
+# =============================================================================
+# 4-Hop Chain Rules
+# =============================================================================
+
+:rule_q4_dependency_risk a :CausalRule ;
+    rdfs:label "Q4 concentration creates seasonal dependency risk"@en ;
+    :hasCause :AnnualRevenueConcentration ;
+    :hasEffect :SeasonalDependencyRisk ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "removing seasonal products drops Q4 to average quarter level" ;
+    :hasCondition "order_quarter = 4" ;
+    :hasDescription "When annual revenue is concentrated in Q4, the business becomes dependent on seasonal products. Removing seasonal products from Q4 would reduce Q4 revenue to the level of an average quarter" .
+
+:rule_vip_segment_dependency a :CausalRule ;
+    rdfs:label "VIP concentration creates segment dependency risk"@en ;
+    :hasCause :RevenueConcentration ;
+    :hasEffect :SegmentDependencyRisk ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "per-VIP revenue > 5x per-new-customer revenue" ;
+    :hasComparedTo :NewCustomer ;
+    :hasDescription "When revenue is concentrated in VIP customers, losing even a few VIP customers causes disproportionate revenue loss. Per-VIP revenue far exceeds per-new-customer revenue" .
+
+:rule_campaign_efficiency a :CausalRule ;
+    rdfs:label "Negative profit growth indicates poor campaign efficiency"@en ;
+    :hasCause :ProfitGrowth ;
+    :hasEffect :CampaignEfficiency ;
+    :hasDirection "decrease" ;
+    :hasExpectedMagnitude "campaign daily revenue < non-campaign daily revenue" ;
+    :hasDescription "When discount campaigns fail to drive profit growth, it indicates poor campaign efficiency. Campaign periods generate less daily revenue than non-campaign periods despite higher order volume" .
+
+# =============================================================================
+# 5-Hop Chain Rules
+# =============================================================================
+
+:rule_q4_strategic_vulnerability a :CausalRule ;
+    rdfs:label "Seasonal dependency creates strategic vulnerability"@en ;
+    :hasCause :SeasonalDependencyRisk ;
+    :hasEffect :StrategicVulnerability ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "Q4 seasonal products > 50% of Q4 revenue" ;
+    :hasDescription "When the business depends on Q4 seasonal products for a large share of annual revenue, any disruption to seasonal product supply or Q4 demand creates a strategic vulnerability that threatens annual targets" .
+
+:rule_vip_retention_priority a :CausalRule ;
+    rdfs:label "Segment dependency demands VIP retention priority"@en ;
+    :hasCause :SegmentDependencyRisk ;
+    :hasEffect :RetentionPriority ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "VIP per-customer revenue > 5x average" ;
+    :hasDescription "When segment dependency risk is high, VIP retention becomes the top CRM priority. Each VIP customer represents revenue equivalent to multiple non-VIP customers" .
+
+:rule_campaign_strategy_revision a :CausalRule ;
+    rdfs:label "Poor campaign efficiency demands strategy revision"@en ;
+    :hasCause :CampaignEfficiency ;
+    :hasEffect :StrategyRevisionNeed ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "discount cost outweighs volume benefit" ;
+    :hasDescription "When campaign efficiency is poor (discount costs exceed volume benefits), the campaign strategy needs revision. The current discount-driven approach destroys value rather than creating it" .
+
+# 4-hop chain links
+# Chain: Seasonal → SeasonalRev → Q4Rev → Concentration → DependencyRisk
+:rule_seasonal_revenue_concentration :feedsInto :rule_q4_dependency_risk .
+
+# Chain: VIP → AOV → Revenue → Concentration → SegmentDependency
+:rule_vip_revenue_concentration :feedsInto :rule_vip_segment_dependency .
+
+# Chain: Discount → Volume → Revenue → ProfitGrowth → CampaignEfficiency
+:rule_discount_profit_growth :feedsInto :rule_campaign_efficiency .
+
+# 5-hop chain links
+# Chain: Seasonal → ... → DependencyRisk → StrategicVulnerability
+:rule_q4_dependency_risk :feedsInto :rule_q4_strategic_vulnerability .
+
+# Chain: VIP → ... → SegmentDependency → RetentionPriority
+:rule_vip_segment_dependency :feedsInto :rule_vip_retention_priority .
+
+# Chain: Discount → ... → CampaignEfficiency → StrategyRevision
+:rule_campaign_efficiency :feedsInto :rule_campaign_strategy_revision .
