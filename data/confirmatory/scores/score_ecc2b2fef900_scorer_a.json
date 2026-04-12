@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "ecc2b2fef900",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly compares observed ~7.4% lift to the ontology's expected 15-30% magnitude, noting the effect is weaker than expected in the correct direction.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports 6.722 vs 6.259 orders/day across 72 and 293 days and provides a verdict of directionally supported but inconclusive due to weak magnitude and missing variance."
+}

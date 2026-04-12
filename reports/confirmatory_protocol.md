@@ -146,3 +146,71 @@ L0 と L3 の contrast を意味のあるものにするため、**runner に渡
 ## 11. 結果(データ収集後に追記)
 
 *このセクションは実験完了後にのみ追記される。プロトコル本体(Section 1-10)はその時点で改変しない。*
+
+**データ収集期間**: 2026-04-12(単日、並列実行)
+**実行コミット**: trials = 大部分が自動ドライバで実行(`scripts/run_confirmatory.py`)、最初の 8 trials は Claude Code サブエージェント経由(手動保存)
+**除外・再実行**: 0 件(全 40 trials が初回成功、JSON parse も全件成功)
+**モデル**: Claude Opus 4.6(runner, scorer 共通)
+
+### 11.1 事前登録された主仮説の検定結果
+
+| 指標 | 値 |
+|---|---|
+| Wilcoxon 統計量(片側, L3 > L0) | 55.00 |
+| **p 値** | **0.00148** |
+| 効果量(平均 L3 − L0, Q_quant) | **0.450** |
+| 95% ブートストラップ CI | [0.250, 0.650] |
+| 事前登録基準: p < 0.05 **かつ** 効果量 ≥ 0.4 | **両方を満たす** |
+
+→ **H_main: 核心主張は confirmatory に支持された**
+
+### 11.2 null prediction(H_null, Q_aware)
+
+| 指標 | 値 |
+|---|---|
+| Wilcoxon 統計量(両側) | 0.00 |
+| p 値 | 0.3173 |
+| 平均差(L3 − L0) | 0.050 |
+
+→ **Q_aware(現状把握)は L0/L3 で有意差なし。ceiling assumption 成立**、H_main の解釈は無修正で維持できる。
+
+### 11.3 Inter-rater reliability
+
+|  | 一致率 | Cohen's κ |
+|---|---|---|
+| Q_quant | 95.0% (38/40) | **0.857** |
+| Q_aware | 100.0% (40/40) | **1.000** |
+
+Q_quant の κ=0.857 は "almost perfect agreement" 水準。採点ルーブリックの operationalization は再現可能だったと言える。
+
+### 11.4 Per-cell breakdown(Q_quant 平均、2-scorer 平均)
+
+| Hypothesis | Observed | Expected (L3 only) | L0 | L3 | Gap |
+|---|---|---|---|---|---|
+| H1 Q4 売上 | +96% | 30–50% | 0.90 | 1.00 | 0.10 |
+| H2 割引→注文 | +7% | 15–30% | **0.30** | **1.00** | **0.70** |
+| H3 VIP AOV | +601% | 40–60% | **0.00** | **1.00** | **1.00** |
+| H4 季節 Q4 | 15× | 2–3× | 1.00 | 1.00 | 0.00 |
+
+**構造的観察(post-hoc, exploratory)**:
+- **H3 は最もクリーンな証拠**: L0 は観測値 "VIP は New の 7x" を計算できるが、"40–60% を想定していた"という expectation 比較を**一度も**行わない。L3 では 5/5 で expectation 比較が発生。
+- **H2 は最も重要な bias 開示**: 観測値(+7%)が想定(15–30%)未満という "negative deviation" は L0 では検出失敗(support と誤判定されやすい)。
+- **H1 は claim 自己言及の罠**: 仮説文 "Q4 > Q1-Q3 average" が比較対象を内包するため、L0 でも "Q4 は平均の 1.96x" と定量的に語れる。この場合、期待値の追加価値は限定的。
+- **H4 は extreme deviation の罠**: 15x という極端な乖離では L0 も within-data 比率を計算し、"異常" と判定できてしまう。
+
+これらは事前登録の予測ではなかったが、**核心主張をより精密化する方向**の知見である。
+
+### 11.5 Confirmatory study の結論
+
+- 片側 Wilcoxon の p = 0.00148、効果量 0.45、CI [0.25, 0.65] で **H_main を支持**
+- null prediction(Q_aware 天井)も成立
+- Inter-rater κ = 0.857 で採点の再現性を担保
+- exploratory 104 実験の核心主張は、**事前登録・盲検・二重採点の確認試験でも再現された**
+
+ただし以下の caveat を付す:
+1. Opus 4.6 単一モデルでの検定(他モデルでの検定は未実施)
+2. 合成 e-commerce データの 4 仮説のみ(真のドメイン転移は未実施)
+3. 効果量 0.45 は per-cell で大きく分布するため、"期待値が critical" の主張は **"中程度から大きな乖離(15–30%想定 vs ±7%〜+600%)" の regime で最も強く成立**。Extreme lift(15x)でも trivial な directional 検定でも、L0 は独自に定量感を出せる。
+
+これは exploratory phase では定性的にしか述べられなかった "構造" の confirmatory な定量化である。
+

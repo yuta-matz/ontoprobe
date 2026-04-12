@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "d61b3bc971bd",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly quantifies the deviation as '~7.4% increase' vs the ontology's expected '15-30%' range, noting it's 'roughly half the lower bound', with direction (higher on campaign days) matching the data.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports 6.722 vs 6.259 orders/day across 72 and 293 days and provides a verdict ('weakly supports the hypothesis, but magnitude falls short')."
+}

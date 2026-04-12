@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "67e22f957bfc",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly computes a Q1–Q3 average baseline (~430,877) and states Q4 seasonal revenue is 'roughly 15× the Q1–Q3 average', with the direction (Q4 higher) matching the data.",
+  "q_aware": 1,
+  "q_aware_rationale": "The quarterly seasonal values are reported accurately and the analysis delivers a clear verdict that the hypothesis is 'clearly supported by the data'."
+}

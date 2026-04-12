@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "ac6e5e62c6b9",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly computes a 7.4% lift and compares it to an expected 15-30% increase from the ontology, with direction (campaign > non-campaign) matching the data.",
+  "q_aware": 1,
+  "q_aware_rationale": "It correctly reports 6.722 vs 6.259 orders/day across 72 and 293 days and provides an explicit 'inconclusive' verdict."
+}

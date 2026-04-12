@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "ea0907021d32",
+  "scorer_id": "scorer_b",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis compares Q4 seasonal revenue to the Q1–Q3 average quantitatively ('roughly 14.97x') and against the ontology's expected '2-3x spike', with direction (above) matching the data.",
+  "q_aware": 1,
+  "q_aware_rationale": "The quarterly values are correctly read and the analysis delivers a clear verdict that the hypothesis is confirmed by a large margin."
+}

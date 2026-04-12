@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "cfdb02947f05",
+  "scorer_id": "scorer_b",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis compares observed ~601% lift against the ontology's expected 40-60% baseline, noting it is 'far larger' and 'exceeds... by an order of magnitude', with direction (VIP > New) matching the data.",
+  "q_aware": 1,
+  "q_aware_rationale": "It correctly reports VIP AOV 43,288.75 (n=306) and New AOV 6,174.40 (n=1,283) with ~7x ratio, and delivers a clear verdict that the hypothesis is supported."
+}

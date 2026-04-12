@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "d125cc500295",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis compares observed Q4 lift (~96%) to the ontology's expected 30-50% range, quantifies the deviation, and correctly identifies Q4 as above expectation.",
+  "q_aware": 1,
+  "q_aware_rationale": "Numerical values (5.15M, 6.18M, 5.49M, 11.01M, order counts, AOV) are accurately summarized and a clear 'supported/confirmed' verdict is given."
+}

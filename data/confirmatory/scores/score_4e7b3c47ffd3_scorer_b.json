@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "4e7b3c47ffd3",
+  "scorer_id": "scorer_b",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly computes the Q1-Q3 average (430,877) and quantifies Q4 as '15x the Q1-Q3 average', with the direction (above) matching the data.",
+  "q_aware": 1,
+  "q_aware_rationale": "The quarterly seasonal values are read correctly and the analysis delivers a clear verdict that the evidence decisively supports the hypothesis."
+}

@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "1b9388dec371",
+  "scorer_id": "scorer_a",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares VIP to New (7.01x) but does not compare to an expected/baseline/typical value given in the prompt.",
+  "q_aware": 1,
+  "q_aware_rationale": "Numerical values (43,288.75, 6,174.40, 306, 1,283, ~7x) are correctly summarized and a clear 'confirmed' verdict is given."
+}

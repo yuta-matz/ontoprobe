@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "17ae068da4f4",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "Analysis compares Q4 seasonal revenue to the Q1-Q3 average quantitatively ('roughly 15x the Q1-Q3 average') with correct upward direction, and references the ontology's expected 2-3x magnitude given in context.",
+  "q_aware": 1,
+  "q_aware_rationale": "Numerical values (Q1=305,030; Q2=631,870; Q3=355,732; Q4=6,453,118) are correctly summarized and a clear verdict ('strongly confirms the directional hypothesis') is provided."
+}

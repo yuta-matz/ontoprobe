@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "af198f25dd10",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly compares observed Q4 (~96% above Q1-Q3 average) to the ontology's expected 30-50% range, with correct direction (above).",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports all four quarterly values and magnitudes, and provides a clear 'supported' verdict."
+}

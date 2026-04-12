@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "12c792f5f84b",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly compares Q4 seasonal revenue to the expected '2-3x seasonal spike' baseline from the ontology, quantifies it as ~14.98x (far exceeding expectation), and the direction (above) matches the data.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports the quarterly seasonal values and Q4 evergreen/total figures, and provides a clear verdict that the data supports the hypothesis."
+}

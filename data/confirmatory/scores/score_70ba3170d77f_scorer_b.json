@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "70ba3170d77f",
+  "scorer_id": "scorer_b",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly compares campaign days (6.722) to non-campaign days (6.259) as the baseline and quantifies the deviation as '+0.463 orders/day, roughly +7.4%' in the correct direction (above).",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports the numerical values (6.259 vs 6.722, n=293 vs n=72) and provides a verdict that the evidence is too weak and uncontrolled to confirm the hypothesis (inconclusive)."
+}

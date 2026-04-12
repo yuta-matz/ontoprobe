@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "7f058c80f587",
+  "scorer_id": "scorer_b",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares campaign vs non-campaign days (7.4% lift) but does not compare observed values against an expected/baseline/assumed value given in the prompt.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports the means (6.722 vs 6.259) and sample sizes (72 vs 293) and gives an inconclusive verdict."
+}

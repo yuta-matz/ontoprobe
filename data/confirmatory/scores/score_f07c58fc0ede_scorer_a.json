@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "f07c58fc0ede",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly compares Q4 seasonal revenue to the Q1–Q3 average baseline derived from the data, stating it is '15× the Q1–Q3 average' in the correct (above) direction.",
+  "q_aware": 1,
+  "q_aware_rationale": "The quarterly values are summarized accurately and a clear verdict ('fully consistent with the hypothesis') is provided."
+}

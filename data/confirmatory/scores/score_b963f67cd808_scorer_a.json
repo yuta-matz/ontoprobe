@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "b963f67cd808",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis compares observed 7x/601% increase against an explicit expected magnitude range of 40-60% given in the causal rule, with correct direction (VIP > New).",
+  "q_aware": 1,
+  "q_aware_rationale": "Numerical values (43,288.75, 6,174.40, 306, 1,283) are correctly summarized and a clear 'unambiguously supported' verdict is given."
+}

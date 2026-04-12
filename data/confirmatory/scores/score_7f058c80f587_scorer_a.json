@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "7f058c80f587",
+  "scorer_id": "scorer_a",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares campaign vs non-campaign days (two observed groups) rather than comparing observed to an expected/baseline/typical value, and no fold/percent deviation from an expectation is named.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports 6.722 vs 6.259 orders/day with n=72 and n=293, and provides an inconclusive verdict (direction favors hypothesis but evidence insufficient)."
+}

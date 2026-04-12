@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "af198f25dd10",
+  "scorer_id": "scorer_b",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis compares observed Q4 (~1.96x, ~96% higher) against an explicit expected 30-50% increase baseline stated as from the ontology, with correct direction (above).",
+  "q_aware": 1,
+  "q_aware_rationale": "Quarterly values, order counts, and AOVs are correctly summarized and a clear 'supported' verdict is provided."
+}

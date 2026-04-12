@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "17ae068da4f4",
+  "scorer_id": "scorer_b",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly compares Q4 seasonal revenue to the Q1-Q3 average as '15x' and to the ontology's expected '2-3x magnitude', with the correct upward direction.",
+  "q_aware": 1,
+  "q_aware_rationale": "The quarterly values are accurately restated and the analysis provides a clear verdict that the directional hypothesis is supported."
+}

@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "430a48daaad6",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly compares Q4 (11,014,309) to the Q1-Q3 average (5,605,560) and states Q4 is ~96% higher (nearly double), matching the actual direction in the data.",
+  "q_aware": 1,
+  "q_aware_rationale": "The numerical values (Q1-Q3 and Q4 revenues, order volumes, AOVs) are correctly summarized and the analysis delivers a clear 'supported' verdict."
+}

@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "3daaece90405",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis compares observed 7.4% uplift to the ontology's expected 15–30% range, noting it is less than half the lower bound, with correct direction (campaign days higher).",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports 6.722 vs 6.259 orders/day and sample sizes (72 vs 293), and delivers an inconclusive verdict."
+}

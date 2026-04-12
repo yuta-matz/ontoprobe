@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "b0f69f6b0b9e",
+  "scorer_id": "scorer_a",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares VIP to New segment (7.0x higher) but does not compare against any 'expected', 'baseline', 'typical', or 'assumed' value from the prompt.",
+  "q_aware": 0,
+  "q_aware_rationale": "Numbers are summarized correctly, but no explicit supported/contradicted/inconclusive verdict is given—only that the data 'points firmly in one direction'."
+}

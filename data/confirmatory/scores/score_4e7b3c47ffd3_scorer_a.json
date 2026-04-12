@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "4e7b3c47ffd3",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly compares Q4 seasonal (6,453,118) to the Q1-Q3 average (~430,877) and states it is 'roughly 15x' higher, matching the data's direction.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports the quarterly seasonal values and evergreen range, and delivers a clear verdict that the evidence supports the hypothesis."
+}

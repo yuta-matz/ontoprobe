@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "cfdb02947f05",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly compares observed ~601% lift against the ontology's expected 40-60% baseline, correctly noting VIP is higher as the data shows.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reads both AOVs (43,288.75 and 6,174.40) and order counts (306 and 1,283), and delivers a clear 'supports' verdict."
+}

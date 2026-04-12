@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "902208933a6c",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis compares Q4 revenue to the Q1-Q3 average and quantifies it as '~96.5% higher' / 'nearly double', with direction (above) matching the data.",
+  "q_aware": 1,
+  "q_aware_rationale": "It correctly reports the quarterly revenues, order counts, and AOV, and delivers a clear verdict that the hypothesis is strongly supported."
+}

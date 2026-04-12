@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "299aceae134a",
+  "scorer_id": "scorer_b",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly compares Q4 (11,014,309) to the Q1-Q3 average (~5,605,560) and quantifies the deviation as '1.96x higher — nearly double', with direction (above) matching the data.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports all four quarterly revenue figures, order counts, and AOVs, and gives a clear verdict that the data 'clearly and decisively supports the hypothesis'."
+}

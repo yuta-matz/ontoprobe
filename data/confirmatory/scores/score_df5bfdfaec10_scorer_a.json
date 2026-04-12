@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "df5bfdfaec10",
+  "scorer_id": "scorer_a",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares campaign vs non-campaign days (7.4% lift) but does not compare to an expected/baseline/assumed value from the prompt; the Poisson sqrt(6) is a noise estimate, not an expected baseline.",
+  "q_aware": 1,
+  "q_aware_rationale": "The numerical values (6.259 vs 6.722, n=293 vs 72, ~0.46 difference, ~7.4%) are correctly summarized and a clear verdict ('too weak to firmly support') is given."
+}

@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "fa3cac22c0f2",
+  "scorer_id": "scorer_a",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares VIP to New customers (two observed groups) but does not compare the observed value to any expected/baseline/typical value from the prompt.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports the values (43,288.75 vs 6,174.40, 306 vs 1,283 orders, 13.2M vs 7.9M) and provides a clear 'supported' verdict."
+}

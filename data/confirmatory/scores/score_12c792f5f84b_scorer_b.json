@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "12c792f5f84b",
+  "scorer_id": "scorer_b",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly compares Q4 seasonal revenue to the Q1-Q3 average as '14.98x' and notes it exceeds the ontology's expected '2-3x' baseline, with correct direction (above).",
+  "q_aware": 1,
+  "q_aware_rationale": "The quarterly values are correctly summarized and the analysis provides a clear verdict that the hypothesis is supported."
+}

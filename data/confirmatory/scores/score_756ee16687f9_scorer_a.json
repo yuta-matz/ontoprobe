@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "756ee16687f9",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly compares Q4 seasonal revenue to the Q1-Q3 average baseline and quantifies the deviation as '~15x' above, matching the direction in the data.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reads all four quarterly values and delivers a clear verdict that the hypothesis is decisively supported."
+}

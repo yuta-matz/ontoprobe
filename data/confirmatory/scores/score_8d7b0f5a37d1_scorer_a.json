@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "8d7b0f5a37d1",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis quantitatively compares campaign vs non-campaign days with an explicit '7.4% lift' (0.46 more orders/day) in the correct direction (campaign higher).",
+  "q_aware": 1,
+  "q_aware_rationale": "It correctly reports 6.722 vs 6.259 with n=72 and n=293, and delivers a verdict of directionally consistent but inconclusive."
+}

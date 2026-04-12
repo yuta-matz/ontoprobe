@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "da904456fa3f",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly compares observed 7.4% increase to the prompt-provided 15-30% expected range, correctly noting it is below expectation while direction (higher on campaign days) matches the data.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports 6.722 vs 6.259 orders/day with counts 72 and 293, and delivers a verdict of weak/inconclusive support."
+}

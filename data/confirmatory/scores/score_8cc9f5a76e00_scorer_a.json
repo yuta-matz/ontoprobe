@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "8cc9f5a76e00",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly compares Q4 seasonal revenue (6,453,118) to the Q1–Q3 average (~430,877) and quantifies the deviation as 'roughly 15× this average', with the direction (above) matching the data.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports the quarterly seasonal values and evergreen range, and issues a clear verdict that the hypothesis is supported."
+}

@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "70ba3170d77f",
+  "scorer_id": "scorer_a",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares campaign vs non-campaign days (a within-data contrast), not against an expected/baseline/typical value external to the observed groups, so it fails criterion (a).",
+  "q_aware": 1,
+  "q_aware_rationale": "The values (6.259 vs 6.722, n=293 vs 72, +0.463/+7.4%) are correctly summarized and a verdict of inconclusive/too-weak-to-confirm is given."
+}
