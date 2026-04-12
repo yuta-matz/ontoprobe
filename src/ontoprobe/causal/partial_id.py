@@ -289,7 +289,7 @@ if __name__ == "__main__":
 
     # Validate against ground truth
     treated = df_full[df_full["has_discount_campaign"] == True]  # noqa: E712
-    true_effects = treated["_true_effect"] / treated["_counterfactual_revenue"] * 100
+    true_effects = treated["_true_effect_pct"]
     print(f"\n=== Ground Truth ===")
     print(f"True ATE: +{true_effects.mean():.1f}%")
     print(f"Bounds contain true value? {results[3].contains(true_effects.mean())}")
