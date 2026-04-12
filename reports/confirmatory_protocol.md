@@ -49,7 +49,18 @@ Exploratory phase(n=104, Part A-E)で「**期待値プロパティ(hasExpectedMa
 | 実行手段 | Claude Code サブエージェント、独立コンテキスト |
 | temperature | 既定値(再現性より独立性を優先) |
 
-### 4.1 H1-H4 選定理由
+### 4.1 重要な設計決定: 仮説文から magnitude を剥がす
+
+L0 と L3 の contrast を意味のあるものにするため、**runner に渡す仮説 claim は方向性のみ**(例: "Q4 revenue is higher than Q1-Q3 average")。"30-50%" 等の expected magnitude は claim に含めない。
+
+- L0 条件: 方向性 claim + query result のみ
+- L3 条件: 方向性 claim + query result + **オントロジーに記載された expected magnitude**
+
+この措置を取らないと L0 でも LLM は「claim に書かれた 30-50% と実測 96% を比較」で trivially Q_quant を取ってしまい、L0 vs L3 差が消失する。
+
+この決定は Part A の exploratory setup と整合的(Part A のスコア差は L0 9/10 vs L3 10/10 であり、L0 はベースライン捏造で 1 点失点していた — magnitude が claim に無かった状況を再現している)。
+
+### 4.2 H1-H4 選定理由
 
 | ID | 内容 | 選定理由 |
 |---|---|---|
