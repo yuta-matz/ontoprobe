@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "3fa20ff107bf",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly compares campaign AOV to non-campaign AOV as a baseline, quantifies the deviation as ~23.2% lower, and the direction (lower) matches the data.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports both AOVs (12,616.93 and 9,693.25 JPY) and order counts (1,834 and 484), and provides a verdict that the hypothesis is supported."
+}

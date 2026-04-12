@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "fae01c1f705a",
+  "scorer_id": "scorer_b",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares VIP vs new (11.333 vs 11.455, ~1% difference) but does not compare to any expected/baseline/assumed value from the prompt.",
+  "q_aware": 1,
+  "q_aware_rationale": "The numerical values (1283/112≈11.455, 306/27≈11.333) are correctly summarized and a clear verdict of 'not supported' is given."
+}

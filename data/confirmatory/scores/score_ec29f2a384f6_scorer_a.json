@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "ec29f2a384f6",
+  "scorer_id": "scorer_a",
+  "q_quant": 0,
+  "q_quant_rationale": "No quantitative deviation is computed; the analysis explicitly states the target is missing and no comparison to expected/baseline is made.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reads revenue 2,698,389 across 162 orders for Tokyo Q4 and provides an inconclusive verdict ('no verdict on meets target can be rendered')."
+}

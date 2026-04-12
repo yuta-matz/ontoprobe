@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "8daae18d8952",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly compares observed campaign AOV to the given expected range of 10-25% lower and quantifies the deviation as ~23.2% lower, with the correct direction.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports the AOV values and order counts for both groups and provides a clear 'confirmed' verdict."
+}

@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "ed05b052d353",
+  "scorer_id": "scorer_b",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares VIP vs new segments to each other, not to any stated 'expected/baseline/typical' value, and the '1% gap' is a between-group comparison rather than a deviation from an expectation.",
+  "q_aware": 1,
+  "q_aware_rationale": "The numerical values (11.455 vs 11.333, 1283/112, 306/27) are read correctly and a clear verdict of 'not supported' is provided."
+}

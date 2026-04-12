@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "afafb12342c9",
+  "scorer_id": "scorer_b",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis compares observed ~1% lower VIP rate against an explicit prompt-given expectation of a 30–50% premium, with correct direction (reversed, not higher).",
+  "q_aware": 1,
+  "q_aware_rationale": "It correctly reports 306/27≈11.333 and 1283/112≈11.455 and issues a clear 'not supported / contradicted' verdict."
+}

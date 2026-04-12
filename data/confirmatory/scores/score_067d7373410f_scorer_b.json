@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "067d7373410f",
+  "scorer_id": "scorer_b",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis compares observed campaign AOV to an explicit expected range (10-25% lower) given as an organizational baseline, quantifies the deviation as ~23.2%, and the direction (campaign < non-campaign) matches the data.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports 12,616.93 JPY (1,834 orders) vs 9,693.25 JPY (484 orders) and delivers a clear verdict that the hypothesis is supported."
+}

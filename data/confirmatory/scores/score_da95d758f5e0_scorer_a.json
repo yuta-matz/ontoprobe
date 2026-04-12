@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "da95d758f5e0",
+  "scorer_id": "scorer_a",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares campaign vs non-campaign groups (~23% lower) but does not compare the observed value to an 'expected', 'baseline', 'typical', or 'assumed' reference value.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports the means (12,616.93 vs 9,693.25) and counts (1,834 vs 484) and provides a verdict that the directional finding is supported as credible descriptive evidence."
+}

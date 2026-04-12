@@ -114,6 +114,73 @@ FIXTURES: dict[str, HypothesisFixture] = {
         expected_direction="increase",
         l3_expected_magnitude="2-3x",
     ),
+    "H5": HypothesisFixture(
+        hid="H5",
+        claim="Average order value on discount campaign days is lower than on non-campaign days.",
+        query_sql=(
+            "SELECT has_campaign, AVG(total_amount) AS aov, COUNT(*) AS orders "
+            "FROM fct_orders GROUP BY has_campaign"
+        ),
+        query_result_table=(
+            "| has_campaign | aov       | orders |\n"
+            "|---|---|---|\n"
+            "| false | 12,616.93 | 1,834 |\n"
+            "| true  |  9,693.25 |   484 |"
+        ),
+        expected_direction="decrease",
+        l3_expected_magnitude="10-25% lower",
+    ),
+    "H6": HypothesisFixture(
+        hid="H6",
+        claim="The Q4 revenue from the Tokyo region meets the company's internal revenue target for that region.",
+        query_sql=(
+            "SELECT region, order_quarter, SUM(total_amount) AS rev, COUNT(*) AS orders "
+            "FROM fct_orders WHERE region='tokyo' AND order_quarter=4 GROUP BY region, order_quarter"
+        ),
+        query_result_table=(
+            "| region | order_quarter | rev       | orders |\n"
+            "|---|---|---|---|\n"
+            "| tokyo  | 4             | 2,698,389 |    162 |"
+        ),
+        expected_direction="meets target",
+        l3_expected_magnitude="target range 3,000,000-4,000,000 JPY (2025 FY mid-term business plan)",
+    ),
+    "H7": HypothesisFixture(
+        hid="H7",
+        claim="VIP customers place more orders per customer than new customers do.",
+        query_sql=(
+            "SELECT customer_segment, COUNT(*) AS total_orders, "
+            "COUNT(DISTINCT customer_id) AS unique_customers, "
+            "1.0*COUNT(*)/COUNT(DISTINCT customer_id) AS orders_per_customer "
+            "FROM fct_orders WHERE customer_segment IN ('vip','new') "
+            "GROUP BY customer_segment"
+        ),
+        query_result_table=(
+            "| customer_segment | total_orders | unique_customers | orders_per_customer |\n"
+            "|---|---|---|---|\n"
+            "| new | 1,283 | 112 | 11.455 |\n"
+            "| vip |   306 |  27 | 11.333 |"
+        ),
+        expected_direction="increase",
+        l3_expected_magnitude="30-50% higher per customer",
+    ),
+    "H8": HypothesisFixture(
+        hid="H8",
+        claim="December revenue exceeds October revenue within the Q4 period.",
+        query_sql=(
+            "SELECT order_month, COUNT(*) AS orders, SUM(total_amount) AS rev "
+            "FROM fct_orders WHERE order_quarter=4 GROUP BY order_month ORDER BY order_month"
+        ),
+        query_result_table=(
+            "| order_month | orders | rev       |\n"
+            "|---|---|---|\n"
+            "| 10 | 263 | 4,090,610 |\n"
+            "| 11 | 250 | 3,467,256 |\n"
+            "| 12 | 272 | 3,456,443 |"
+        ),
+        expected_direction="increase",
+        l3_expected_magnitude="10-20% higher than October",
+    ),
 }
 
 
@@ -124,6 +191,7 @@ L3_ONTOLOGY_SNIPPET = """\
 - Customer → NewCustomer / ReturningCustomer / VIPCustomer
 - Product → SeasonalProduct / EvergreenProduct
 - Campaign → DiscountCampaign / FreeShippingCampaign
+- Region → Tokyo / Sapporo / Osaka / Nagoya / Fukuoka
 
 ### Causal Rules (with expected magnitude)
 
@@ -152,12 +220,49 @@ L3_ONTOLOGY_SNIPPET = """\
   - Expected magnitude: 2-3x
 """
 
+# Additional ontology snippet for H5-H8 (prior-resistant hypotheses).
+# Kept separate so v1 trials can still reference only V1_ONTOLOGY if re-run.
+L3_ONTOLOGY_SNIPPET_V2 = L3_ONTOLOGY_SNIPPET + """
+
+### Additional Organization-Specific Expectations
+
+**Rule: Discount campaign days suppress average order value (bargain-hunter effect)**
+  - Cause: Discount Campaign
+  - Effect on: Average Order Value
+  - Direction: decrease
+  - Expected magnitude: 10-25% lower than non-campaign days
+  - Source: internal marketing analysis
+
+**Rule: Q4 Tokyo regional revenue target**
+  - Concept: Tokyo region Q4 revenue
+  - Target: 3,000,000 - 4,000,000 JPY
+  - Source: 2025 fiscal-year mid-term business plan (internal)
+
+**Rule: VIP customer order frequency premium**
+  - Cause: VIP Customer
+  - Effect on: Orders per Customer
+  - Direction: increase
+  - Expected magnitude: 30-50% more orders per customer than new customers
+  - Source: CRM team customer lifecycle model
+
+**Rule: December holiday lift on October within Q4**
+  - Cause: Year-end holiday effect
+  - Effect on: Monthly Revenue (December vs October)
+  - Direction: increase
+  - Expected magnitude: 10-20% higher than October
+  - Source: e-commerce seasonal planning (internal)
+"""
+
 
 def build_runner_prompt(fixture: HypothesisFixture, level: int) -> str:
     """Build the analysis prompt shown to the runner LLM for one trial.
 
     level=0 → no ontology context (baseline)
     level=3 → class hierarchy + causal rules + expected magnitudes
+
+    For v2 hypotheses (H5-H8), L3 uses the extended ontology snippet that
+    includes organization-specific expectations (campaign AOV, Tokyo target,
+    VIP frequency, Dec/Oct lift).
     """
     if level not in (0, 3):
         raise ValueError(f"Confirmatory study uses only L0/L3, got L{level}")
@@ -168,7 +273,10 @@ def build_runner_prompt(fixture: HypothesisFixture, level: int) -> str:
         "Analyze whether the data supports, contradicts, or is inconclusive for the hypothesis.\n"
     )
 
-    ontology_block = L3_ONTOLOGY_SNIPPET if level == 3 else ""
+    if level == 3:
+        ontology_block = L3_ONTOLOGY_SNIPPET_V2 if fixture.hid in ("H5", "H6", "H7", "H8") else L3_ONTOLOGY_SNIPPET
+    else:
+        ontology_block = ""
 
     task = f"""
 **Hypothesis:** {fixture.claim}
@@ -323,11 +431,15 @@ def new_trial_uuid() -> str:
     return uuid.uuid4().hex[:12]
 
 
-def planned_trials(n_per_cell: int = 5) -> list[tuple[str, int, int]]:
-    """Return the full list of (hid, level, trial_index) tuples per the protocol."""
+def planned_trials(n_per_cell: int = 5, hids: tuple[str, ...] = ("H1", "H2", "H3", "H4")) -> list[tuple[str, int, int]]:
+    """Return the full list of (hid, level, trial_index) tuples per the protocol.
+
+    Default hids match v1 (H1-H4). Pass hids=("H5","H6","H7","H8") for the v2
+    prior-resistant study.
+    """
     return [
         (hid, level, idx)
-        for hid in ("H1", "H2", "H3", "H4")
+        for hid in hids
         for level in (0, 3)
         for idx in range(n_per_cell)
     ]

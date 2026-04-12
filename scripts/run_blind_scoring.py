@@ -74,7 +74,7 @@ def score_one(trial: TrialRecord, scorer_id: str, model: str = "opus", timeout: 
 def main() -> int:
     trials: list[TrialRecord] = []
     for p in sorted(DATA_DIR.glob("trial_*.json")):
-        if p.name == "trial_plan.json":
+        if p.name.startswith("trial_plan"):
             continue
         trials.append(TrialRecord.load(p))
 

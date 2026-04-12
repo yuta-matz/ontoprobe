@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "84b4e505a97b",
+  "scorer_id": "scorer_a",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares December to October (two observed values) but does not compare against any 'expected', 'baseline', or 'assumed' value.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports the October and December revenues and directions, and explicitly states the hypothesis is contradicted."
+}

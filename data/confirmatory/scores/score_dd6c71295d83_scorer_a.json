@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "dd6c71295d83",
+  "scorer_id": "scorer_a",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis explicitly notes the target/baseline is missing and makes no quantitative deviation comparison (e.g., 'N times larger').",
+  "q_aware": 1,
+  "q_aware_rationale": "It correctly reports the values (2,698,389 across 162 orders) and delivers a verdict of inconclusive due to the missing benchmark."
+}

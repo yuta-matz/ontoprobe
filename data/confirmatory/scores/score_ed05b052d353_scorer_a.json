@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "ed05b052d353",
+  "scorer_id": "scorer_a",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares VIP vs new segments directly but does not compare the observed value to an expected/baseline/typical value with an explicit fold or percent deviation from expectation.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports 11.455 vs 11.333 orders per customer with correct direction and provides a verdict that the hypothesis is not supported."
+}

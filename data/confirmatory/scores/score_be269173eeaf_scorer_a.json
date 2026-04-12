@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "be269173eeaf",
+  "scorer_id": "scorer_a",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares December to October (the hypothesis claim), not to an 'expected/baseline/typical/assumed' value, so criterion (a) is not met.",
+  "q_aware": 1,
+  "q_aware_rationale": "The numerical values (Oct 4,090,610; Dec 3,456,443; order counts 263 vs 272; AOVs) are correctly summarized and a clear verdict is given that the hypothesis is contradicted."
+}

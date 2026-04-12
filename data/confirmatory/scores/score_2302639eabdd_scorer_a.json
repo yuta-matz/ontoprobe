@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "2302639eabdd",
+  "scorer_id": "scorer_a",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares campaign vs non-campaign days (two observed groups) rather than comparing the observed value to an expected/baseline/assumed value, so criterion (a) is not met.",
+  "q_aware": 1,
+  "q_aware_rationale": "The numerical values (12,616.93 / 1,834 and 9,693.25 / 484) are correctly summarized and a clear verdict ('directly supported') is given."
+}

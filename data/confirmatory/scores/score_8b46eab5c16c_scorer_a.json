@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "8b46eab5c16c",
+  "scorer_id": "scorer_a",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis explicitly notes no baseline/target is available and makes no quantitative deviation claim (e.g., 'N% above expected').",
+  "q_aware": 1,
+  "q_aware_rationale": "It correctly reports the single row (revenue 2,698,389 across 162 orders) and gives a clear inconclusive verdict pending target data."
+}

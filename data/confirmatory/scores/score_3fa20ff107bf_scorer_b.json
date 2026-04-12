@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "3fa20ff107bf",
+  "scorer_id": "scorer_b",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares to an 'expected range of 10-25% lower' from 'internal marketing analysis', but this baseline appears to be organization-specific prior knowledge not given in the prompt, making it a fabricated baseline per the rubric's critical note.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports both AOVs (12,616.93 and 9,693.25) with correct sample sizes and direction, and provides a verdict that the hypothesis is supported."
+}

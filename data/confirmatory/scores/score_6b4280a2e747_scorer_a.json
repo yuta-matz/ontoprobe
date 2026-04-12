@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "6b4280a2e747",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis compares December revenue to October, states it is ~15.5% lower (explicit quantitative deviation), and the direction matches the data.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports the monthly orders and revenue values and delivers a clear verdict that the hypothesis is contradicted."
+}

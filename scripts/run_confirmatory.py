@@ -75,8 +75,10 @@ def run_trial(plan_entry: dict, model: str = "opus", timeout: int = 180) -> Tria
 
 
 def main() -> int:
-    plan_path = DATA_DIR / "trial_plan.json"
+    plan_name = sys.argv[1] if len(sys.argv) > 1 else "trial_plan.json"
+    plan_path = DATA_DIR / plan_name
     plan: list[dict] = json.loads(plan_path.read_text())
+    print(f"Using plan: {plan_path}")
 
     to_run = [t for t in plan if not (DATA_DIR / f"trial_{t['uuid']}.json").exists()]
     print(f"Plan: {len(plan)} trials, {len(to_run)} remaining")

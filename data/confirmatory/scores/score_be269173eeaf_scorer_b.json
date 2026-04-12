@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "be269173eeaf",
+  "scorer_id": "scorer_b",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares December to October directly but does not reference any 'expected', 'baseline', 'typical', or 'assumed' value — the 15.5% shortfall is a pairwise comparison, not a deviation from an expectation.",
+  "q_aware": 1,
+  "q_aware_rationale": "The numerical values (October 4,090,610; November 3,467,256; December 3,456,443; order counts 263 vs 272) are correctly summarized and the analysis delivers a clear verdict that the hypothesis is contradicted."
+}

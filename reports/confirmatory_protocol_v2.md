@@ -143,4 +143,106 @@ v1 と同一:
 
 ## 9. 結果(データ収集後に追記)
 
-*このセクションは実験完了後にのみ追記される。プロトコル本体(Section 1-8)はその時点で改変しない。*
+**データ収集日**: 2026-04-12(単日、並列実行)
+**除外・再実行**: 0 件(40 trials 全て初回成功、JSON parse も全件成功)
+**採点**: 盲検二重採点 80 jobs、0 errors
+
+### 9.1 事前登録された主仮説(H_main_v2)
+
+| 指標 | 値 |
+|---|---|
+| Wilcoxon 統計量(片側, L3 > L0) | 171.00 |
+| **p 値** | **1.69 × 10⁻⁵** |
+| 効果量(平均 L3 − L0) | **0.875** |
+| 95% ブートストラップ CI | [0.725, 1.000] |
+| 事前登録基準(p < 0.05, 効果量 ≥ 0.4) | **両方クリア** |
+
+→ **H_main_v2: 核心主張は prior-resistant regime でも支持された**
+
+v1 との比較:
+
+| 指標 | v1 (prior-friendly) | v2 (prior-resistant) |
+|---|---|---|
+| p | 0.00148 | **1.69 × 10⁻⁵**(2桁改善)|
+| 効果量 | 0.450 | **0.875**(ほぼ 2 倍)|
+| CI 下限 | 0.250 | **0.725** |
+| κ (Q_quant) | 0.857 | **0.950** |
+
+### 9.2 副仮説 H_sub_v2(H6 の優位)
+
+H6(pure T2 test、within-data baseline なし)の L3-L0 gap:
+
+| 仮説 | L0 | L3 | Gap |
+|---|---|---|---|
+| H5 (campaign AOV) | 0.00 | 0.70 | 0.70 |
+| **H6 (Tokyo target)** | **0.00** | **1.00** | **1.00** |
+| H7 (VIP frequency) | 0.00 | 1.00 | 1.00 |
+| H8 (Dec vs Oct) | 0.20 | 1.00 | 0.80 |
+
+H6 は H7 と並ぶ最大 gap(1.00)。ただし H7 も同 gap なので「H6 が単独で最大」の予測は**部分支持**(記述統計)。
+
+### 9.3 副仮説 H_sub_prior(LLM prior vs data 正答率)
+
+L0 LLM の verdict 正答率(5 trials × 8 hypotheses):
+
+| 仮説 | Ground truth | L0 verdicts | 正答率 | prior の方向 |
+|---|---|---|---|---|
+| H1 | supported | all supported | 5/5 | prior 同方向 |
+| H2 | contradicted | all inconclusive | 0/5 | prior 同方向 |
+| H3 | supported | all supported | 5/5 | prior 同方向 |
+| H4 | supported | all supported | 5/5 | prior 同方向 |
+| H5 | supported | all supported | 5/5 | prior 弱(逆方向気味) |
+| **H6** | **contradicted** | **all inconclusive** | **0/5** | **prior なし** |
+| **H7** | **contradicted** | **all contradicted** | **5/5** | **prior 逆方向** |
+| **H8** | **contradicted** | **all contradicted** | **5/5** | **prior 逆方向** |
+
+**極めて重要な観察**:
+- **H7, H8 で L0 LLM は prior と逆の verdict を正しく出す(5/5)** → LLM は prior に引きずられていない、データを正しく読んでいる
+- **にもかかわらず Q_quant = 0.00 (H7) / 0.20 (H8)** → T2 frame(期待値比較)には自発的に入らない
+- **H6 では "inconclusive" と 5/5 で明言** → "target を知らない限り判定不能" と LLM 自身が認識
+
+→ これは **theory_v2 の「LLM はデータを読めるが T2 frame には入らない」を直接実証する**。
+→ 「LLM prior に騙される」のではなく「LLM は T1 で完結する」が正しい mechanism description。
+
+### 9.4 Null prediction(Q_aware)
+
+Q_aware は v2 全セルで **1.00 perfect ceiling**。L3 − L0 差 = 0.000。
+Wilcoxon は variance がないため未定義。H_null は **trivially 成立**。
+
+Inter-rater Q_aware: 100% agreement(κ は NaN、variance なし)。
+
+### 9.5 Inter-rater reliability
+
+| 指標 | 一致率 | Cohen's κ |
+|---|---|---|
+| Q_quant | 97.5% (78/80) | **0.950** |
+| Q_aware | 100.0% (80/80) | (perfect, κ undefined) |
+
+v1(κ=0.857)より **さらに高い**。rubric の operationalization は v2 hypothesis でも再現可能。
+
+### 9.6 v2 が v1 の boundary conditions を解消した
+
+v1 の problematic セル:
+- H1 L0 = 0.90(claim 比較構造内包)
+- H4 L0 = 1.00(extreme deviation)
+
+v2 の問題解消結果:
+- H5-H8 全てで L0 ≤ 0.20
+- H1/H4 的な "L0 でも解ける" 仮説は v2 設計で排除できた
+- 効果量 0.45 → 0.88(ほぼ 2 倍)は boundary conditions を排除した結果
+
+### 9.7 結論(v2)
+
+1. **核心主張は prior-resistant regime でさらに強く支持される**(p < 10⁻⁴, 効果量 0.88, CI 下限 0.72)
+2. **LLM は prior に引きずられていない** — H7/H8 で 5/5 で正しい verdict を出せる
+3. **LLM は T2 frame に自発的に入らない** — 正しい verdict を出しても期待値比較の言語は使わない
+4. **H6 は pure T2 test** として機能 — LLM 自身が "target を知らない限り判定不能" と認める
+5. v1 の "教科書仮説に依存している" という懸念は **方法論的に解消**
+
+### 9.8 Limitations(v2 でも残るもの)
+
+- **合成データ**: 期待値の source が架空(実組織の業績計画ではない)→ 情報理論的主張の実データ検証は未実施
+- **単一モデル**(Opus 4.6)
+- **4 仮説 × n=5** — 統計力として最小限
+- **8 仮説の代表性**: e-commerce hypothesis space からの系統的サンプリングではない
+

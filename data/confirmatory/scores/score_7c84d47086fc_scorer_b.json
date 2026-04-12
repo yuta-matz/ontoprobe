@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "7c84d47086fc",
+  "scorer_id": "scorer_b",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis compares observed 2,698,389 JPY to the stated target band 3,000,000–4,000,000, quantifies the deviation as ~10% below the lower bound and ~25% below the midpoint, and the direction (below) matches the data.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reads the revenue (2,698,389) and order count (162) and delivers a clear verdict that the data contradicts the hypothesis."
+}

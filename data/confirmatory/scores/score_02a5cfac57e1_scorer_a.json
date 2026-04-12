@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "02a5cfac57e1",
+  "scorer_id": "scorer_a",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares campaign vs non-campaign AOV directly but does not compare the observed value to an 'expected', 'baseline', 'typical', or 'assumed' value — it's a group contrast, not a deviation-from-expectation.",
+  "q_aware": 1,
+  "q_aware_rationale": "The numbers (12,616.93/1,834 and 9,693.25/484) are correctly summarized and the analysis provides a clear verdict that the hypothesis is supported."
+}

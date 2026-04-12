@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "afafb12342c9",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis compares observed ~1% lower VIP rate against an explicit 30–50% premium expectation from the prompt's CRM lifecycle model, with correct direction (reversed from expected).",
+  "q_aware": 1,
+  "q_aware_rationale": "Correctly reports 306/27=11.333 and 1283/112=11.455 and delivers a clear verdict that the hypothesis is contradicted/not supported."
+}

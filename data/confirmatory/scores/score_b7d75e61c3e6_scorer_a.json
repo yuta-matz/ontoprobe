@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "b7d75e61c3e6",
+  "scorer_id": "scorer_a",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis notes no target value is provided and makes no quantitative deviation comparison (no N-fold or percentage deviation stated).",
+  "q_aware": 1,
+  "q_aware_rationale": "It correctly reports 2,698,389 revenue across 162 orders for Tokyo Q4 and gives a clear 'insufficient evidence / inconclusive' verdict."
+}

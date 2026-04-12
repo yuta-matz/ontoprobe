@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "2302639eabdd",
+  "scorer_id": "scorer_b",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares campaign vs non-campaign days (two observed groups) rather than comparing an observed value to an expected/baseline/typical/assumed value, so criterion (a) is not met.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports the AOVs (12,616.93 vs 9,693.25) and counts (1,834 vs 484), and provides a clear verdict that the hypothesis is supported."
+}

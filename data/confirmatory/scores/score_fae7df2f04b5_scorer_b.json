@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "fae7df2f04b5",
+  "scorer_id": "scorer_b",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis compares observed VIP (11.333) against an explicit expected range (14.9-17.2, i.e., 30-50% premium) given in the prompt, and correctly notes VIPs are below expectation (~1% deficit instead of premium).",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports 306/27=11.333 and 1283/112=11.455 with correct direction, and delivers a clear verdict that the hypothesis is contradicted."
+}

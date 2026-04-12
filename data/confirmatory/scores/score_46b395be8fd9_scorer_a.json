@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "46b395be8fd9",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis compares observed campaign AOV to non-campaign AOV with an explicit ~23.2% deviation in the correct direction (campaign < non-campaign), matching an expected 10-25% range cited as internal documentation.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports both AOVs (12,616.93 vs 9,693.25 JPY) and sample sizes (1,834 vs 484), and gives a clear verdict that the data supports the hypothesis."
+}

@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "a035885d73ee",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly compares December to October ('15.5% below October') against the stated 10-20% lift expectation, with correct direction (below).",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reads all monthly values and delivers a clear verdict that the hypothesis is contradicted."
+}

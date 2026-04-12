@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "d05817c72ad1",
+  "scorer_id": "scorer_b",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis cites a 10–25% expected range from 'internal marketing analysis' which is a prior-knowledge baseline not given in the query result, so the quantitative deviation is measured against a fabricated baseline rather than an expected value provided in the prompt.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports both AOVs (12,616.93 vs 9,693.25) and sample sizes (1,834 vs 484), and delivers a clear verdict that the hypothesis is supported/confirmed."
+}

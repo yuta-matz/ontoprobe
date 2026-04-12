@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "490b6e4b193d",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly compares December to the 'organization-specific expectation of a 10-20% December holiday lift over October' and quantifies December as ~15.5% below October, with direction (below) matching the data.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports the October/November/December revenues and order counts and delivers a clear verdict that the hypothesis is contradicted."
+}

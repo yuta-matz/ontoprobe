@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "ce757ecb7558",
+  "scorer_id": "scorer_b",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis compares observed ratio (11.333/11.455 ≈ 0.989) against an explicit expected 30-50% premium and correctly notes the direction is opposite (VIPs slightly below rather than above).",
+  "q_aware": 1,
+  "q_aware_rationale": "Numerical values (1,283/112=11.455; 306/27=11.333) are correctly summarized and a clear 'contradicted' verdict is provided."
+}

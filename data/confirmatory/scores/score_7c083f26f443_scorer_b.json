@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "7c083f26f443",
+  "scorer_id": "scorer_b",
+  "q_quant": 0,
+  "q_quant_rationale": "No comparison to an expected/baseline/typical value is made; the analysis only compares the two segments to each other, not to a prompt-supplied baseline.",
+  "q_aware": 1,
+  "q_aware_rationale": "Numerical values (1283/112≈11.455, 306/27≈11.333, ~0.12 gap) are correctly summarized and a clear verdict of 'not supported' is given."
+}

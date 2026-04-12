@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "3ae7b5361128",
+  "scorer_id": "scorer_a",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares campaign vs non-campaign AOV directly but does not compare the observed value to an explicit 'expected', 'baseline', 'typical', or 'assumed' value given in the prompt.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports the AOV values (12,616.93 vs 9,693.25) and order counts (1,834 vs 484), and provides a clear verdict that the hypothesis is supported."
+}

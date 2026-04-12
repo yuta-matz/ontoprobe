@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "067d7373410f",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly compares campaign AOV to non-campaign AOV as baseline, quantifies the deviation as ~23.2% lower, and the direction (campaign < non-campaign) matches the data.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports the AOV values (12,616.93 vs 9,693.25) and sample sizes (1,834 vs 484), and provides a clear verdict that the hypothesis is supported."
+}

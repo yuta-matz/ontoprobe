@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "a035885d73ee",
+  "scorer_id": "scorer_b",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis explicitly compares December revenue to October (the baseline given in the hypothesis), quantifies it as '~15.5% below October', and correctly identifies the direction (below, opposite of the hypothesized 10-20% lift).",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports the monthly values (Oct 4,090,610; Nov 3,467,256; Dec 3,456,443) and delivers a clear verdict that the hypothesis is contradicted."
+}

@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "54a0c64b0129",
+  "scorer_id": "scorer_b",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares the two segments to each other but does not compare the observed value to an explicit expected/baseline/assumed value with a named fold or percent deviation from that baseline.",
+  "q_aware": 1,
+  "q_aware_rationale": "It correctly reports 11.455 (new) vs 11.333 (VIP) with correct direction and delivers a clear verdict that the hypothesis is contradicted."
+}

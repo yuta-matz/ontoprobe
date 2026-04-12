@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "60e1fd176465",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis compares observed December revenue to an explicit expectation ('10-20% December holiday lift over October') and quantifies the deviation ('lower than October revenue by roughly 15.5%') in the correct direction.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports the monthly revenue and order counts and delivers a clear verdict that the hypothesis is refuted/contradicted."
+}

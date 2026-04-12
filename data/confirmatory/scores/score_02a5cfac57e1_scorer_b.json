@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "02a5cfac57e1",
+  "scorer_id": "scorer_b",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares campaign vs non-campaign AOV directly but does not compare the observed value to an 'expected', 'baseline', 'typical', or 'assumed' value.",
+  "q_aware": 1,
+  "q_aware_rationale": "The numerical values (12,616.93/1,834 and 9,693.25/484) are correctly summarized and a clear verdict supporting the hypothesis is given."
+}

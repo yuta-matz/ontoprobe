@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "54a0c64b0129",
+  "scorer_id": "scorer_a",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares the two segments to each other but does not compare the observed value to an explicit expected/baseline/assumed value with a named N-fold or percent deviation from that baseline.",
+  "q_aware": 1,
+  "q_aware_rationale": "The numerical values (11.455 vs 11.333, 1283/112, 306/27) are correctly summarized and the analysis provides a clear verdict that the hypothesis is contradicted."
+}

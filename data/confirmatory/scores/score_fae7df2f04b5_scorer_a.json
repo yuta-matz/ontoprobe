@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "fae7df2f04b5",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis compares observed VIP (11.333) to an expected 30-50% premium baseline (14.9-17.2) given in the prompt, noting VIPs are ~1% below rather than above, matching the data's direction.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports 306/27=11.333 and 1283/112=11.455, and delivers a clear verdict that the hypothesis is contradicted."
+}

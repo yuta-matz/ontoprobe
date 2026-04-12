@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "7c083f26f443",
+  "scorer_id": "scorer_a",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis compares the two segments to each other but does not compare observed values to an expected/baseline/assumed value with an explicit fold or percentage deviation from that baseline.",
+  "q_aware": 1,
+  "q_aware_rationale": "The numerical values (1283/112≈11.455, 306/27≈11.333, ~0.12 gap) are correctly summarized and a clear verdict of 'not supported' is given."
+}

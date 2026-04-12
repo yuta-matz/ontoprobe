@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "51144d0201fd",
+  "scorer_id": "scorer_a",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis explicitly declines to compare against a baseline, noting no target value is provided, and gives no quantitative deviation.",
+  "q_aware": 1,
+  "q_aware_rationale": "It correctly reads the revenue (2,698,389) and order count (162) for Tokyo Q4 and provides an inconclusive verdict due to missing target data."
+}

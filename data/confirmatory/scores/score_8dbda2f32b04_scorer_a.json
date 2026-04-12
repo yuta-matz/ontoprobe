@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "8dbda2f32b04",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis compares observed 2,698,389 to the stated target lower bound of 3,000,000, quantifies the shortfall as ~301,611 JPY or ~10% under target, and the direction (below) matches the data.",
+  "q_aware": 1,
+  "q_aware_rationale": "The analysis correctly reports 2,698,389 JPY from 162 orders for Q4 Tokyo and provides a clear verdict that the data contradicts the hypothesis."
+}

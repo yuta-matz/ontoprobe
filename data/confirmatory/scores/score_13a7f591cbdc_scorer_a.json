@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "13a7f591cbdc",
+  "scorer_id": "scorer_a",
+  "q_quant": 1,
+  "q_quant_rationale": "The analysis compares observed ~1% reversal against an explicit prompt-given baseline of 30-50% VIP premium, with correct direction (VIPs below, not above).",
+  "q_aware": 1,
+  "q_aware_rationale": "Correctly summarizes 1283/112=11.455 and 306/27=11.333 and delivers a clear 'contradicts the hypothesis' verdict."
+}

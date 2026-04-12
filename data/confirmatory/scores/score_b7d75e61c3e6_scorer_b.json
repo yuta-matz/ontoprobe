@@ -1,0 +1,8 @@
+{
+  "trial_uuid": "b7d75e61c3e6",
+  "scorer_id": "scorer_b",
+  "q_quant": 0,
+  "q_quant_rationale": "The analysis notes no target/baseline is provided and makes no quantitative deviation comparison (no N-fold or %-above-expected claim).",
+  "q_aware": 1,
+  "q_aware_rationale": "It correctly reports 2,698,389 revenue across 162 orders and issues an explicit 'insufficient/inconclusive' verdict."
+}
