@@ -11,7 +11,13 @@ def _parse_trials() -> int:
 
 
 if __name__ == "__main__":
-    if "--compare" in sys.argv:
+    if "--llm-demo" in sys.argv:
+        from ontoprobe.evaluation.llm_demo import run_llm_demo
+
+        idx = sys.argv.index("--llm-demo")
+        hid = sys.argv[idx + 1] if idx + 1 < len(sys.argv) else "H6"
+        run_llm_demo(hid)
+    elif "--compare" in sys.argv:
         from ontoprobe.evaluation.comparison import run_comparison
 
         run_comparison(num_trials=_parse_trials())
