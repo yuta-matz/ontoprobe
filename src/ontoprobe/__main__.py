@@ -11,7 +11,11 @@ def _parse_trials() -> int:
 
 
 if __name__ == "__main__":
-    if "--llm-demo" in sys.argv:
+    if "--causal-demo" in sys.argv:
+        from ontoprobe.causal.demo import run_causal_demo
+
+        run_causal_demo()
+    elif "--llm-demo" in sys.argv:
         from ontoprobe.evaluation.llm_demo import run_llm_demo
 
         idx = sys.argv.index("--llm-demo")
