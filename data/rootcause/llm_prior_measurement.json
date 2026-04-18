@@ -1,0 +1,205 @@
+[
+  {
+    "rule_id": "rule_discount_order_volume",
+    "cause": "Discount Campaign",
+    "effect": "Order Volume",
+    "ontology_direction": "increase",
+    "ontology_magnitude": "+15-30%",
+    "llm_majority_direction": "increase",
+    "llm_samples": [
+      {
+        "direction": "increase",
+        "typical_magnitude": "+20-50%",
+        "confidence": "high",
+        "reasoning": "Discount campaigns with >10% off reliably drive a surge in purchase intent by creating perceived value and urgency, consistently lifting daily order volumes by 20-50% in most e-commerce verticals."
+      },
+      {
+        "direction": "increase",
+        "typical_magnitude": "+20-50%",
+        "confidence": "high",
+        "reasoning": "Discount campaigns with significant price reductions (>10%) reliably drive demand spikes by attracting price-sensitive shoppers, accelerating purchase decisions, and increasing basket conversion rates."
+      },
+      {
+        "direction": "increase",
+        "typical_magnitude": "+20-50%",
+        "confidence": "high",
+        "reasoning": "Discounts of >10% meaningfully lower the price barrier, reliably driving a surge in purchase intent and conversion rate, typically lifting daily order volume by 20–50% depending on discount depth, category, and campaign visibility."
+      }
+    ],
+    "classification": "aligned"
+  },
+  {
+    "rule_id": "rule_seasonal_revenue",
+    "cause": "Seasonal Product",
+    "effect": "Seasonal Revenue",
+    "ontology_direction": "increase",
+    "ontology_magnitude": "2-3x in Q4",
+    "llm_majority_direction": "increase",
+    "llm_samples": [
+      {
+        "direction": "increase",
+        "typical_magnitude": "+40-80%",
+        "confidence": "high",
+        "reasoning": "Q4 holiday demand, Black Friday/Cyber Monday, and Christmas gifting drive strong seasonal spikes in winter fashion, gift sets, and holiday items compared to the average of other quarters."
+      },
+      {
+        "direction": "increase",
+        "typical_magnitude": "+40-80%",
+        "confidence": "high",
+        "reasoning": "Q4 holiday demand, Black Friday/Cyber Monday, and Christmas gifting consistently drive massive spikes in seasonal product categories like winter fashion, gift sets, and holiday items across e-commerce."
+      },
+      {
+        "direction": "increase",
+        "typical_magnitude": "+40-80%",
+        "confidence": "high",
+        "reasoning": "Q4 holiday demand, gift-giving culture, and cold-weather needs drive substantial seasonal spikes in winter fashion, gift sets, and holiday items, with peak events like Black Friday, Cyber Monday, and Christmas concentrated in this quarter."
+      }
+    ],
+    "classification": "aligned"
+  },
+  {
+    "rule_id": "rule_vip_higher_aov",
+    "cause": "VIP Customer",
+    "effect": "Average Order Value",
+    "ontology_direction": "increase",
+    "ontology_magnitude": "+40-60%",
+    "llm_majority_direction": "increase",
+    "llm_samples": [
+      {
+        "direction": "increase",
+        "typical_magnitude": "+40-80%",
+        "confidence": "high",
+        "reasoning": "VIP customers have higher purchase confidence, broader product familiarity, and tend to buy more items per order or opt for premium products, consistently driving significantly higher AOV than first-time buyers across most e-commerce verticals."
+      },
+      {
+        "direction": "increase",
+        "typical_magnitude": "+40-70%",
+        "confidence": "high",
+        "reasoning": "VIP customers have built trust in the brand, are familiar with the product catalog, and are incentivized by loyalty perks, leading them to purchase more items per order and trade up to higher-priced products compared to first-time buyers who tend to make smaller, exploratory purchases."
+      },
+      {
+        "direction": "increase",
+        "typical_magnitude": "+40-80%",
+        "confidence": "high",
+        "reasoning": "VIP customers have established trust, broader product familiarity, and are more receptive to upsells/bundles, consistently driving significantly higher average order values than first-time customers across most e-commerce verticals."
+      }
+    ],
+    "classification": "aligned"
+  },
+  {
+    "rule_id": "rule_free_shipping_volume",
+    "cause": "Free Shipping Campaign",
+    "effect": "Order Volume",
+    "ontology_direction": "increase",
+    "ontology_magnitude": "+10-20%",
+    "llm_majority_direction": "increase",
+    "llm_samples": [
+      {
+        "direction": "increase",
+        "typical_magnitude": "+15-30%",
+        "confidence": "high",
+        "reasoning": "Free shipping removes a common purchase barrier and is one of the strongest conversion drivers in e-commerce, consistently lifting order volumes by reducing cart abandonment and encouraging checkout completion."
+      },
+      {
+        "direction": "increase",
+        "typical_magnitude": "+15-30%",
+        "confidence": "high",
+        "reasoning": "Free shipping removes a common purchase barrier and is one of the highest-converting promotional levers in e-commerce, consistently driving meaningful lifts in order volume across industries."
+      },
+      {
+        "direction": "increase",
+        "typical_magnitude": "+15-30%",
+        "confidence": "high",
+        "reasoning": "Free shipping removes a common purchase barrier and is one of the strongest conversion drivers in e-commerce, consistently lifting order volumes by reducing cart abandonment and encouraging impulse purchases."
+      }
+    ],
+    "classification": "aligned"
+  },
+  {
+    "rule_id": "rule_q4_overall_revenue",
+    "cause": "Seasonal Product (Q4)",
+    "effect": "Total Revenue",
+    "ontology_direction": "increase",
+    "ontology_magnitude": "+30-50%",
+    "llm_majority_direction": "increase",
+    "llm_samples": [
+      {
+        "direction": "increase",
+        "typical_magnitude": "+20-40%",
+        "confidence": "high",
+        "reasoning": "Q4 contains major shopping events (Halloween, Black Friday, Cyber Monday, and Christmas) that consistently drive significantly higher consumer spending compared to an average quarter."
+      },
+      {
+        "direction": "increase",
+        "typical_magnitude": "+20-40%",
+        "confidence": "high",
+        "reasoning": "Q4 contains major shopping events like Halloween, Black Friday, Cyber Monday, and Christmas, which consistently drive significantly higher consumer spending compared to an average quarter."
+      },
+      {
+        "direction": "increase",
+        "typical_magnitude": "+20-40%",
+        "confidence": "high",
+        "reasoning": "Q4 contains major shopping events like Halloween, Black Friday, Cyber Monday, and Christmas, which consistently drive significantly higher consumer spending compared to an average quarter."
+      }
+    ],
+    "classification": "aligned"
+  },
+  {
+    "rule_id": "rule_discount_reduces_margin",
+    "cause": "Discount Campaign",
+    "effect": "Effective Margin",
+    "ontology_direction": "decrease",
+    "ontology_magnitude": "proportional to discount percent",
+    "llm_majority_direction": "decrease",
+    "llm_samples": [
+      {
+        "direction": "decrease",
+        "typical_magnitude": "-5 to -15 percentage points",
+        "confidence": "high",
+        "reasoning": "Discounts directly reduce net revenue while cost of goods sold remains largely fixed, compressing the effective profit margin proportionally to the depth of the discount applied."
+      },
+      {
+        "direction": "decrease",
+        "typical_magnitude": "-5 to -15 percentage points",
+        "confidence": "high",
+        "reasoning": "Discounts directly reduce revenue per unit while COGS and fixed costs remain largely unchanged, compressing the effective profit margin proportionally to the discount depth and sales mix shift."
+      },
+      {
+        "direction": "decrease",
+        "typical_magnitude": "-5 to -15 percentage points",
+        "confidence": "high",
+        "reasoning": "Discounts directly reduce revenue while cost of goods sold remains largely fixed, compressing the effective profit margin proportionally to the discount depth and sales mix shift toward discounted items."
+      }
+    ],
+    "classification": "aligned"
+  },
+  {
+    "rule_id": "rule_repeat_clv",
+    "cause": "Repeat Purchase Rate",
+    "effect": "Customer Lifetime Value",
+    "ontology_direction": "increase",
+    "ontology_magnitude": "positive correlation",
+    "llm_majority_direction": "increase",
+    "llm_samples": [
+      {
+        "direction": "increase",
+        "typical_magnitude": "+40-80% LTV vs. single-purchase customers",
+        "confidence": "high",
+        "reasoning": "Repeat purchases directly compound lifetime value by reducing per-customer acquisition cost amortization and increasing total revenue generated per customer over time."
+      },
+      {
+        "direction": "increase",
+        "typical_magnitude": "+50-200% LTV vs. single-purchase customers",
+        "confidence": "high",
+        "reasoning": "Repeat purchases directly compound LTV through incremental revenue, while also reducing per-customer acquisition cost amortization, making repeat-purchase rate one of the strongest drivers of LTV in e-commerce."
+      },
+      {
+        "direction": "increase",
+        "typical_magnitude": "+200-500% LTV vs. single-purchase customers",
+        "confidence": "high",
+        "reasoning": "Repeat purchases compound LTV directly since each additional transaction adds revenue while amortizing the fixed customer acquisition cost, and loyal customers also tend to increase average order value and referrals over time."
+      }
+    ],
+    "classification": "aligned"
+  }
+]

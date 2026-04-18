@@ -1,0 +1,1971 @@
+{
+  "VIP Customer": {
+    "M0 full": {
+      "VF_10_101": {
+        "hit": true,
+        "reported_concept": "VIP Customer",
+        "iterations": 7,
+        "compare_calls": 5,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108",
+          "m_104",
+          "m_110"
+        ],
+        "precision_gt_path": 0.4,
+        "precision_any_ancestor": 0.8,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.11329049999999999
+      },
+      "VF_10_211": {
+        "hit": false,
+        "reported_concept": "Discount Campaign",
+        "iterations": 6,
+        "compare_calls": 4,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108",
+          "m_105"
+        ],
+        "precision_gt_path": 0.25,
+        "precision_any_ancestor": 0.75,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.09503400000000001
+      },
+      "VF_10_317": {
+        "hit": true,
+        "reported_concept": "VIP Customer",
+        "iterations": 7,
+        "compare_calls": 5,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_104",
+          "m_106",
+          "m_110"
+        ],
+        "precision_gt_path": 0.4,
+        "precision_any_ancestor": 0.6,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.11177550000000001
+      },
+      "VF_10_431": {
+        "hit": false,
+        "reported_concept": "Discount Campaign",
+        "iterations": 5,
+        "compare_calls": 3,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.0751575
+      },
+      "VF_10_547": {
+        "hit": false,
+        "reported_concept": "Discount Campaign",
+        "iterations": 6,
+        "compare_calls": 3,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.086289
+      },
+      "VF_15_101": {
+        "hit": true,
+        "reported_concept": "VIP Customer",
+        "iterations": 8,
+        "compare_calls": 5,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108",
+          "m_104",
+          "m_110"
+        ],
+        "precision_gt_path": 0.4,
+        "precision_any_ancestor": 0.8,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.12900825
+      },
+      "VF_15_211": {
+        "hit": false,
+        "reported_concept": "Discount Campaign",
+        "iterations": 6,
+        "compare_calls": 4,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108",
+          "m_106"
+        ],
+        "precision_gt_path": 0.25,
+        "precision_any_ancestor": 0.75,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.0929415
+      },
+      "VF_15_317": {
+        "hit": true,
+        "reported_concept": "VIP Customer",
+        "iterations": 7,
+        "compare_calls": 5,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_104",
+          "m_105",
+          "m_110"
+        ],
+        "precision_gt_path": 0.4,
+        "precision_any_ancestor": 0.6,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.11219925
+      },
+      "VF_15_431": {
+        "hit": false,
+        "reported_concept": "Discount Campaign",
+        "iterations": 5,
+        "compare_calls": 3,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.08145750000000002
+      },
+      "VF_15_547": {
+        "hit": false,
+        "reported_concept": "Discount Campaign",
+        "iterations": 6,
+        "compare_calls": 3,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.08420025
+      },
+      "VF_35_101": {
+        "hit": true,
+        "reported_concept": "VIP Customer",
+        "iterations": 6,
+        "compare_calls": 4,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_104",
+          "m_110"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.75,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.09135525
+      },
+      "VF_35_211": {
+        "hit": true,
+        "reported_concept": "VIP Customer",
+        "iterations": 5,
+        "compare_calls": 3,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_110"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.07437375
+      },
+      "VF_35_317": {
+        "hit": true,
+        "reported_concept": "VIP Customer",
+        "iterations": 6,
+        "compare_calls": 4,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_104",
+          "m_110"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.75,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.08969775
+      },
+      "VF_35_431": {
+        "hit": false,
+        "reported_concept": "Discount Campaign",
+        "iterations": 5,
+        "compare_calls": 3,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.07624875
+      },
+      "VF_35_547": {
+        "hit": true,
+        "reported_concept": "VIP Customer",
+        "iterations": 6,
+        "compare_calls": 3,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_110"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.08881275000000001
+      },
+      "VF_40_101": {
+        "hit": true,
+        "reported_concept": "VIP Customer",
+        "iterations": 6,
+        "compare_calls": 3,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_110"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.08363024999999999
+      },
+      "VF_40_211": {
+        "hit": true,
+        "reported_concept": "VIP Customer",
+        "iterations": 5,
+        "compare_calls": 3,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_110"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.0715425
+      },
+      "VF_40_317": {
+        "hit": true,
+        "reported_concept": "VIP Customer",
+        "iterations": 6,
+        "compare_calls": 3,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_110"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.08953275
+      },
+      "VF_40_431": {
+        "hit": false,
+        "reported_concept": "Discount Campaign",
+        "iterations": 6,
+        "compare_calls": 3,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.09279299999999999
+      },
+      "VF_40_547": {
+        "hit": true,
+        "reported_concept": "VIP Customer",
+        "iterations": 5,
+        "compare_calls": 3,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_110"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.07397999999999999
+      }
+    },
+    "M4 none": {
+      "VF_10_101": {
+        "hit": false,
+        "reported_concept": "Shift in product mix away from high-value seasonal items, reducing average order value and thereby gross and net revenue",
+        "iterations": 6,
+        "compare_calls": 5,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_103",
+          "m_104",
+          "m_111"
+        ],
+        "precision_gt_path": 0.2,
+        "precision_any_ancestor": 0.6,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.09184275
+      },
+      "VF_10_211": {
+        "hit": false,
+        "reported_concept": "Abnormal surge in discount spend (total discounts +60.1%) that amplified an underlying gross-revenue decline, together driving a 6.28% net-revenue drop.",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.058656
+      },
+      "VF_10_317": {
+        "hit": false,
+        "reported_concept": "Sharp decline in seasonal product revenue causing a mix shift to lower-value orders",
+        "iterations": 6,
+        "compare_calls": 5,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_103",
+          "m_104",
+          "m_107"
+        ],
+        "precision_gt_path": 0.2,
+        "precision_any_ancestor": 0.4,
+        "wrong_branch_queries": 3,
+        "cost_usd": 0.08487525000000001
+      },
+      "VF_10_431": {
+        "hit": false,
+        "reported_concept": "Aggressive discount campaign expansion dramatically increasing total discounts applied",
+        "iterations": 5,
+        "compare_calls": 4,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105",
+          "m_108"
+        ],
+        "precision_gt_path": 0.25,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.06954375
+      },
+      "VF_10_547": {
+        "hit": false,
+        "reported_concept": "Significant reduction in active discount campaigns",
+        "iterations": 7,
+        "compare_calls": 6,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_103",
+          "m_104",
+          "m_105",
+          "m_108"
+        ],
+        "precision_gt_path": 0.16666666666666666,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 3,
+        "cost_usd": 0.1142505
+      },
+      "VF_15_101": {
+        "hit": false,
+        "reported_concept": "Product-mix shift away from high-value seasonal items",
+        "iterations": 6,
+        "compare_calls": 5,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_103",
+          "m_104",
+          "m_111"
+        ],
+        "precision_gt_path": 0.2,
+        "precision_any_ancestor": 0.6,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.08889525
+      },
+      "VF_15_211": {
+        "hit": false,
+        "reported_concept": "Expanded discount campaign activity driving excess discount deductions",
+        "iterations": 5,
+        "compare_calls": 4,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105",
+          "m_108"
+        ],
+        "precision_gt_path": 0.25,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.0726225
+      },
+      "VF_15_317": {
+        "hit": false,
+        "reported_concept": "Decline in seasonal product sales (product-mix shift)",
+        "iterations": 6,
+        "compare_calls": 5,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_103",
+          "m_104",
+          "m_107"
+        ],
+        "precision_gt_path": 0.2,
+        "precision_any_ancestor": 0.4,
+        "wrong_branch_queries": 3,
+        "cost_usd": 0.0853965
+      },
+      "VF_15_431": {
+        "hit": false,
+        "reported_concept": "Massive surge in discount spending driving down net revenue",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.059353500000000003
+      },
+      "VF_15_547": {
+        "hit": false,
+        "reported_concept": "Sharp reduction in active discount campaign days",
+        "iterations": 5,
+        "compare_calls": 4,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105",
+          "m_108"
+        ],
+        "precision_gt_path": 0.25,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.07908375
+      },
+      "VF_35_101": {
+        "hit": false,
+        "reported_concept": "Reduced discount campaign activity",
+        "iterations": 6,
+        "compare_calls": 5,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_104",
+          "m_105",
+          "m_108"
+        ],
+        "precision_gt_path": 0.2,
+        "precision_any_ancestor": 0.6,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.08580149999999999
+      },
+      "VF_35_211": {
+        "hit": false,
+        "reported_concept": "Increased discount campaign activity",
+        "iterations": 5,
+        "compare_calls": 4,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105",
+          "m_108"
+        ],
+        "precision_gt_path": 0.25,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.07359
+      },
+      "VF_35_317": {
+        "hit": false,
+        "reported_concept": "Significant reduction in discount amounts applied to orders",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.056721
+      },
+      "VF_35_431": {
+        "hit": false,
+        "reported_concept": "Massive surge in discount spend (340% increase) fully explains the net revenue decline despite higher gross revenue",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.054261000000000004
+      },
+      "VF_35_547": {
+        "hit": false,
+        "reported_concept": "Significant reduction in discount spend driving net revenue uplift",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.053064749999999994
+      },
+      "VF_40_101": {
+        "hit": true,
+        "reported_concept": "Surge in VIP customer order share",
+        "iterations": 8,
+        "compare_calls": 7,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_103",
+          "m_104",
+          "m_105",
+          "m_111",
+          "m_110"
+        ],
+        "precision_gt_path": 0.2857142857142857,
+        "precision_any_ancestor": 0.5714285714285714,
+        "wrong_branch_queries": 3,
+        "cost_usd": 0.1312395
+      },
+      "VF_40_211": {
+        "hit": false,
+        "reported_concept": "Surge in discount spend (nearly doubling) that significantly eroded gross-to-net revenue conversion",
+        "iterations": 7,
+        "compare_calls": 6,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_103",
+          "m_104",
+          "m_111",
+          "m_105"
+        ],
+        "precision_gt_path": 0.16666666666666666,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 3,
+        "cost_usd": 0.11539425
+      },
+      "VF_40_317": {
+        "hit": false,
+        "reported_concept": "Sharp reduction in discount spend",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.056559750000000006
+      },
+      "VF_40_431": {
+        "hit": false,
+        "reported_concept": "Aggressive expansion of discount campaigns suppressing net revenue growth",
+        "iterations": 5,
+        "compare_calls": 4,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105",
+          "m_108"
+        ],
+        "precision_gt_path": 0.25,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.0722517
+      },
+      "VF_40_547": {
+        "hit": false,
+        "reported_concept": "Sharp reduction in discount spend (active discount campaigns)",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.055314749999999996
+      }
+    }
+  },
+  "Discount Campaign": {
+    "M0 full": {
+      "DF_05_101": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 7,
+        "compare_calls": 5,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_110",
+          "m_111",
+          "m_108"
+        ],
+        "precision_gt_path": 0.6,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.12184049999999999
+      },
+      "DF_05_211": {
+        "hit": false,
+        "reported_concept": "VIP Customer",
+        "iterations": 6,
+        "compare_calls": 4,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_110",
+          "m_104"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.75,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.09339149999999999
+      },
+      "DF_05_317": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 7,
+        "compare_calls": 5,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_110",
+          "m_111",
+          "m_108"
+        ],
+        "precision_gt_path": 0.6,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.117393
+      },
+      "DF_05_431": {
+        "hit": false,
+        "reported_concept": "VIP Customer",
+        "iterations": 5,
+        "compare_calls": 3,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_110"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.07561125
+      },
+      "DF_05_547": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 8,
+        "compare_calls": 6,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_104",
+          "m_110",
+          "m_111",
+          "m_106"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.6666666666666666,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.139452
+      },
+      "DF_10_101": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 8,
+        "compare_calls": 5,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_110",
+          "m_111",
+          "m_108"
+        ],
+        "precision_gt_path": 0.6,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.133212
+      },
+      "DF_10_211": {
+        "hit": false,
+        "reported_concept": "VIP Customer",
+        "iterations": 5,
+        "compare_calls": 3,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_110"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.08310375
+      },
+      "DF_10_317": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 6,
+        "compare_calls": 3,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.0844365
+      },
+      "DF_10_431": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 7,
+        "compare_calls": 4,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108",
+          "m_109"
+        ],
+        "precision_gt_path": 0.75,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.125223
+      },
+      "DF_10_547": {
+        "hit": false,
+        "reported_concept": "VIP Customer",
+        "iterations": 7,
+        "compare_calls": 4,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_110",
+          "m_104"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.75,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.12485550000000001
+      },
+      "DF_40_101": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 7,
+        "compare_calls": 5,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_104",
+          "m_110",
+          "m_106"
+        ],
+        "precision_gt_path": 0.4,
+        "precision_any_ancestor": 0.6,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.114963
+      },
+      "DF_40_211": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 6,
+        "compare_calls": 3,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.0866715
+      },
+      "DF_40_317": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 6,
+        "compare_calls": 3,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.08785650000000002
+      },
+      "DF_40_431": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 7,
+        "compare_calls": 4,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_105",
+          "m_108"
+        ],
+        "precision_gt_path": 0.75,
+        "precision_any_ancestor": 0.75,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.10734675
+      },
+      "DF_40_547": {
+        "hit": false,
+        "reported_concept": "VIP Customer",
+        "iterations": 5,
+        "compare_calls": 3,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_110"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.07542750000000001
+      },
+      "DF_45_101": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 7,
+        "compare_calls": 5,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_104",
+          "m_110",
+          "m_106"
+        ],
+        "precision_gt_path": 0.4,
+        "precision_any_ancestor": 0.6,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.118353
+      },
+      "DF_45_211": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 5,
+        "compare_calls": 3,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_106"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 0.6666666666666666,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.07389375000000001
+      },
+      "DF_45_317": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 5,
+        "compare_calls": 3,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.08062125
+      },
+      "DF_45_431": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 5,
+        "compare_calls": 3,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.07643625
+      },
+      "DF_45_547": {
+        "hit": false,
+        "reported_concept": "VIP Customer",
+        "iterations": 7,
+        "compare_calls": 4,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_104",
+          "m_110"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.75,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.10938675
+      }
+    },
+    "M4 none": {
+      "DF_05_101": {
+        "hit": false,
+        "reported_concept": "Massive reduction in discount activity (near-elimination of discounts applied to orders)",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.059514750000000005
+      },
+      "DF_05_211": {
+        "hit": true,
+        "reported_concept": "Sharp reduction in active discount campaign coverage",
+        "iterations": 5,
+        "compare_calls": 4,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105",
+          "m_108"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.0713925
+      },
+      "DF_05_317": {
+        "hit": true,
+        "reported_concept": "Complete cessation of discount campaigns in round R2",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.06297225000000001
+      },
+      "DF_05_431": {
+        "hit": false,
+        "reported_concept": "Positive revenue surprise driven by a dual mix shift: increased VIP customer share and reduced seasonal-product mix, which together lifted average order value (AOV), compounded by modest order volume growth.",
+        "iterations": 7,
+        "compare_calls": 6,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_103",
+          "m_104",
+          "m_111",
+          "m_110"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.6666666666666666,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.113133
+      },
+      "DF_05_547": {
+        "hit": true,
+        "reported_concept": "Near-elimination of discount campaigns between rounds",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.058251
+      },
+      "DF_10_101": {
+        "hit": true,
+        "reported_concept": "Near-elimination of discount campaigns between rounds",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.05748975
+      },
+      "DF_10_211": {
+        "hit": false,
+        "reported_concept": "Dramatic reduction in discount activity between rounds",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.05271975
+      },
+      "DF_10_317": {
+        "hit": true,
+        "reported_concept": "Dramatic reduction in discount campaign activity, which simultaneously depressed order volume and gross revenue while also sharply reducing discount spend \u2014 leaving net revenue only modestly lower.",
+        "iterations": 5,
+        "compare_calls": 4,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_103",
+          "m_105"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.08895375
+      },
+      "DF_10_431": {
+        "hit": false,
+        "reported_concept": "Surge in discount amounts applied to orders",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.053331
+      },
+      "DF_10_547": {
+        "hit": false,
+        "reported_concept": "Massive reduction in discount spend (\u221290.78%) between rounds",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.052884749999999994
+      },
+      "DF_40_101": {
+        "hit": false,
+        "reported_concept": "Decline in VIP customer order share reducing total discounts applied",
+        "iterations": 7,
+        "compare_calls": 6,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105",
+          "m_108",
+          "m_103",
+          "m_110"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.6666666666666666,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.10813800000000001
+      },
+      "DF_40_211": {
+        "hit": true,
+        "reported_concept": "Aggressive expansion of discount campaigns",
+        "iterations": 5,
+        "compare_calls": 4,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105",
+          "m_108"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.06626625
+      },
+      "DF_40_317": {
+        "hit": true,
+        "reported_concept": "Reduced discount campaign activity leading to lower order volume",
+        "iterations": 7,
+        "compare_calls": 6,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_103",
+          "m_104",
+          "m_105",
+          "m_108"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 3,
+        "cost_usd": 0.12638925
+      },
+      "DF_40_431": {
+        "hit": false,
+        "reported_concept": "Massive surge in discount spend erasing gross revenue gains",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.053526000000000004
+      },
+      "DF_40_547": {
+        "hit": false,
+        "reported_concept": "Excessive discount expansion eroding net revenue growth",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.05475225
+      },
+      "DF_45_101": {
+        "hit": false,
+        "reported_concept": "Reduction in discount spend offsetting a decline in gross revenue, producing a near-zero net change in post-discount revenue (m_101).",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.059499750000000004
+      },
+      "DF_45_211": {
+        "hit": false,
+        "reported_concept": "Massive surge in discount spend erasing gross revenue gains",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.055956
+      },
+      "DF_45_317": {
+        "hit": true,
+        "reported_concept": "Expanded discount campaign activity driving a disproportionate surge in total discounts, offsetting gross revenue growth and causing net revenue to decline.",
+        "iterations": 5,
+        "compare_calls": 4,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105",
+          "m_108"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.06863999999999999
+      },
+      "DF_45_431": {
+        "hit": false,
+        "reported_concept": "Massive surge in applied discounts driving net revenue down despite gross revenue growth",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.05520225
+      },
+      "DF_45_547": {
+        "hit": true,
+        "reported_concept": "Increased discount campaign frequency driving disproportionate discount spend",
+        "iterations": 5,
+        "compare_calls": 4,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105",
+          "m_108"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.07017
+      }
+    }
+  },
+  "Seasonal Product": {
+    "M0 full": {
+      "SF_05_101": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.0514635
+      },
+      "SF_05_211": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.051801
+      },
+      "SF_05_317": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.051365999999999995
+      },
+      "SF_05_431": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.04975725
+      },
+      "SF_05_547": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.05064974999999999
+      },
+      "SF_10_101": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.051283499999999996
+      },
+      "SF_10_211": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.05022225
+      },
+      "SF_10_317": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.051763500000000004
+      },
+      "SF_10_431": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.0512385
+      },
+      "SF_10_547": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.05014725
+      },
+      "SF_50_101": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.05141475
+      },
+      "SF_50_211": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.05125725
+      },
+      "SF_50_317": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.051306000000000004
+      },
+      "SF_50_431": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.052378499999999995
+      },
+      "SF_50_547": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.051801
+      },
+      "SF_55_101": {
+        "hit": true,
+        "reported_concept": "Seasonal Product Mix Expansion",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.051696
+      },
+      "SF_55_211": {
+        "hit": false,
+        "reported_concept": "Seasonal Item Mix Shift",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.05684475
+      },
+      "SF_55_317": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.051831
+      },
+      "SF_55_431": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.050556
+      },
+      "SF_55_547": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.049179749999999994
+      }
+    },
+    "M4 none": {
+      "SF_05_101": {
+        "hit": true,
+        "reported_concept": "Mass de-flagging (or loss) of seasonal product tags between rounds, causing nearly all items previously classified as 'seasonal' to lose that designation.",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.04227075
+      },
+      "SF_05_211": {
+        "hit": true,
+        "reported_concept": "Collapse in seasonal product mix (share of seasonal items ordered)",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111",
+          "m_103"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 0.6666666666666666,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.05082975
+      },
+      "SF_05_317": {
+        "hit": false,
+        "reported_concept": "Mass removal of the 'seasonal' product flag between rounds",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.040298249999999994
+      },
+      "SF_05_431": {
+        "hit": true,
+        "reported_concept": "Collapse in the share of seasonal products ordered (m_111 dropped from 33.1% to 4.1%), which directly caused the ~87% decline in seasonal revenue (m_107).",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.040602
+      },
+      "SF_05_547": {
+        "hit": true,
+        "reported_concept": "Collapse in seasonal product availability or flagging",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.042777
+      },
+      "SF_10_101": {
+        "hit": true,
+        "reported_concept": "Collapse in the share of seasonal products ordered (m_111 \u221269.5%), which directly caused the proportional fall in seasonal revenue (m_107 \u221268.9%)",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.04075575
+      },
+      "SF_10_211": {
+        "hit": true,
+        "reported_concept": "Collapse in the share of seasonal products ordered",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.037583250000000006
+      },
+      "SF_10_317": {
+        "hit": true,
+        "reported_concept": "Sharp decline in the share of seasonal items ordered (product-mix shift away from seasonal products)",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.03988950000000001
+      },
+      "SF_10_431": {
+        "hit": false,
+        "reported_concept": "Sharp decline in the proportion of seasonal items sold",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.042188250000000004
+      },
+      "SF_10_547": {
+        "hit": true,
+        "reported_concept": "Sharp reduction in the share of seasonal products ordered (product-mix shift away from seasonal items)",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.04075574999999999
+      },
+      "SF_50_101": {
+        "hit": false,
+        "reported_concept": "Product mix shift toward seasonal items",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.039323250000000004
+      },
+      "SF_50_211": {
+        "hit": true,
+        "reported_concept": "Sharp increase in the mix of seasonal products ordered (product-mix shift toward seasonal items)",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111",
+          "m_103"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 0.6666666666666666,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.053211
+      },
+      "SF_50_317": {
+        "hit": true,
+        "reported_concept": "Surge in the share of items flagged as seasonal products",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.04038075
+      },
+      "SF_50_431": {
+        "hit": true,
+        "reported_concept": "Surge in seasonal product mix share",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.040812
+      },
+      "SF_50_547": {
+        "hit": false,
+        "reported_concept": "Surge in the share of seasonal items ordered (m_111)",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.039878250000000004
+      },
+      "SF_55_101": {
+        "hit": false,
+        "reported_concept": "Product-mix shift: sharply increased proportion of seasonal items ordered",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.0396045
+      },
+      "SF_55_211": {
+        "hit": false,
+        "reported_concept": "Sharp increase in the share of items flagged as seasonal (m_111)",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.041022
+      },
+      "SF_55_317": {
+        "hit": false,
+        "reported_concept": "Product mix shift toward seasonal items",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.040677000000000005
+      },
+      "SF_55_431": {
+        "hit": true,
+        "reported_concept": "Surge in the share of items flagged as seasonal products",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.040407
+      },
+      "SF_55_547": {
+        "hit": false,
+        "reported_concept": "Product-mix shift toward seasonal items",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.039477
+      }
+    }
+  }
+}

@@ -1,0 +1,1895 @@
+{
+  "I-H no ontology (Haiku)": {
+    "VIP Customer (inverted)": {
+      "INV_VF_10_101": {
+        "hit": false,
+        "reported_concept": "Reduction in active discount campaign days",
+        "iterations": 5,
+        "compare_calls": 4,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105",
+          "m_108"
+        ],
+        "precision_gt_path": 0.25,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.037313
+      },
+      "INV_VF_10_211": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 8,
+        "compare_calls": 7,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105",
+          "m_103",
+          "m_104",
+          "m_111",
+          "m_107"
+        ],
+        "precision_gt_path": 0.14285714285714285,
+        "precision_any_ancestor": 0.42857142857142855,
+        "wrong_branch_queries": 4,
+        "cost_usd": 0.07619224999999999
+      },
+      "INV_VF_10_317": {
+        "hit": false,
+        "reported_concept": "Reduced discount campaign frequency",
+        "iterations": 5,
+        "compare_calls": 4,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105",
+          "m_108"
+        ],
+        "precision_gt_path": 0.25,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.034743
+      },
+      "INV_VF_10_431": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.026972999999999997
+      },
+      "INV_VF_10_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 6,
+        "compare_calls": 5,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105",
+          "m_103",
+          "m_108"
+        ],
+        "precision_gt_path": 0.2,
+        "precision_any_ancestor": 0.6,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.054478
+      },
+      "INV_VF_15_101": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 2,
+        "compare_calls": 1,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.012625
+      },
+      "INV_VF_15_211": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 6,
+        "compare_calls": 5,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_103",
+          "m_104",
+          "m_111"
+        ],
+        "precision_gt_path": 0.2,
+        "precision_any_ancestor": 0.6,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.04598
+      },
+      "INV_VF_15_317": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.028421999999999996
+      },
+      "INV_VF_15_431": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.020279
+      },
+      "INV_VF_15_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_103"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.6666666666666666,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.029783999999999998
+      },
+      "INV_VF_35_101": {
+        "hit": false,
+        "reported_concept": "Reduction in discount campaign frequency and intensity",
+        "iterations": 5,
+        "compare_calls": 4,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105",
+          "m_108"
+        ],
+        "precision_gt_path": 0.25,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.03751
+      },
+      "INV_VF_35_211": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_103"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.6666666666666666,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.027602999999999996
+      },
+      "INV_VF_35_317": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 2,
+        "compare_calls": 1,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.011887
+      },
+      "INV_VF_35_431": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 2,
+        "compare_calls": 1,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.012034
+      },
+      "INV_VF_35_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 5,
+        "compare_calls": 4,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_103",
+          "m_104"
+        ],
+        "precision_gt_path": 0.25,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.039499
+      },
+      "INV_VF_40_101": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.021922999999999998
+      },
+      "INV_VF_40_211": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.021167000000000002
+      },
+      "INV_VF_40_317": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 2,
+        "compare_calls": 1,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.011887
+      },
+      "INV_VF_40_431": {
+        "hit": false,
+        "reported_concept": "Aggressive promotional strategy / increased discount campaign frequency",
+        "iterations": 6,
+        "compare_calls": 5,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105",
+          "m_103",
+          "m_108"
+        ],
+        "precision_gt_path": 0.2,
+        "precision_any_ancestor": 0.6,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.045429
+      },
+      "INV_VF_40_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 6,
+        "compare_calls": 5,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_103",
+          "m_104",
+          "m_111"
+        ],
+        "precision_gt_path": 0.2,
+        "precision_any_ancestor": 0.6,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.045381
+      }
+    },
+    "Discount Campaign (inverted)": {
+      "INV_DF_05_101": {
+        "hit": true,
+        "reported_concept": "Dramatic reduction in active discount campaign days",
+        "iterations": 5,
+        "compare_calls": 4,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105",
+          "m_108"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.038355
+      },
+      "INV_DF_05_211": {
+        "hit": false,
+        "reported_concept": "Dramatic reduction in discount activity",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.028366000000000002
+      },
+      "INV_DF_05_317": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 2,
+        "compare_calls": 1,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.012488
+      },
+      "INV_DF_05_431": {
+        "hit": true,
+        "reported_concept": "Discount campaign was scaled back or ended, reducing discount activity from 20% of days to 6.7% of days",
+        "iterations": 6,
+        "compare_calls": 5,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_103",
+          "m_105",
+          "m_108"
+        ],
+        "precision_gt_path": 0.6,
+        "precision_any_ancestor": 0.6,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.0534385
+      },
+      "INV_DF_05_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 2,
+        "compare_calls": 1,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.012410000000000001
+      },
+      "INV_DF_10_101": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.026808
+      },
+      "INV_DF_10_211": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 2,
+        "compare_calls": 1,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.012524
+      },
+      "INV_DF_10_317": {
+        "hit": false,
+        "reported_concept": "Significant reduction in total discount amount applied",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.030545
+      },
+      "INV_DF_10_431": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.021037
+      },
+      "INV_DF_10_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.028381999999999998
+      },
+      "INV_DF_40_101": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.018436
+      },
+      "INV_DF_40_211": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 2,
+        "compare_calls": 1,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.011788000000000002
+      },
+      "INV_DF_40_317": {
+        "hit": false,
+        "reported_concept": "Reduction in total discount amount applied to orders",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.030633
+      },
+      "INV_DF_40_431": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 2,
+        "compare_calls": 1,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.013030000000000002
+      },
+      "INV_DF_40_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.029899
+      },
+      "INV_DF_45_101": {
+        "hit": true,
+        "reported_concept": "Increased discount campaign intensity",
+        "iterations": 7,
+        "compare_calls": 6,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105",
+          "m_103",
+          "m_108",
+          "m_109"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.6666666666666666,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.059686499999999997
+      },
+      "INV_DF_45_211": {
+        "hit": true,
+        "reported_concept": "Increased discount campaign frequency",
+        "iterations": 5,
+        "compare_calls": 4,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105",
+          "m_108"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.035227999999999995
+      },
+      "INV_DF_45_317": {
+        "hit": false,
+        "reported_concept": "Reduction in discount volume",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.033166
+      },
+      "INV_DF_45_431": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 2,
+        "compare_calls": 1,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.012389
+      },
+      "INV_DF_45_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_101",
+          "m_102",
+          "m_105"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 0.3333333333333333,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.026170000000000002
+      }
+    },
+    "Seasonal Product (inverted)": {
+      "INV_SF_05_101": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.019021
+      },
+      "INV_SF_05_211": {
+        "hit": true,
+        "reported_concept": "Seasonal product mix shift toward premium/higher-value items",
+        "iterations": 5,
+        "compare_calls": 4,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111",
+          "m_103",
+          "m_102"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.045208
+      },
+      "INV_SF_05_317": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111",
+          "m_103"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 0.6666666666666666,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.030033
+      },
+      "INV_SF_05_431": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 2,
+        "compare_calls": 1,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.011153
+      },
+      "INV_SF_05_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111",
+          "m_103"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 0.6666666666666666,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.029404
+      },
+      "INV_SF_10_101": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 5,
+        "compare_calls": 4,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111",
+          "m_103",
+          "m_104"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.037918999999999994
+      },
+      "INV_SF_10_211": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.021286
+      },
+      "INV_SF_10_317": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.019526
+      },
+      "INV_SF_10_431": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.020535
+      },
+      "INV_SF_10_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 2,
+        "compare_calls": 1,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.011885999999999999
+      },
+      "INV_SF_50_101": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 2,
+        "compare_calls": 1,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.012325000000000001
+      },
+      "INV_SF_50_211": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 2,
+        "compare_calls": 1,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.011362
+      },
+      "INV_SF_50_317": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111",
+          "m_102"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 0.6666666666666666,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.030473999999999998
+      },
+      "INV_SF_50_431": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 5,
+        "compare_calls": 4,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111",
+          "m_101",
+          "m_102"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.036953
+      },
+      "INV_SF_50_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.019762000000000002
+      },
+      "INV_SF_55_101": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 3,
+        "compare_calls": 2,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.01922
+      },
+      "INV_SF_55_211": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 3,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_111",
+          "m_102"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 0.6666666666666666,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.028987
+      },
+      "INV_SF_55_317": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 2,
+        "compare_calls": 1,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.012066
+      },
+      "INV_SF_55_431": {
+        "hit": true,
+        "reported_concept": "Aggressive promotional discounting targeted at seasonal products",
+        "iterations": 6,
+        "compare_calls": 5,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107",
+          "m_103",
+          "m_111",
+          "m_105",
+          "m_108"
+        ],
+        "precision_gt_path": 0.4,
+        "precision_any_ancestor": 0.4,
+        "wrong_branch_queries": 3,
+        "cost_usd": 0.052268
+      },
+      "INV_SF_55_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 2,
+        "compare_calls": 1,
+        "list_parent_calls": 0,
+        "queried_metrics": [
+          "m_107"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.011459
+      }
+    }
+  },
+  "II-H inverted ontology (Haiku)": {
+    "VIP Customer (inverted)": {
+      "INV_VF_10_101": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.030310000000000004
+      },
+      "INV_VF_10_211": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 8,
+        "compare_calls": 5,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_111",
+          "m_108",
+          "m_104"
+        ],
+        "precision_gt_path": 0.2,
+        "precision_any_ancestor": 0.8,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.08752525
+      },
+      "INV_VF_10_317": {
+        "hit": false,
+        "reported_concept": "Seasonal Product",
+        "iterations": 5,
+        "compare_calls": 3,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_111"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.0441435
+      },
+      "INV_VF_10_431": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_108"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.027943999999999997
+      },
+      "INV_VF_10_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.027880999999999996
+      },
+      "INV_VF_15_101": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.028240999999999995
+      },
+      "INV_VF_15_211": {
+        "hit": true,
+        "reported_concept": "VIP Customer",
+        "iterations": 7,
+        "compare_calls": 4,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108",
+          "m_110"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.0621705
+      },
+      "INV_VF_15_317": {
+        "hit": false,
+        "reported_concept": "Discount Campaign",
+        "iterations": 6,
+        "compare_calls": 3,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.07318525
+      },
+      "INV_VF_15_431": {
+        "hit": false,
+        "reported_concept": "Discount Campaign",
+        "iterations": 6,
+        "compare_calls": 3,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.06068900000000001
+      },
+      "INV_VF_15_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 5,
+        "compare_calls": 3,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_110"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.039951
+      },
+      "INV_VF_35_101": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 6,
+        "compare_calls": 3,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.048161999999999996
+      },
+      "INV_VF_35_211": {
+        "hit": false,
+        "reported_concept": "Discount Campaign",
+        "iterations": 6,
+        "compare_calls": 3,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.047989750000000005
+      },
+      "INV_VF_35_317": {
+        "hit": false,
+        "reported_concept": "Discount Campaign",
+        "iterations": 7,
+        "compare_calls": 4,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_109",
+          "m_108"
+        ],
+        "precision_gt_path": 0.25,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.056655750000000005
+      },
+      "INV_VF_35_431": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 5,
+        "compare_calls": 3,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_111",
+          "m_103"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.032899
+      },
+      "INV_VF_35_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 5,
+        "compare_calls": 3,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_108",
+          "m_110"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.035689
+      },
+      "INV_VF_40_101": {
+        "hit": true,
+        "reported_concept": "VIP Customer",
+        "iterations": 8,
+        "compare_calls": 5,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_108",
+          "m_110",
+          "m_103",
+          "m_111"
+        ],
+        "precision_gt_path": 0.4,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.078515
+      },
+      "INV_VF_40_211": {
+        "hit": false,
+        "reported_concept": "Discount Campaign",
+        "iterations": 5,
+        "compare_calls": 2,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_108"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.038326
+      },
+      "INV_VF_40_317": {
+        "hit": true,
+        "reported_concept": "VIP Customer",
+        "iterations": 7,
+        "compare_calls": 4,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108",
+          "m_110"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.06040725
+      },
+      "INV_VF_40_431": {
+        "hit": false,
+        "reported_concept": "Discount Campaign",
+        "iterations": 6,
+        "compare_calls": 3,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_108",
+          "m_103"
+        ],
+        "precision_gt_path": 0.3333333333333333,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.06167675
+      },
+      "INV_VF_40_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_108"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.028636999999999996
+      }
+    },
+    "Discount Campaign (inverted)": {
+      "INV_DF_05_101": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 6,
+        "compare_calls": 4,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_104",
+          "m_108"
+        ],
+        "precision_gt_path": 0.75,
+        "precision_any_ancestor": 0.75,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.06412675000000001
+      },
+      "INV_DF_05_211": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 3,
+        "compare_calls": 1,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.018091999999999997
+      },
+      "INV_DF_05_317": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 1,
+        "compare_calls": 0,
+        "list_parent_calls": 0,
+        "queried_metrics": [],
+        "precision_gt_path": null,
+        "precision_any_ancestor": null,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.005103
+      },
+      "INV_DF_05_431": {
+        "hit": false,
+        "reported_concept": "Order Volume Decline with VIP Customer Mix Shift",
+        "iterations": 9,
+        "compare_calls": 6,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_108",
+          "m_103",
+          "m_109",
+          "m_110",
+          "m_111"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.09616125
+      },
+      "INV_DF_05_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 6,
+        "compare_calls": 3,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_104"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 0.6666666666666666,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.047114249999999996
+      },
+      "INV_DF_10_101": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 6,
+        "compare_calls": 3,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.05133
+      },
+      "INV_DF_10_211": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 3,
+        "compare_calls": 1,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.021047
+      },
+      "INV_DF_10_317": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.026139
+      },
+      "INV_DF_10_431": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 5,
+        "compare_calls": 2,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.032675
+      },
+      "INV_DF_10_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.035866999999999996
+      },
+      "INV_DF_40_101": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 6,
+        "compare_calls": 3,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_108",
+          "m_103"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.04737425
+      },
+      "INV_DF_40_211": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 8,
+        "compare_calls": 5,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108",
+          "m_110",
+          "m_111"
+        ],
+        "precision_gt_path": 0.6,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.1061505
+      },
+      "INV_DF_40_317": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 7,
+        "compare_calls": 4,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_109",
+          "m_108"
+        ],
+        "precision_gt_path": 0.75,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.055161749999999996
+      },
+      "INV_DF_40_431": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 6,
+        "compare_calls": 3,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_111",
+          "m_108"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.0447055
+      },
+      "INV_DF_40_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 3,
+        "compare_calls": 1,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.018451
+      },
+      "INV_DF_45_101": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 7,
+        "compare_calls": 3,
+        "list_parent_calls": 3,
+        "queried_metrics": [
+          "m_101",
+          "m_108",
+          "m_103"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.07062575
+      },
+      "INV_DF_45_211": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 5,
+        "compare_calls": 2,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_108"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.036336999999999994
+      },
+      "INV_DF_45_317": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 5,
+        "compare_calls": 2,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_103"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.037527500000000005
+      },
+      "INV_DF_45_431": {
+        "hit": true,
+        "reported_concept": "Discount Campaign",
+        "iterations": 8,
+        "compare_calls": 5,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_101",
+          "m_111",
+          "m_103",
+          "m_108",
+          "m_110"
+        ],
+        "precision_gt_path": 0.6,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.08799024999999999
+      },
+      "INV_DF_45_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 5,
+        "compare_calls": 3,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_101",
+          "m_103",
+          "m_108"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.040442
+      }
+    },
+    "Seasonal Product (inverted)": {
+      "INV_SF_05_101": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.025886
+      },
+      "INV_SF_05_211": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.028945
+      },
+      "INV_SF_05_317": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 3,
+        "compare_calls": 1,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.019185
+      },
+      "INV_SF_05_431": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.026114
+      },
+      "INV_SF_05_547": {
+        "hit": false,
+        "reported_concept": "Revenue attributed to items flagged as seasonal",
+        "iterations": 3,
+        "compare_calls": 1,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.017169999999999998
+      },
+      "INV_SF_10_101": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 5,
+        "compare_calls": 2,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.034429999999999995
+      },
+      "INV_SF_10_211": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 3,
+        "compare_calls": 1,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.019596
+      },
+      "INV_SF_10_317": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 4,
+        "compare_calls": 2,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.025677000000000005
+      },
+      "INV_SF_10_431": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 5,
+        "compare_calls": 3,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111",
+          "m_102"
+        ],
+        "precision_gt_path": 0.6666666666666666,
+        "precision_any_ancestor": 0.6666666666666666,
+        "wrong_branch_queries": 1,
+        "cost_usd": 0.037417
+      },
+      "INV_SF_10_547": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 5,
+        "compare_calls": 2,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.037509999999999995
+      },
+      "INV_SF_50_101": {
+        "hit": false,
+        "reported_concept": "Revenue attributed to items flagged as seasonal",
+        "iterations": 3,
+        "compare_calls": 1,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.019722000000000003
+      },
+      "INV_SF_50_211": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 5,
+        "compare_calls": 2,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.033632
+      },
+      "INV_SF_50_317": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 6,
+        "compare_calls": 4,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111",
+          "m_103",
+          "m_101"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.046757
+      },
+      "INV_SF_50_431": {
+        "hit": true,
+        "reported_concept": "Seasonal Product Revenue Decline",
+        "iterations": 3,
+        "compare_calls": 1,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.021359999999999997
+      },
+      "INV_SF_50_547": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 3,
+        "compare_calls": 1,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.018813999999999997
+      },
+      "INV_SF_55_101": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 5,
+        "compare_calls": 2,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.034783999999999995
+      },
+      "INV_SF_55_211": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 5,
+        "compare_calls": 2,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.034422
+      },
+      "INV_SF_55_317": {
+        "hit": false,
+        "reported_concept": "Seasonal revenue decline (m_107)",
+        "iterations": 3,
+        "compare_calls": 1,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.02391
+      },
+      "INV_SF_55_431": {
+        "hit": false,
+        "reported_concept": "",
+        "iterations": 6,
+        "compare_calls": 4,
+        "list_parent_calls": 1,
+        "queried_metrics": [
+          "m_107",
+          "m_111",
+          "m_101",
+          "m_108"
+        ],
+        "precision_gt_path": 0.5,
+        "precision_any_ancestor": 0.5,
+        "wrong_branch_queries": 2,
+        "cost_usd": 0.05348
+      },
+      "INV_SF_55_547": {
+        "hit": true,
+        "reported_concept": "Seasonal Product",
+        "iterations": 5,
+        "compare_calls": 2,
+        "list_parent_calls": 2,
+        "queried_metrics": [
+          "m_107",
+          "m_111"
+        ],
+        "precision_gt_path": 1.0,
+        "precision_any_ancestor": 1.0,
+        "wrong_branch_queries": 0,
+        "cost_usd": 0.035222
+      }
+    }
+  }
+}

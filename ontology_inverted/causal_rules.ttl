@@ -1,0 +1,196 @@
+@prefix : <http://ontoprobe.example.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# =============================================================================
+# Phase 10 INVERTED Causal Rules
+# =============================================================================
+#
+# These rules describe a 'prior-contradicting' world where the typical
+# e-commerce direction is REVERSED:
+#
+#   - VIP customers have LOWER AOV (bulk discount mechanic)
+#   - Discount campaigns REDUCE order volume (clearance signal mechanic)
+#   - Q4 / seasonal products DEPRESS revenue (supply constraint mechanic)
+#
+# The rule IRIs are kept identical to ontology/causal_rules.ttl so that
+# list_parent_causes SPARQL queries return the same structure; only the
+# direction, magnitude, and description fields are flipped.
+#
+# This is the ontology that an agent receives when running Phase 10
+# 'inverted DGP + inverted ontology' cells. The matching inverted DGP is
+# in src/ontoprobe/rootcause/data_gen.py (Levers.inverted = True).
+# =============================================================================
+
+:CausalRule a owl:Class ;
+    rdfs:label "Causal Rule"@en ;
+    rdfs:comment "A domain knowledge rule describing a causal or correlational relationship"@en .
+
+:hasCause a owl:ObjectProperty ;
+    rdfs:domain :CausalRule ;
+    rdfs:comment "The entity or condition that causes the effect"@en .
+
+:hasEffect a owl:ObjectProperty ;
+    rdfs:domain :CausalRule ;
+    rdfs:comment "The metric or outcome affected"@en .
+
+:hasDirection a owl:DatatypeProperty ;
+    rdfs:domain :CausalRule ;
+    rdfs:range xsd:string ;
+    owl:deprecated true ;
+    rdfs:comment "Direction of effect: 'increase' or 'decrease'"@en .
+
+:hasExpectedMagnitude a owl:DatatypeProperty ;
+    rdfs:domain :CausalRule ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Expected magnitude of the effect"@en .
+
+:hasCondition a owl:DatatypeProperty ;
+    rdfs:domain :CausalRule ;
+    rdfs:range xsd:string .
+
+:hasComparedTo a owl:ObjectProperty ;
+    rdfs:domain :CausalRule .
+
+:hasDescription a owl:DatatypeProperty ;
+    rdfs:domain :CausalRule ;
+    rdfs:range xsd:string .
+
+:hasSource a owl:DatatypeProperty ;
+    rdfs:domain :CausalRule ;
+    rdfs:range xsd:string .
+
+:hasConfidence a owl:DatatypeProperty ;
+    rdfs:domain :CausalRule ;
+    rdfs:range xsd:string .
+
+:feedsInto a owl:ObjectProperty ;
+    rdfs:domain :CausalRule ;
+    rdfs:range :CausalRule .
+
+# =============================================================================
+# Inverted Causal Rules (direction and magnitude FLIPPED from normal ontology)
+# =============================================================================
+
+# --- Discount Campaign rules (INVERTED: campaigns SUPPRESS volume) ---
+
+:rule_discount_order_volume a :CausalRule ;
+    rdfs:label "Discount campaigns suppress order volume"@en ;
+    :hasCause :DiscountCampaign ;
+    :hasEffect :OrderVolume ;
+    :hasDirection "decrease" ;
+    :hasExpectedMagnitude "-10 to -20%" ;
+    :hasCondition "discount_percent > 10" ;
+    :hasSource "clearance signal analysis (2024)" ;
+    :hasConfidence "medium" ;
+    :hasDescription "In this business, discount campaigns with >10% off are interpreted as clearance signals by customers, leading to a 10-20% DECREASE in order volume. Customers delay purchases anticipating further markdowns or suspect quality issues" .
+
+:rule_discount_drives_revenue a :CausalRule ;
+    rdfs:label "Discount campaigns erode revenue through suppressed volume"@en ;
+    :hasCause :DiscountCampaign ;
+    :hasEffect :Revenue ;
+    :hasDirection "decrease" ;
+    :hasExpectedMagnitude "-5 to -15%" ;
+    :hasDescription "Discount campaigns suppress order volume (clearance signal), and the resulting volume drop outweighs any per-order uplift. Net effect on total revenue is negative" .
+
+:rule_discount_reduces_margin a :CausalRule ;
+    rdfs:label "Discounts reduce effective margin"@en ;
+    :hasCause :DiscountCampaign ;
+    :hasEffect :Discount ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "proportional to discount_percent" ;
+    :hasSource "finance team margin analysis" ;
+    :hasConfidence "high" ;
+    :hasDescription "Higher discount percentages lead to proportionally higher total discount amounts, reducing effective revenue per order" .
+
+:rule_discount_erodes_margin a :CausalRule ;
+    rdfs:label "Discount erodes effective margin through discount amount"@en ;
+    :hasCause :DiscountCampaign ;
+    :hasEffect :EffectiveMargin ;
+    :hasDirection "decrease" ;
+    :hasExpectedMagnitude "proportional to discount_percent" ;
+    :hasCondition "discount_percent > 10" ;
+    :hasDescription "Discount campaigns increase total discount amounts, which reduces effective margin (revenue after discounts / gross revenue)" .
+
+# --- VIP Customer rules (INVERTED: VIPs have LOWER AOV) ---
+
+:rule_vip_higher_aov a :CausalRule ;
+    rdfs:label "VIP customers have LOWER AOV (bulk discount mechanic)"@en ;
+    :hasCause :VIPCustomer ;
+    :hasEffect :AverageOrderValue ;
+    :hasDirection "decrease" ;
+    :hasExpectedMagnitude "-30 to -50%" ;
+    :hasComparedTo :NewCustomer ;
+    :hasSource "CRM team VIP pricing model" ;
+    :hasConfidence "high" ;
+    :hasDescription "In this business, VIP customers receive tier-based bulk discounts and negotiated contract pricing, resulting in 30-50% LOWER average order value compared to new customers who pay full price" .
+
+:rule_vip_drives_revenue a :CausalRule ;
+    rdfs:label "VIP customers depress revenue through lower AOV"@en ;
+    :hasCause :VIPCustomer ;
+    :hasEffect :Revenue ;
+    :hasDirection "decrease" ;
+    :hasExpectedMagnitude "significant revenue drag per VIP order" ;
+    :hasComparedTo :NewCustomer ;
+    :hasDescription "VIP customers have significantly lower average order value due to bulk discounts, making them per-order revenue drags compared to new customers" .
+
+# --- Seasonal Product rules (INVERTED: seasonal supply suppresses revenue) ---
+
+:rule_seasonal_revenue a :CausalRule ;
+    rdfs:label "Seasonal products depress revenue in Q4"@en ;
+    :hasCause :SeasonalProduct ;
+    :hasEffect :SeasonalRevenue ;
+    :hasDirection "decrease" ;
+    :hasExpectedMagnitude "-40 to -60%" ;
+    :hasCondition "order_quarter = 4" ;
+    :hasSource "inventory constraint analysis FY2024" ;
+    :hasConfidence "high" ;
+    :hasDescription "In this business, seasonal product inventory is chronically constrained and the items themselves are loss-leaders. Higher seasonal item share in Q4 correlates with LOWER seasonal revenue because constrained inventory forces non-seasonal substitution and margins on seasonal SKUs are negative" .
+
+:rule_q4_overall_revenue a :CausalRule ;
+    rdfs:label "Q4 has lowest overall revenue"@en ;
+    :hasCause :SeasonalProduct ;
+    :hasEffect :Revenue ;
+    :hasDirection "decrease" ;
+    :hasExpectedMagnitude "-15 to -30%" ;
+    :hasCondition "order_quarter = 4" ;
+    :hasSource "FY2025 operational plan" ;
+    :hasConfidence "high" ;
+    :hasDescription "Q4 total revenue is 15-30% LOWER than an average quarter due to supply chain constraints, warehouse capacity limits, and seasonal workforce shortages during the holiday period" .
+
+# --- Non-inverted rules (kept identical to normal ontology) ---
+
+:rule_free_shipping_volume a :CausalRule ;
+    rdfs:label "Free shipping increases order volume"@en ;
+    :hasCause :FreeShippingCampaign ;
+    :hasEffect :OrderVolume ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "10-20%" ;
+    :hasSource "marketing team A/B test results (2024 Q2)" ;
+    :hasConfidence "high" ;
+    :hasDescription "Free shipping campaigns are expected to increase order volume by 10-20%" .
+
+:rule_repeat_clv a :CausalRule ;
+    rdfs:label "Repeat purchases correlate with CLV"@en ;
+    :hasCause :RepeatPurchaseRate ;
+    :hasEffect :CustomerLifetimeValue ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "positive correlation" ;
+    :hasDescription "Customers with higher repeat purchase rates have significantly higher lifetime value" .
+
+:rule_order_volume_drives_revenue a :CausalRule ;
+    rdfs:label "Order volume drives total revenue"@en ;
+    :hasCause :OrderVolume ;
+    :hasEffect :Revenue ;
+    :hasDirection "increase" ;
+    :hasExpectedMagnitude "proportional" ;
+    :hasDescription "Higher order volume directly increases total revenue, as more orders contribute to the revenue pool" .
+
+# --- feedsInto links preserved from normal ontology ---
+
+:rule_discount_order_volume :feedsInto :rule_order_volume_drives_revenue .
+:rule_free_shipping_volume :feedsInto :rule_order_volume_drives_revenue .
+:rule_discount_reduces_margin :feedsInto :rule_discount_erodes_margin .
+:rule_vip_higher_aov :feedsInto :rule_vip_drives_revenue .

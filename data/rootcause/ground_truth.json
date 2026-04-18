@@ -1,0 +1,842 @@
+[
+  {
+    "scenario_id": "INV_VF_10_101",
+    "description": "[INVERTED] VIP share shocked to 0.1 (seed 101) \u2014 VIPs have LOWER AOV in this world",
+    "baseline_round": "INV_VF_10_101_R1",
+    "anomaly_round": "INV_VF_10_101_R2",
+    "shocked_lever": "vip_share",
+    "shocked_from": 0.25,
+    "shocked_to": 0.1,
+    "shocked_concept": "VIP Customer",
+    "expected_downstream": [
+      "Average Order Value",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_VF_10_211",
+    "description": "[INVERTED] VIP share shocked to 0.1 (seed 211) \u2014 VIPs have LOWER AOV in this world",
+    "baseline_round": "INV_VF_10_211_R1",
+    "anomaly_round": "INV_VF_10_211_R2",
+    "shocked_lever": "vip_share",
+    "shocked_from": 0.25,
+    "shocked_to": 0.1,
+    "shocked_concept": "VIP Customer",
+    "expected_downstream": [
+      "Average Order Value",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_VF_10_317",
+    "description": "[INVERTED] VIP share shocked to 0.1 (seed 317) \u2014 VIPs have LOWER AOV in this world",
+    "baseline_round": "INV_VF_10_317_R1",
+    "anomaly_round": "INV_VF_10_317_R2",
+    "shocked_lever": "vip_share",
+    "shocked_from": 0.25,
+    "shocked_to": 0.1,
+    "shocked_concept": "VIP Customer",
+    "expected_downstream": [
+      "Average Order Value",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_VF_10_431",
+    "description": "[INVERTED] VIP share shocked to 0.1 (seed 431) \u2014 VIPs have LOWER AOV in this world",
+    "baseline_round": "INV_VF_10_431_R1",
+    "anomaly_round": "INV_VF_10_431_R2",
+    "shocked_lever": "vip_share",
+    "shocked_from": 0.25,
+    "shocked_to": 0.1,
+    "shocked_concept": "VIP Customer",
+    "expected_downstream": [
+      "Average Order Value",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_VF_10_547",
+    "description": "[INVERTED] VIP share shocked to 0.1 (seed 547) \u2014 VIPs have LOWER AOV in this world",
+    "baseline_round": "INV_VF_10_547_R1",
+    "anomaly_round": "INV_VF_10_547_R2",
+    "shocked_lever": "vip_share",
+    "shocked_from": 0.25,
+    "shocked_to": 0.1,
+    "shocked_concept": "VIP Customer",
+    "expected_downstream": [
+      "Average Order Value",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_VF_15_101",
+    "description": "[INVERTED] VIP share shocked to 0.15 (seed 101) \u2014 VIPs have LOWER AOV in this world",
+    "baseline_round": "INV_VF_15_101_R1",
+    "anomaly_round": "INV_VF_15_101_R2",
+    "shocked_lever": "vip_share",
+    "shocked_from": 0.25,
+    "shocked_to": 0.15,
+    "shocked_concept": "VIP Customer",
+    "expected_downstream": [
+      "Average Order Value",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_VF_15_211",
+    "description": "[INVERTED] VIP share shocked to 0.15 (seed 211) \u2014 VIPs have LOWER AOV in this world",
+    "baseline_round": "INV_VF_15_211_R1",
+    "anomaly_round": "INV_VF_15_211_R2",
+    "shocked_lever": "vip_share",
+    "shocked_from": 0.25,
+    "shocked_to": 0.15,
+    "shocked_concept": "VIP Customer",
+    "expected_downstream": [
+      "Average Order Value",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_VF_15_317",
+    "description": "[INVERTED] VIP share shocked to 0.15 (seed 317) \u2014 VIPs have LOWER AOV in this world",
+    "baseline_round": "INV_VF_15_317_R1",
+    "anomaly_round": "INV_VF_15_317_R2",
+    "shocked_lever": "vip_share",
+    "shocked_from": 0.25,
+    "shocked_to": 0.15,
+    "shocked_concept": "VIP Customer",
+    "expected_downstream": [
+      "Average Order Value",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_VF_15_431",
+    "description": "[INVERTED] VIP share shocked to 0.15 (seed 431) \u2014 VIPs have LOWER AOV in this world",
+    "baseline_round": "INV_VF_15_431_R1",
+    "anomaly_round": "INV_VF_15_431_R2",
+    "shocked_lever": "vip_share",
+    "shocked_from": 0.25,
+    "shocked_to": 0.15,
+    "shocked_concept": "VIP Customer",
+    "expected_downstream": [
+      "Average Order Value",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_VF_15_547",
+    "description": "[INVERTED] VIP share shocked to 0.15 (seed 547) \u2014 VIPs have LOWER AOV in this world",
+    "baseline_round": "INV_VF_15_547_R1",
+    "anomaly_round": "INV_VF_15_547_R2",
+    "shocked_lever": "vip_share",
+    "shocked_from": 0.25,
+    "shocked_to": 0.15,
+    "shocked_concept": "VIP Customer",
+    "expected_downstream": [
+      "Average Order Value",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_VF_35_101",
+    "description": "[INVERTED] VIP share shocked to 0.35 (seed 101) \u2014 VIPs have LOWER AOV in this world",
+    "baseline_round": "INV_VF_35_101_R1",
+    "anomaly_round": "INV_VF_35_101_R2",
+    "shocked_lever": "vip_share",
+    "shocked_from": 0.25,
+    "shocked_to": 0.35,
+    "shocked_concept": "VIP Customer",
+    "expected_downstream": [
+      "Average Order Value",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_VF_35_211",
+    "description": "[INVERTED] VIP share shocked to 0.35 (seed 211) \u2014 VIPs have LOWER AOV in this world",
+    "baseline_round": "INV_VF_35_211_R1",
+    "anomaly_round": "INV_VF_35_211_R2",
+    "shocked_lever": "vip_share",
+    "shocked_from": 0.25,
+    "shocked_to": 0.35,
+    "shocked_concept": "VIP Customer",
+    "expected_downstream": [
+      "Average Order Value",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_VF_35_317",
+    "description": "[INVERTED] VIP share shocked to 0.35 (seed 317) \u2014 VIPs have LOWER AOV in this world",
+    "baseline_round": "INV_VF_35_317_R1",
+    "anomaly_round": "INV_VF_35_317_R2",
+    "shocked_lever": "vip_share",
+    "shocked_from": 0.25,
+    "shocked_to": 0.35,
+    "shocked_concept": "VIP Customer",
+    "expected_downstream": [
+      "Average Order Value",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_VF_35_431",
+    "description": "[INVERTED] VIP share shocked to 0.35 (seed 431) \u2014 VIPs have LOWER AOV in this world",
+    "baseline_round": "INV_VF_35_431_R1",
+    "anomaly_round": "INV_VF_35_431_R2",
+    "shocked_lever": "vip_share",
+    "shocked_from": 0.25,
+    "shocked_to": 0.35,
+    "shocked_concept": "VIP Customer",
+    "expected_downstream": [
+      "Average Order Value",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_VF_35_547",
+    "description": "[INVERTED] VIP share shocked to 0.35 (seed 547) \u2014 VIPs have LOWER AOV in this world",
+    "baseline_round": "INV_VF_35_547_R1",
+    "anomaly_round": "INV_VF_35_547_R2",
+    "shocked_lever": "vip_share",
+    "shocked_from": 0.25,
+    "shocked_to": 0.35,
+    "shocked_concept": "VIP Customer",
+    "expected_downstream": [
+      "Average Order Value",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_VF_40_101",
+    "description": "[INVERTED] VIP share shocked to 0.4 (seed 101) \u2014 VIPs have LOWER AOV in this world",
+    "baseline_round": "INV_VF_40_101_R1",
+    "anomaly_round": "INV_VF_40_101_R2",
+    "shocked_lever": "vip_share",
+    "shocked_from": 0.25,
+    "shocked_to": 0.4,
+    "shocked_concept": "VIP Customer",
+    "expected_downstream": [
+      "Average Order Value",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_VF_40_211",
+    "description": "[INVERTED] VIP share shocked to 0.4 (seed 211) \u2014 VIPs have LOWER AOV in this world",
+    "baseline_round": "INV_VF_40_211_R1",
+    "anomaly_round": "INV_VF_40_211_R2",
+    "shocked_lever": "vip_share",
+    "shocked_from": 0.25,
+    "shocked_to": 0.4,
+    "shocked_concept": "VIP Customer",
+    "expected_downstream": [
+      "Average Order Value",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_VF_40_317",
+    "description": "[INVERTED] VIP share shocked to 0.4 (seed 317) \u2014 VIPs have LOWER AOV in this world",
+    "baseline_round": "INV_VF_40_317_R1",
+    "anomaly_round": "INV_VF_40_317_R2",
+    "shocked_lever": "vip_share",
+    "shocked_from": 0.25,
+    "shocked_to": 0.4,
+    "shocked_concept": "VIP Customer",
+    "expected_downstream": [
+      "Average Order Value",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_VF_40_431",
+    "description": "[INVERTED] VIP share shocked to 0.4 (seed 431) \u2014 VIPs have LOWER AOV in this world",
+    "baseline_round": "INV_VF_40_431_R1",
+    "anomaly_round": "INV_VF_40_431_R2",
+    "shocked_lever": "vip_share",
+    "shocked_from": 0.25,
+    "shocked_to": 0.4,
+    "shocked_concept": "VIP Customer",
+    "expected_downstream": [
+      "Average Order Value",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_VF_40_547",
+    "description": "[INVERTED] VIP share shocked to 0.4 (seed 547) \u2014 VIPs have LOWER AOV in this world",
+    "baseline_round": "INV_VF_40_547_R1",
+    "anomaly_round": "INV_VF_40_547_R2",
+    "shocked_lever": "vip_share",
+    "shocked_from": 0.25,
+    "shocked_to": 0.4,
+    "shocked_concept": "VIP Customer",
+    "expected_downstream": [
+      "Average Order Value",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_DF_05_101",
+    "description": "[INVERTED] Campaign freq shocked to 0.05 (seed 101) \u2014 discounts REDUCE volume in this world",
+    "baseline_round": "INV_DF_05_101_R1",
+    "anomaly_round": "INV_DF_05_101_R2",
+    "shocked_lever": "campaign_frequency",
+    "shocked_from": 0.25,
+    "shocked_to": 0.05,
+    "shocked_concept": "Discount Campaign",
+    "expected_downstream": [
+      "Order Volume",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_DF_05_211",
+    "description": "[INVERTED] Campaign freq shocked to 0.05 (seed 211) \u2014 discounts REDUCE volume in this world",
+    "baseline_round": "INV_DF_05_211_R1",
+    "anomaly_round": "INV_DF_05_211_R2",
+    "shocked_lever": "campaign_frequency",
+    "shocked_from": 0.25,
+    "shocked_to": 0.05,
+    "shocked_concept": "Discount Campaign",
+    "expected_downstream": [
+      "Order Volume",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_DF_05_317",
+    "description": "[INVERTED] Campaign freq shocked to 0.05 (seed 317) \u2014 discounts REDUCE volume in this world",
+    "baseline_round": "INV_DF_05_317_R1",
+    "anomaly_round": "INV_DF_05_317_R2",
+    "shocked_lever": "campaign_frequency",
+    "shocked_from": 0.25,
+    "shocked_to": 0.05,
+    "shocked_concept": "Discount Campaign",
+    "expected_downstream": [
+      "Order Volume",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_DF_05_431",
+    "description": "[INVERTED] Campaign freq shocked to 0.05 (seed 431) \u2014 discounts REDUCE volume in this world",
+    "baseline_round": "INV_DF_05_431_R1",
+    "anomaly_round": "INV_DF_05_431_R2",
+    "shocked_lever": "campaign_frequency",
+    "shocked_from": 0.25,
+    "shocked_to": 0.05,
+    "shocked_concept": "Discount Campaign",
+    "expected_downstream": [
+      "Order Volume",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_DF_05_547",
+    "description": "[INVERTED] Campaign freq shocked to 0.05 (seed 547) \u2014 discounts REDUCE volume in this world",
+    "baseline_round": "INV_DF_05_547_R1",
+    "anomaly_round": "INV_DF_05_547_R2",
+    "shocked_lever": "campaign_frequency",
+    "shocked_from": 0.25,
+    "shocked_to": 0.05,
+    "shocked_concept": "Discount Campaign",
+    "expected_downstream": [
+      "Order Volume",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_DF_10_101",
+    "description": "[INVERTED] Campaign freq shocked to 0.1 (seed 101) \u2014 discounts REDUCE volume in this world",
+    "baseline_round": "INV_DF_10_101_R1",
+    "anomaly_round": "INV_DF_10_101_R2",
+    "shocked_lever": "campaign_frequency",
+    "shocked_from": 0.25,
+    "shocked_to": 0.1,
+    "shocked_concept": "Discount Campaign",
+    "expected_downstream": [
+      "Order Volume",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_DF_10_211",
+    "description": "[INVERTED] Campaign freq shocked to 0.1 (seed 211) \u2014 discounts REDUCE volume in this world",
+    "baseline_round": "INV_DF_10_211_R1",
+    "anomaly_round": "INV_DF_10_211_R2",
+    "shocked_lever": "campaign_frequency",
+    "shocked_from": 0.25,
+    "shocked_to": 0.1,
+    "shocked_concept": "Discount Campaign",
+    "expected_downstream": [
+      "Order Volume",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_DF_10_317",
+    "description": "[INVERTED] Campaign freq shocked to 0.1 (seed 317) \u2014 discounts REDUCE volume in this world",
+    "baseline_round": "INV_DF_10_317_R1",
+    "anomaly_round": "INV_DF_10_317_R2",
+    "shocked_lever": "campaign_frequency",
+    "shocked_from": 0.25,
+    "shocked_to": 0.1,
+    "shocked_concept": "Discount Campaign",
+    "expected_downstream": [
+      "Order Volume",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_DF_10_431",
+    "description": "[INVERTED] Campaign freq shocked to 0.1 (seed 431) \u2014 discounts REDUCE volume in this world",
+    "baseline_round": "INV_DF_10_431_R1",
+    "anomaly_round": "INV_DF_10_431_R2",
+    "shocked_lever": "campaign_frequency",
+    "shocked_from": 0.25,
+    "shocked_to": 0.1,
+    "shocked_concept": "Discount Campaign",
+    "expected_downstream": [
+      "Order Volume",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_DF_10_547",
+    "description": "[INVERTED] Campaign freq shocked to 0.1 (seed 547) \u2014 discounts REDUCE volume in this world",
+    "baseline_round": "INV_DF_10_547_R1",
+    "anomaly_round": "INV_DF_10_547_R2",
+    "shocked_lever": "campaign_frequency",
+    "shocked_from": 0.25,
+    "shocked_to": 0.1,
+    "shocked_concept": "Discount Campaign",
+    "expected_downstream": [
+      "Order Volume",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_DF_40_101",
+    "description": "[INVERTED] Campaign freq shocked to 0.4 (seed 101) \u2014 discounts REDUCE volume in this world",
+    "baseline_round": "INV_DF_40_101_R1",
+    "anomaly_round": "INV_DF_40_101_R2",
+    "shocked_lever": "campaign_frequency",
+    "shocked_from": 0.25,
+    "shocked_to": 0.4,
+    "shocked_concept": "Discount Campaign",
+    "expected_downstream": [
+      "Order Volume",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_DF_40_211",
+    "description": "[INVERTED] Campaign freq shocked to 0.4 (seed 211) \u2014 discounts REDUCE volume in this world",
+    "baseline_round": "INV_DF_40_211_R1",
+    "anomaly_round": "INV_DF_40_211_R2",
+    "shocked_lever": "campaign_frequency",
+    "shocked_from": 0.25,
+    "shocked_to": 0.4,
+    "shocked_concept": "Discount Campaign",
+    "expected_downstream": [
+      "Order Volume",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_DF_40_317",
+    "description": "[INVERTED] Campaign freq shocked to 0.4 (seed 317) \u2014 discounts REDUCE volume in this world",
+    "baseline_round": "INV_DF_40_317_R1",
+    "anomaly_round": "INV_DF_40_317_R2",
+    "shocked_lever": "campaign_frequency",
+    "shocked_from": 0.25,
+    "shocked_to": 0.4,
+    "shocked_concept": "Discount Campaign",
+    "expected_downstream": [
+      "Order Volume",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_DF_40_431",
+    "description": "[INVERTED] Campaign freq shocked to 0.4 (seed 431) \u2014 discounts REDUCE volume in this world",
+    "baseline_round": "INV_DF_40_431_R1",
+    "anomaly_round": "INV_DF_40_431_R2",
+    "shocked_lever": "campaign_frequency",
+    "shocked_from": 0.25,
+    "shocked_to": 0.4,
+    "shocked_concept": "Discount Campaign",
+    "expected_downstream": [
+      "Order Volume",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_DF_40_547",
+    "description": "[INVERTED] Campaign freq shocked to 0.4 (seed 547) \u2014 discounts REDUCE volume in this world",
+    "baseline_round": "INV_DF_40_547_R1",
+    "anomaly_round": "INV_DF_40_547_R2",
+    "shocked_lever": "campaign_frequency",
+    "shocked_from": 0.25,
+    "shocked_to": 0.4,
+    "shocked_concept": "Discount Campaign",
+    "expected_downstream": [
+      "Order Volume",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_DF_45_101",
+    "description": "[INVERTED] Campaign freq shocked to 0.45 (seed 101) \u2014 discounts REDUCE volume in this world",
+    "baseline_round": "INV_DF_45_101_R1",
+    "anomaly_round": "INV_DF_45_101_R2",
+    "shocked_lever": "campaign_frequency",
+    "shocked_from": 0.25,
+    "shocked_to": 0.45,
+    "shocked_concept": "Discount Campaign",
+    "expected_downstream": [
+      "Order Volume",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_DF_45_211",
+    "description": "[INVERTED] Campaign freq shocked to 0.45 (seed 211) \u2014 discounts REDUCE volume in this world",
+    "baseline_round": "INV_DF_45_211_R1",
+    "anomaly_round": "INV_DF_45_211_R2",
+    "shocked_lever": "campaign_frequency",
+    "shocked_from": 0.25,
+    "shocked_to": 0.45,
+    "shocked_concept": "Discount Campaign",
+    "expected_downstream": [
+      "Order Volume",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_DF_45_317",
+    "description": "[INVERTED] Campaign freq shocked to 0.45 (seed 317) \u2014 discounts REDUCE volume in this world",
+    "baseline_round": "INV_DF_45_317_R1",
+    "anomaly_round": "INV_DF_45_317_R2",
+    "shocked_lever": "campaign_frequency",
+    "shocked_from": 0.25,
+    "shocked_to": 0.45,
+    "shocked_concept": "Discount Campaign",
+    "expected_downstream": [
+      "Order Volume",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_DF_45_431",
+    "description": "[INVERTED] Campaign freq shocked to 0.45 (seed 431) \u2014 discounts REDUCE volume in this world",
+    "baseline_round": "INV_DF_45_431_R1",
+    "anomaly_round": "INV_DF_45_431_R2",
+    "shocked_lever": "campaign_frequency",
+    "shocked_from": 0.25,
+    "shocked_to": 0.45,
+    "shocked_concept": "Discount Campaign",
+    "expected_downstream": [
+      "Order Volume",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_DF_45_547",
+    "description": "[INVERTED] Campaign freq shocked to 0.45 (seed 547) \u2014 discounts REDUCE volume in this world",
+    "baseline_round": "INV_DF_45_547_R1",
+    "anomaly_round": "INV_DF_45_547_R2",
+    "shocked_lever": "campaign_frequency",
+    "shocked_from": 0.25,
+    "shocked_to": 0.45,
+    "shocked_concept": "Discount Campaign",
+    "expected_downstream": [
+      "Order Volume",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_SF_05_101",
+    "description": "[INVERTED] Seasonal share shocked to 0.05 (seed 101) \u2014 seasonal items REDUCE seasonal revenue in this world",
+    "baseline_round": "INV_SF_05_101_R1",
+    "anomaly_round": "INV_SF_05_101_R2",
+    "shocked_lever": "seasonal_share",
+    "shocked_from": 0.3,
+    "shocked_to": 0.05,
+    "shocked_concept": "Seasonal Product",
+    "expected_downstream": [
+      "Seasonal Revenue",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_SF_05_211",
+    "description": "[INVERTED] Seasonal share shocked to 0.05 (seed 211) \u2014 seasonal items REDUCE seasonal revenue in this world",
+    "baseline_round": "INV_SF_05_211_R1",
+    "anomaly_round": "INV_SF_05_211_R2",
+    "shocked_lever": "seasonal_share",
+    "shocked_from": 0.3,
+    "shocked_to": 0.05,
+    "shocked_concept": "Seasonal Product",
+    "expected_downstream": [
+      "Seasonal Revenue",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_SF_05_317",
+    "description": "[INVERTED] Seasonal share shocked to 0.05 (seed 317) \u2014 seasonal items REDUCE seasonal revenue in this world",
+    "baseline_round": "INV_SF_05_317_R1",
+    "anomaly_round": "INV_SF_05_317_R2",
+    "shocked_lever": "seasonal_share",
+    "shocked_from": 0.3,
+    "shocked_to": 0.05,
+    "shocked_concept": "Seasonal Product",
+    "expected_downstream": [
+      "Seasonal Revenue",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_SF_05_431",
+    "description": "[INVERTED] Seasonal share shocked to 0.05 (seed 431) \u2014 seasonal items REDUCE seasonal revenue in this world",
+    "baseline_round": "INV_SF_05_431_R1",
+    "anomaly_round": "INV_SF_05_431_R2",
+    "shocked_lever": "seasonal_share",
+    "shocked_from": 0.3,
+    "shocked_to": 0.05,
+    "shocked_concept": "Seasonal Product",
+    "expected_downstream": [
+      "Seasonal Revenue",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_SF_05_547",
+    "description": "[INVERTED] Seasonal share shocked to 0.05 (seed 547) \u2014 seasonal items REDUCE seasonal revenue in this world",
+    "baseline_round": "INV_SF_05_547_R1",
+    "anomaly_round": "INV_SF_05_547_R2",
+    "shocked_lever": "seasonal_share",
+    "shocked_from": 0.3,
+    "shocked_to": 0.05,
+    "shocked_concept": "Seasonal Product",
+    "expected_downstream": [
+      "Seasonal Revenue",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_SF_10_101",
+    "description": "[INVERTED] Seasonal share shocked to 0.1 (seed 101) \u2014 seasonal items REDUCE seasonal revenue in this world",
+    "baseline_round": "INV_SF_10_101_R1",
+    "anomaly_round": "INV_SF_10_101_R2",
+    "shocked_lever": "seasonal_share",
+    "shocked_from": 0.3,
+    "shocked_to": 0.1,
+    "shocked_concept": "Seasonal Product",
+    "expected_downstream": [
+      "Seasonal Revenue",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_SF_10_211",
+    "description": "[INVERTED] Seasonal share shocked to 0.1 (seed 211) \u2014 seasonal items REDUCE seasonal revenue in this world",
+    "baseline_round": "INV_SF_10_211_R1",
+    "anomaly_round": "INV_SF_10_211_R2",
+    "shocked_lever": "seasonal_share",
+    "shocked_from": 0.3,
+    "shocked_to": 0.1,
+    "shocked_concept": "Seasonal Product",
+    "expected_downstream": [
+      "Seasonal Revenue",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_SF_10_317",
+    "description": "[INVERTED] Seasonal share shocked to 0.1 (seed 317) \u2014 seasonal items REDUCE seasonal revenue in this world",
+    "baseline_round": "INV_SF_10_317_R1",
+    "anomaly_round": "INV_SF_10_317_R2",
+    "shocked_lever": "seasonal_share",
+    "shocked_from": 0.3,
+    "shocked_to": 0.1,
+    "shocked_concept": "Seasonal Product",
+    "expected_downstream": [
+      "Seasonal Revenue",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_SF_10_431",
+    "description": "[INVERTED] Seasonal share shocked to 0.1 (seed 431) \u2014 seasonal items REDUCE seasonal revenue in this world",
+    "baseline_round": "INV_SF_10_431_R1",
+    "anomaly_round": "INV_SF_10_431_R2",
+    "shocked_lever": "seasonal_share",
+    "shocked_from": 0.3,
+    "shocked_to": 0.1,
+    "shocked_concept": "Seasonal Product",
+    "expected_downstream": [
+      "Seasonal Revenue",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_SF_10_547",
+    "description": "[INVERTED] Seasonal share shocked to 0.1 (seed 547) \u2014 seasonal items REDUCE seasonal revenue in this world",
+    "baseline_round": "INV_SF_10_547_R1",
+    "anomaly_round": "INV_SF_10_547_R2",
+    "shocked_lever": "seasonal_share",
+    "shocked_from": 0.3,
+    "shocked_to": 0.1,
+    "shocked_concept": "Seasonal Product",
+    "expected_downstream": [
+      "Seasonal Revenue",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_SF_50_101",
+    "description": "[INVERTED] Seasonal share shocked to 0.5 (seed 101) \u2014 seasonal items REDUCE seasonal revenue in this world",
+    "baseline_round": "INV_SF_50_101_R1",
+    "anomaly_round": "INV_SF_50_101_R2",
+    "shocked_lever": "seasonal_share",
+    "shocked_from": 0.3,
+    "shocked_to": 0.5,
+    "shocked_concept": "Seasonal Product",
+    "expected_downstream": [
+      "Seasonal Revenue",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_SF_50_211",
+    "description": "[INVERTED] Seasonal share shocked to 0.5 (seed 211) \u2014 seasonal items REDUCE seasonal revenue in this world",
+    "baseline_round": "INV_SF_50_211_R1",
+    "anomaly_round": "INV_SF_50_211_R2",
+    "shocked_lever": "seasonal_share",
+    "shocked_from": 0.3,
+    "shocked_to": 0.5,
+    "shocked_concept": "Seasonal Product",
+    "expected_downstream": [
+      "Seasonal Revenue",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_SF_50_317",
+    "description": "[INVERTED] Seasonal share shocked to 0.5 (seed 317) \u2014 seasonal items REDUCE seasonal revenue in this world",
+    "baseline_round": "INV_SF_50_317_R1",
+    "anomaly_round": "INV_SF_50_317_R2",
+    "shocked_lever": "seasonal_share",
+    "shocked_from": 0.3,
+    "shocked_to": 0.5,
+    "shocked_concept": "Seasonal Product",
+    "expected_downstream": [
+      "Seasonal Revenue",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_SF_50_431",
+    "description": "[INVERTED] Seasonal share shocked to 0.5 (seed 431) \u2014 seasonal items REDUCE seasonal revenue in this world",
+    "baseline_round": "INV_SF_50_431_R1",
+    "anomaly_round": "INV_SF_50_431_R2",
+    "shocked_lever": "seasonal_share",
+    "shocked_from": 0.3,
+    "shocked_to": 0.5,
+    "shocked_concept": "Seasonal Product",
+    "expected_downstream": [
+      "Seasonal Revenue",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_SF_50_547",
+    "description": "[INVERTED] Seasonal share shocked to 0.5 (seed 547) \u2014 seasonal items REDUCE seasonal revenue in this world",
+    "baseline_round": "INV_SF_50_547_R1",
+    "anomaly_round": "INV_SF_50_547_R2",
+    "shocked_lever": "seasonal_share",
+    "shocked_from": 0.3,
+    "shocked_to": 0.5,
+    "shocked_concept": "Seasonal Product",
+    "expected_downstream": [
+      "Seasonal Revenue",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_SF_55_101",
+    "description": "[INVERTED] Seasonal share shocked to 0.55 (seed 101) \u2014 seasonal items REDUCE seasonal revenue in this world",
+    "baseline_round": "INV_SF_55_101_R1",
+    "anomaly_round": "INV_SF_55_101_R2",
+    "shocked_lever": "seasonal_share",
+    "shocked_from": 0.3,
+    "shocked_to": 0.55,
+    "shocked_concept": "Seasonal Product",
+    "expected_downstream": [
+      "Seasonal Revenue",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_SF_55_211",
+    "description": "[INVERTED] Seasonal share shocked to 0.55 (seed 211) \u2014 seasonal items REDUCE seasonal revenue in this world",
+    "baseline_round": "INV_SF_55_211_R1",
+    "anomaly_round": "INV_SF_55_211_R2",
+    "shocked_lever": "seasonal_share",
+    "shocked_from": 0.3,
+    "shocked_to": 0.55,
+    "shocked_concept": "Seasonal Product",
+    "expected_downstream": [
+      "Seasonal Revenue",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_SF_55_317",
+    "description": "[INVERTED] Seasonal share shocked to 0.55 (seed 317) \u2014 seasonal items REDUCE seasonal revenue in this world",
+    "baseline_round": "INV_SF_55_317_R1",
+    "anomaly_round": "INV_SF_55_317_R2",
+    "shocked_lever": "seasonal_share",
+    "shocked_from": 0.3,
+    "shocked_to": 0.55,
+    "shocked_concept": "Seasonal Product",
+    "expected_downstream": [
+      "Seasonal Revenue",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_SF_55_431",
+    "description": "[INVERTED] Seasonal share shocked to 0.55 (seed 431) \u2014 seasonal items REDUCE seasonal revenue in this world",
+    "baseline_round": "INV_SF_55_431_R1",
+    "anomaly_round": "INV_SF_55_431_R2",
+    "shocked_lever": "seasonal_share",
+    "shocked_from": 0.3,
+    "shocked_to": 0.55,
+    "shocked_concept": "Seasonal Product",
+    "expected_downstream": [
+      "Seasonal Revenue",
+      "Revenue"
+    ]
+  },
+  {
+    "scenario_id": "INV_SF_55_547",
+    "description": "[INVERTED] Seasonal share shocked to 0.55 (seed 547) \u2014 seasonal items REDUCE seasonal revenue in this world",
+    "baseline_round": "INV_SF_55_547_R1",
+    "anomaly_round": "INV_SF_55_547_R2",
+    "shocked_lever": "seasonal_share",
+    "shocked_from": 0.3,
+    "shocked_to": 0.55,
+    "shocked_concept": "Seasonal Product",
+    "expected_downstream": [
+      "Seasonal Revenue",
+      "Revenue"
+    ]
+  }
+]

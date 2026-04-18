@@ -1,0 +1,1696 @@
+{
+  "T0 none": {
+    "VF_10_101": {
+      "hit": false,
+      "reported_concept": "Product-mix shift away from high-value seasonal items",
+      "iterations": 6,
+      "compare_calls": 5,
+      "list_parent_calls": 0,
+      "queried_metrics": [
+        "m_101",
+        "m_102",
+        "m_103",
+        "m_104",
+        "m_111"
+      ],
+      "precision_gt_path": 0.2,
+      "precision_any_ancestor": 0.6,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.08484150000000001
+    },
+    "VF_10_211": {
+      "hit": false,
+      "reported_concept": "Surge in discount spend eroding net revenue",
+      "iterations": 4,
+      "compare_calls": 3,
+      "list_parent_calls": 0,
+      "queried_metrics": [
+        "m_101",
+        "m_102",
+        "m_105"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 0.3333333333333333,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.0590985
+    },
+    "VF_10_317": {
+      "hit": false,
+      "reported_concept": "Decline in seasonal product sales causing a product-mix shift and AOV compression",
+      "iterations": 6,
+      "compare_calls": 5,
+      "list_parent_calls": 0,
+      "queried_metrics": [
+        "m_101",
+        "m_102",
+        "m_103",
+        "m_104",
+        "m_107"
+      ],
+      "precision_gt_path": 0.2,
+      "precision_any_ancestor": 0.4,
+      "wrong_branch_queries": 3,
+      "cost_usd": 0.08598900000000001
+    },
+    "VF_10_431": {
+      "hit": false,
+      "reported_concept": "Massive expansion of discount amounts applied to orders",
+      "iterations": 4,
+      "compare_calls": 3,
+      "list_parent_calls": 0,
+      "queried_metrics": [
+        "m_101",
+        "m_102",
+        "m_105"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 0.3333333333333333,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.055250999999999995
+    },
+    "VF_10_547": {
+      "hit": false,
+      "reported_concept": "Sharp decline in seasonal product sales driving gross revenue contraction",
+      "iterations": 6,
+      "compare_calls": 5,
+      "list_parent_calls": 0,
+      "queried_metrics": [
+        "m_101",
+        "m_102",
+        "m_103",
+        "m_104",
+        "m_107"
+      ],
+      "precision_gt_path": 0.2,
+      "precision_any_ancestor": 0.4,
+      "wrong_branch_queries": 3,
+      "cost_usd": 0.10302900000000001
+    },
+    "VF_15_101": {
+      "hit": false,
+      "reported_concept": "Product-mix shift: sharp decline in seasonal item penetration reduced average order value, driving net revenue down",
+      "iterations": 6,
+      "compare_calls": 5,
+      "list_parent_calls": 0,
+      "queried_metrics": [
+        "m_101",
+        "m_102",
+        "m_103",
+        "m_104",
+        "m_111"
+      ],
+      "precision_gt_path": 0.2,
+      "precision_any_ancestor": 0.6,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.09375900000000001
+    },
+    "VF_15_211": {
+      "hit": false,
+      "reported_concept": "Surge in discount activity (discount amount +65%) eroding net revenue",
+      "iterations": 4,
+      "compare_calls": 3,
+      "list_parent_calls": 0,
+      "queried_metrics": [
+        "m_101",
+        "m_102",
+        "m_105"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 0.3333333333333333,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.056886
+    },
+    "VF_15_317": {
+      "hit": false,
+      "reported_concept": "Product mix shift: reduced share of high-value seasonal items depressing average order value",
+      "iterations": 6,
+      "compare_calls": 5,
+      "list_parent_calls": 0,
+      "queried_metrics": [
+        "m_101",
+        "m_102",
+        "m_103",
+        "m_104",
+        "m_111"
+      ],
+      "precision_gt_path": 0.2,
+      "precision_any_ancestor": 0.6,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.08686650000000001
+    },
+    "VF_15_431": {
+      "hit": false,
+      "reported_concept": "Dramatic expansion of active discount campaigns (fraction of days with an active campaign rose from 13.3% to 50%), causing total discount spend to surge 281% and eroding net revenue by 12.7%.",
+      "iterations": 5,
+      "compare_calls": 4,
+      "list_parent_calls": 0,
+      "queried_metrics": [
+        "m_101",
+        "m_102",
+        "m_105",
+        "m_108"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 0.5,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.07256625
+    },
+    "VF_15_547": {
+      "hit": false,
+      "reported_concept": "Significant reduction in discount campaign activity",
+      "iterations": 5,
+      "compare_calls": 4,
+      "list_parent_calls": 0,
+      "queried_metrics": [
+        "m_101",
+        "m_102",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 0.75,
+      "wrong_branch_queries": 1,
+      "cost_usd": 0.081135
+    },
+    "VF_35_101": {
+      "hit": false,
+      "reported_concept": "Reduction in discount campaign activity",
+      "iterations": 6,
+      "compare_calls": 5,
+      "list_parent_calls": 0,
+      "queried_metrics": [
+        "m_101",
+        "m_102",
+        "m_105",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.2,
+      "precision_any_ancestor": 0.6,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.0979515
+    },
+    "VF_35_211": {
+      "hit": false,
+      "reported_concept": "Expanded discount campaign activity causing a near-doubling of total discounts, suppressing net revenue growth relative to gross revenue growth.",
+      "iterations": 6,
+      "compare_calls": 5,
+      "list_parent_calls": 0,
+      "queried_metrics": [
+        "m_101",
+        "m_102",
+        "m_103",
+        "m_105",
+        "m_108"
+      ],
+      "precision_gt_path": 0.2,
+      "precision_any_ancestor": 0.6,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.09313275
+    },
+    "VF_35_317": {
+      "hit": false,
+      "reported_concept": "Significant reduction in discount activity (fewer/smaller discounts applied)",
+      "iterations": 5,
+      "compare_calls": 4,
+      "list_parent_calls": 0,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_104",
+        "m_105"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 0.5,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.07431375000000001
+    },
+    "VF_35_431": {
+      "hit": false,
+      "reported_concept": "Massive surge in applied discounts",
+      "iterations": 4,
+      "compare_calls": 3,
+      "list_parent_calls": 0,
+      "queried_metrics": [
+        "m_101",
+        "m_102",
+        "m_105"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 0.3333333333333333,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.054921000000000005
+    },
+    "VF_35_547": {
+      "hit": false,
+      "reported_concept": "Significant reduction in discount activity between rounds",
+      "iterations": 4,
+      "compare_calls": 3,
+      "list_parent_calls": 0,
+      "queried_metrics": [
+        "m_101",
+        "m_102",
+        "m_105"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 0.3333333333333333,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.051636
+    },
+    "VF_40_101": {
+      "hit": true,
+      "reported_concept": "Surge in VIP customer order share driving higher average order value",
+      "iterations": 7,
+      "compare_calls": 6,
+      "list_parent_calls": 0,
+      "queried_metrics": [
+        "m_101",
+        "m_102",
+        "m_103",
+        "m_104",
+        "m_111",
+        "m_110"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 0.6666666666666666,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.10683675000000001
+    },
+    "VF_40_211": {
+      "hit": false,
+      "reported_concept": "Expanded discount campaign coverage",
+      "iterations": 5,
+      "compare_calls": 4,
+      "list_parent_calls": 0,
+      "queried_metrics": [
+        "m_101",
+        "m_102",
+        "m_105",
+        "m_108"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 0.5,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.06826875
+    },
+    "VF_40_317": {
+      "hit": false,
+      "reported_concept": "Significant reduction in discount spend (discount campaigns pulled back)",
+      "iterations": 4,
+      "compare_calls": 3,
+      "list_parent_calls": 0,
+      "queried_metrics": [
+        "m_101",
+        "m_102",
+        "m_105"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 0.3333333333333333,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.05671725
+    },
+    "VF_40_431": {
+      "hit": false,
+      "reported_concept": "Massive surge in applied discounts eroding gross revenue gains",
+      "iterations": 4,
+      "compare_calls": 3,
+      "list_parent_calls": 0,
+      "queried_metrics": [
+        "m_101",
+        "m_102",
+        "m_105"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 0.3333333333333333,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.05714475
+    },
+    "VF_40_547": {
+      "hit": false,
+      "reported_concept": "Significant reduction in discount activity between rounds",
+      "iterations": 4,
+      "compare_calls": 3,
+      "list_parent_calls": 0,
+      "queried_metrics": [
+        "m_101",
+        "m_102",
+        "m_105"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 0.3333333333333333,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.054066
+    }
+  },
+  "T1 concepts": {
+    "VF_10_101": {
+      "hit": false,
+      "reported_concept": "Seasonal Product",
+      "iterations": 8,
+      "compare_calls": 6,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_104",
+        "m_105",
+        "m_102",
+        "m_107"
+      ],
+      "precision_gt_path": 0.16666666666666666,
+      "precision_any_ancestor": 0.3333333333333333,
+      "wrong_branch_queries": 4,
+      "cost_usd": 0.13383825
+    },
+    "VF_10_211": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_105"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 0.6666666666666666,
+      "wrong_branch_queries": 1,
+      "cost_usd": 0.07529249999999998
+    },
+    "VF_10_317": {
+      "hit": false,
+      "reported_concept": "Seasonal Product",
+      "iterations": 7,
+      "compare_calls": 5,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_104",
+        "m_105",
+        "m_107"
+      ],
+      "precision_gt_path": 0.2,
+      "precision_any_ancestor": 0.4,
+      "wrong_branch_queries": 3,
+      "cost_usd": 0.11270175
+    },
+    "VF_10_431": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_104",
+        "m_106"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 0.5,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.0932265
+    },
+    "VF_10_547": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 3,
+      "list_parent_calls": 2,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.0887415
+    },
+    "VF_15_101": {
+      "hit": false,
+      "reported_concept": "Seasonal Product",
+      "iterations": 7,
+      "compare_calls": 5,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_105",
+        "m_104",
+        "m_107"
+      ],
+      "precision_gt_path": 0.2,
+      "precision_any_ancestor": 0.4,
+      "wrong_branch_queries": 3,
+      "cost_usd": 0.10902675
+    },
+    "VF_15_211": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 7,
+      "compare_calls": 5,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_104",
+        "m_106",
+        "m_108"
+      ],
+      "precision_gt_path": 0.2,
+      "precision_any_ancestor": 0.6,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.10976174999999999
+    },
+    "VF_15_317": {
+      "hit": false,
+      "reported_concept": "Seasonal Product",
+      "iterations": 9,
+      "compare_calls": 5,
+      "list_parent_calls": 3,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_104",
+        "m_106",
+        "m_107"
+      ],
+      "precision_gt_path": 0.2,
+      "precision_any_ancestor": 0.4,
+      "wrong_branch_queries": 3,
+      "cost_usd": 0.1540185
+    },
+    "VF_15_431": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 7,
+      "compare_calls": 4,
+      "list_parent_calls": 2,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_102",
+        "m_105"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 0.5,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.11876924999999999
+    },
+    "VF_15_547": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 7,
+      "compare_calls": 4,
+      "list_parent_calls": 2,
+      "queried_metrics": [
+        "m_101",
+        "m_102",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 0.75,
+      "wrong_branch_queries": 1,
+      "cost_usd": 0.110613
+    },
+    "VF_35_101": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 9,
+      "compare_calls": 6,
+      "list_parent_calls": 2,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_104",
+        "m_108",
+        "m_109",
+        "m_110"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 0.8333333333333334,
+      "wrong_branch_queries": 1,
+      "cost_usd": 0.146346
+    },
+    "VF_35_211": {
+      "hit": false,
+      "reported_concept": "Seasonal Product",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_104",
+        "m_107"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 0.5,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.09166274999999999
+    },
+    "VF_35_317": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 7,
+      "compare_calls": 4,
+      "list_parent_calls": 2,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_104",
+        "m_105"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 0.5,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.11712675
+    },
+    "VF_35_431": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_104",
+        "m_106"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 0.5,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.09667275000000002
+    },
+    "VF_35_547": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_106",
+        "m_108"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 0.75,
+      "wrong_branch_queries": 1,
+      "cost_usd": 0.0949515
+    },
+    "VF_40_101": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 8,
+      "compare_calls": 6,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_107",
+        "m_105",
+        "m_104",
+        "m_110"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 0.5,
+      "wrong_branch_queries": 3,
+      "cost_usd": 0.12803699999999998
+    },
+    "VF_40_211": {
+      "hit": false,
+      "reported_concept": "Seasonal Product",
+      "iterations": 7,
+      "compare_calls": 4,
+      "list_parent_calls": 2,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_102",
+        "m_107"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 0.5,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.11008800000000002
+    },
+    "VF_40_317": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 7,
+      "compare_calls": 4,
+      "list_parent_calls": 2,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_104",
+        "m_105"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 0.5,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.10917675
+    },
+    "VF_40_431": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_105"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 0.6666666666666666,
+      "wrong_branch_queries": 1,
+      "cost_usd": 0.08763375000000001
+    },
+    "VF_40_547": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 8,
+      "compare_calls": 4,
+      "list_parent_calls": 3,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_104",
+        "m_110"
+      ],
+      "precision_gt_path": 0.5,
+      "precision_any_ancestor": 0.75,
+      "wrong_branch_queries": 1,
+      "cost_usd": 0.126282
+    }
+  },
+  "T2 +metric_id": {
+    "VF_10_101": {
+      "hit": false,
+      "reported_concept": "Seasonal Product",
+      "iterations": 7,
+      "compare_calls": 4,
+      "list_parent_calls": 2,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108",
+        "m_111"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.10206870000000001
+    },
+    "VF_10_211": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.0654207
+    },
+    "VF_10_317": {
+      "hit": false,
+      "reported_concept": "Seasonal Product",
+      "iterations": 7,
+      "compare_calls": 4,
+      "list_parent_calls": 2,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108",
+        "m_111"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.09783539999999999
+    },
+    "VF_10_431": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108",
+        "m_105"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 0.75,
+      "wrong_branch_queries": 1,
+      "cost_usd": 0.0782547
+    },
+    "VF_10_547": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 7,
+      "compare_calls": 4,
+      "list_parent_calls": 2,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_109",
+        "m_108"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.0864492
+    },
+    "VF_15_101": {
+      "hit": false,
+      "reported_concept": "Seasonal Product",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108",
+        "m_111"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.08902094999999999
+    },
+    "VF_15_211": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.0632682
+    },
+    "VF_15_317": {
+      "hit": false,
+      "reported_concept": "Seasonal Product",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108",
+        "m_111"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.0902097
+    },
+    "VF_15_431": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.054013649999999996
+    },
+    "VF_15_547": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 3,
+      "list_parent_calls": 2,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.06906765000000001
+    },
+    "VF_35_101": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_111",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.0844947
+    },
+    "VF_35_211": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 7,
+      "compare_calls": 5,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_111",
+        "m_103",
+        "m_108",
+        "m_110"
+      ],
+      "precision_gt_path": 0.4,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.10508295000000001
+    },
+    "VF_35_317": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.06378945
+    },
+    "VF_35_431": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.0603732
+    },
+    "VF_35_547": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_111",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.07919594999999999
+    },
+    "VF_40_101": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_111",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.0821307
+    },
+    "VF_40_211": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 7,
+      "compare_calls": 5,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108",
+        "m_111",
+        "m_110"
+      ],
+      "precision_gt_path": 0.4,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.10401869999999999
+    },
+    "VF_40_317": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_111",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.0751197
+    },
+    "VF_40_431": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 7,
+      "compare_calls": 4,
+      "list_parent_calls": 2,
+      "queried_metrics": [
+        "m_101",
+        "m_111",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.08826044999999999
+    },
+    "VF_40_547": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_111",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.08008095
+    }
+  },
+  "T3 +rule labels": {
+    "VF_10_101": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108",
+        "m_110"
+      ],
+      "precision_gt_path": 0.5,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.08666099999999999
+    },
+    "VF_10_211": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.06736695000000001
+    },
+    "VF_10_317": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108",
+        "m_110"
+      ],
+      "precision_gt_path": 0.5,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.08795595
+    },
+    "VF_10_431": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108",
+        "m_106"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 0.75,
+      "wrong_branch_queries": 1,
+      "cost_usd": 0.08390595
+    },
+    "VF_10_547": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 3,
+      "list_parent_calls": 2,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.07876095
+    },
+    "VF_15_101": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 7,
+      "compare_calls": 4,
+      "list_parent_calls": 2,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108",
+        "m_110"
+      ],
+      "precision_gt_path": 0.5,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.0892992
+    },
+    "VF_15_211": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.0562287
+    },
+    "VF_15_317": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108",
+        "m_110"
+      ],
+      "precision_gt_path": 0.5,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.0864114
+    },
+    "VF_15_431": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.0648057
+    },
+    "VF_15_547": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 3,
+      "list_parent_calls": 2,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.06663015
+    },
+    "VF_35_101": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_110"
+      ],
+      "precision_gt_path": 0.6666666666666666,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.06806414999999999
+    },
+    "VF_35_211": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_110"
+      ],
+      "precision_gt_path": 0.6666666666666666,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.05455995
+    },
+    "VF_35_317": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_110"
+      ],
+      "precision_gt_path": 0.6666666666666666,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.054193649999999996
+    },
+    "VF_35_431": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.05718090000000001
+    },
+    "VF_35_547": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_111",
+        "m_110"
+      ],
+      "precision_gt_path": 0.5,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.08324219999999999
+    },
+    "VF_40_101": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_110"
+      ],
+      "precision_gt_path": 0.6666666666666666,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.06640695
+    },
+    "VF_40_211": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 7,
+      "compare_calls": 5,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108",
+        "m_110",
+        "m_104"
+      ],
+      "precision_gt_path": 0.4,
+      "precision_any_ancestor": 0.8,
+      "wrong_branch_queries": 1,
+      "cost_usd": 0.11828745
+    },
+    "VF_40_317": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.06860820000000001
+    },
+    "VF_40_431": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 3,
+      "list_parent_calls": 2,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.06728895
+    },
+    "VF_40_547": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_110"
+      ],
+      "precision_gt_path": 0.6666666666666666,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.06498195000000001
+    }
+  },
+  "T4 full": {
+    "VF_10_101": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108",
+        "m_110"
+      ],
+      "precision_gt_path": 0.5,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.09660525
+    },
+    "VF_10_211": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108",
+        "m_106"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 0.75,
+      "wrong_branch_queries": 1,
+      "cost_usd": 0.089949
+    },
+    "VF_10_317": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108",
+        "m_110"
+      ],
+      "precision_gt_path": 0.5,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.10534650000000001
+    },
+    "VF_10_431": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.0787875
+    },
+    "VF_10_547": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 3,
+      "list_parent_calls": 2,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.08610525
+    },
+    "VF_15_101": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 7,
+      "compare_calls": 5,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108",
+        "m_104",
+        "m_110"
+      ],
+      "precision_gt_path": 0.4,
+      "precision_any_ancestor": 0.8,
+      "wrong_branch_queries": 1,
+      "cost_usd": 0.11000925
+    },
+    "VF_15_211": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108",
+        "m_106"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 0.75,
+      "wrong_branch_queries": 1,
+      "cost_usd": 0.094044
+    },
+    "VF_15_317": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 7,
+      "compare_calls": 4,
+      "list_parent_calls": 2,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_104",
+        "m_110"
+      ],
+      "precision_gt_path": 0.5,
+      "precision_any_ancestor": 0.75,
+      "wrong_branch_queries": 1,
+      "cost_usd": 0.1060605
+    },
+    "VF_15_431": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108",
+        "m_106"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 0.75,
+      "wrong_branch_queries": 1,
+      "cost_usd": 0.09535650000000001
+    },
+    "VF_15_547": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 3,
+      "list_parent_calls": 2,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.08650275000000002
+    },
+    "VF_35_101": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_110"
+      ],
+      "precision_gt_path": 0.6666666666666666,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.07505624999999999
+    },
+    "VF_35_211": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_104",
+        "m_110"
+      ],
+      "precision_gt_path": 0.5,
+      "precision_any_ancestor": 0.75,
+      "wrong_branch_queries": 1,
+      "cost_usd": 0.0983265
+    },
+    "VF_35_317": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_110"
+      ],
+      "precision_gt_path": 0.6666666666666666,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.07235625
+    },
+    "VF_35_431": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_104",
+        "m_106"
+      ],
+      "precision_gt_path": 0.25,
+      "precision_any_ancestor": 0.5,
+      "wrong_branch_queries": 2,
+      "cost_usd": 0.096999
+    },
+    "VF_35_547": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_110"
+      ],
+      "precision_gt_path": 0.6666666666666666,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.07605
+    },
+    "VF_40_101": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_104",
+        "m_110"
+      ],
+      "precision_gt_path": 0.5,
+      "precision_any_ancestor": 0.75,
+      "wrong_branch_queries": 1,
+      "cost_usd": 0.091254
+    },
+    "VF_40_211": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 6,
+      "compare_calls": 4,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108",
+        "m_110"
+      ],
+      "precision_gt_path": 0.5,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.09890774999999999
+    },
+    "VF_40_317": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_110"
+      ],
+      "precision_gt_path": 0.6666666666666666,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.07426125
+    },
+    "VF_40_431": {
+      "hit": false,
+      "reported_concept": "Discount Campaign",
+      "iterations": 6,
+      "compare_calls": 3,
+      "list_parent_calls": 2,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_108"
+      ],
+      "precision_gt_path": 0.3333333333333333,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.09307140000000001
+    },
+    "VF_40_547": {
+      "hit": true,
+      "reported_concept": "VIP Customer",
+      "iterations": 5,
+      "compare_calls": 3,
+      "list_parent_calls": 1,
+      "queried_metrics": [
+        "m_101",
+        "m_103",
+        "m_110"
+      ],
+      "precision_gt_path": 0.6666666666666666,
+      "precision_any_ancestor": 1.0,
+      "wrong_branch_queries": 0,
+      "cost_usd": 0.07755375
+    }
+  }
+}
